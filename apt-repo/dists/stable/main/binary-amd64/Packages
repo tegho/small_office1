@@ -1,0 +1,62 @@
+Package: certbot-snap-assist
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 11
+Depends: snapd
+Breaks: certbot
+Filename: pool/main/certbot-snap-assist_0.1-1_all.deb
+Size: 2294
+MD5sum: 595029c88c2450fcfd00b80a9ac77bf2
+SHA1: ed27c3689a1a54e5503131ebb4934d2441fb964c
+SHA256: 1357d07b3467d446eb7fda2be32e0b571cd34ac24e82e91387c5028158d196a8
+SHA512: d9f05a96bdcfbc186e08b7fa28ace9dece01c3d589a4692e09287928c30fead42e8e81ac3bc6094ecac37f44eaedf814216c03f4b3f844ed66c608b3f1574997
+Homepage: https://github.com/tegho
+Description: Helps to setup certbot
+ 1
+ 2
+ 3
+ 4
+
+Package: ddns-afraid-org
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Filename: pool/main/ddns-afraid-org_0.1-1_all.deb
+Size: 3464
+MD5sum: 26d4edfbdea1d1f6c7daf1c2286e8f62
+SHA1: ccc5d07264c57f4b8cc424027e4e472cc237dec6
+SHA256: 6dca5aa5e0658536e3d923791b8d6f3dbb326f16f8f5de515985d714d3f822f0
+SHA512: d8e8ddbc5660c254cd2bc974b8789d11ad6870206308cc02106f08ad778c22066aa6e65f956692be4a2f1dcb6444d04337132956829992fd1a7019ac5f85890d
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ 1
+ 2
+ 3
+ 4
+
+Package: my-repo
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 16
+Filename: pool/main/my-repo_0.1-1_all.deb
+Size: 2442
+MD5sum: c94e1e46f6de6b6bd78e050e5668c341
+SHA1: 3bee137032e510003714de5352fa34b6a08b6fff
+SHA256: 7acd4a9af44fa1c8a4a78cd166775a2a00e72eddd3592715657bfebb4ae307b1
+SHA512: 6c0f5bef7c078042c1e31875c6d9bb02f086c76ad16b1f8a305d2ebf57a5460656e6f6c20e0e44c5de485b2e8fca7e9071e4b128d0318f4952840642d975ddec
+Homepage: https://github.com/tegho
+Description: Install my-repo apt repository
+ 1
+ 2
+ 3
+ 4
+

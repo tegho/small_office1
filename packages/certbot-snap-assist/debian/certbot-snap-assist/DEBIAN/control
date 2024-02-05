@@ -1,0 +1,15 @@
+Package: certbot-snap-assist
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 11
+Depends: snapd
+Breaks: certbot
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: Helps to setup certbot
+ 1
+ 2
+ 3
+ 4

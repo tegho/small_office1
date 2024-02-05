@@ -1,0 +1,3 @@
+package_url='https://github.com/tegho'
+package_short="Updates DDNS records on afraid.org"
+package_depends='systemd,curl|wget'

@@ -1,0 +1,19 @@
+Source: my-repo
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/my-repo
+#Vcs-Git: https://salsa.debian.org/debian/my-repo.git
+Rules-Requires-Root: no
+
+Package: my-repo
+Architecture: all
+Depends: 
+Description: Install my-repo apt repository
+ 1
+ 2
+ 3
+ 4

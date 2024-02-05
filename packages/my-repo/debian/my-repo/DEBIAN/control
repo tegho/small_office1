@@ -1,0 +1,13 @@
+Package: my-repo
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 16
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: Install my-repo apt repository
+ 1
+ 2
+ 3
+ 4

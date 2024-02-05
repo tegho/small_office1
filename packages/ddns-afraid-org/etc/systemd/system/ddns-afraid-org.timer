@@ -1,0 +1,9 @@
+[Unit]
+Description=Update DDNS (timer)
+
+[Timer]
+OnCalendar=*:0/20:0
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target

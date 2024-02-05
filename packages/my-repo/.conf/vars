@@ -1,0 +1,3 @@
+package_url='https://github.com/tegho'
+package_short="Install my-repo apt repository"
+package_depends=''

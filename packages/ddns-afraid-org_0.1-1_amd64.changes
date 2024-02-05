@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sun, 04 Feb 2024 02:04:19 +0300
+Source: ddns-afraid-org
+Binary: ddns-afraid-org
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ ddns-afraid-org - Updates DDNS records on afraid.org
+Changes:
+ ddns-afraid-org (0.1-1) UNRELEASED; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ ccc5d07264c57f4b8cc424027e4e472cc237dec6 3464 ddns-afraid-org_0.1-1_all.deb
+ 40926c86b62e3d941639fc3e4fca18398baf3e88 5956 ddns-afraid-org_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 6dca5aa5e0658536e3d923791b8d6f3dbb326f16f8f5de515985d714d3f822f0 3464 ddns-afraid-org_0.1-1_all.deb
+ 6e8bea6a755426ca23cf541efa3334509721ed5c63510891c7ff0ffdc0b8fe10 5956 ddns-afraid-org_0.1-1_amd64.buildinfo
+Files:
+ 26d4edfbdea1d1f6c7daf1c2286e8f62 3464 unknown optional ddns-afraid-org_0.1-1_all.deb
+ b45afd885a8256942320d997cc623e2b 5956 unknown optional ddns-afraid-org_0.1-1_amd64.buildinfo

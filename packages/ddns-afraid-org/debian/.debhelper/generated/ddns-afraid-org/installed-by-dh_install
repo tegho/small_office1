@@ -1,0 +1,5 @@
+./usr/lib/ddns-afraid-org/update-ddns.sh
+./etc/ddns-afraid-org.d/example.conf
+./etc/ddns-afraid-org.d/README
+./etc/systemd/system/ddns-afraid-org.service
+./etc/systemd/system/ddns-afraid-org.timer

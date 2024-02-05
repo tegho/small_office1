@@ -1,0 +1,5 @@
+Config files to update dns records on DDNS afraid.org.
+One config per each dns record you want to update.
+
+Set permission to 640.
+Keep this files in secret, the data might be sensitive.

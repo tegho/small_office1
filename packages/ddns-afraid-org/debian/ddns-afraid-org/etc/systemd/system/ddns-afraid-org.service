@@ -1,0 +1,10 @@
+[Unit]
+Description=Update DDNS (service)
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/lib/ddns-afraid-org/update-ddns.sh
+
+[Install]
+WantedBy=multi-user.target

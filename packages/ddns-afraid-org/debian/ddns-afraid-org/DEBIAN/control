@@ -1,0 +1,13 @@
+Package: ddns-afraid-org
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ 1
+ 2
+ 3
+ 4

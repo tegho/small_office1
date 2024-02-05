@@ -1,0 +1,19 @@
+Source: ddns-afraid-org
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/ddns-afraid-org
+#Vcs-Git: https://salsa.debian.org/debian/ddns-afraid-org.git
+Rules-Requires-Root: no
+
+Package: ddns-afraid-org
+Architecture: all
+Depends: ${misc:Depends}
+Description: Updates DDNS records on afraid.org
+ 1
+ 2
+ 3
+ 4
