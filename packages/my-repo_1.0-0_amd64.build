@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package my-repo
-dpkg-buildpackage: info: source version 0.1-1
+dpkg-buildpackage: info: source version 1.0-0
 dpkg-buildpackage: info: source distribution jammy
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
@@ -28,22 +28,24 @@ dh binary
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'my-repo' in '../my-repo_0.1-1_all.deb'.
- dpkg-genbuildinfo --build=binary -O../my-repo_0.1-1_amd64.buildinfo
- dpkg-genchanges --build=binary -O../my-repo_0.1-1_amd64.changes
+dpkg-deb: building package 'my-repo' in '../my-repo_1.0-0_all.deb'.
+ dpkg-genbuildinfo --build=binary -O../my-repo_1.0-0_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../my-repo_1.0-0_amd64.changes
 dpkg-genchanges: info: binary-only upload (no source code included)
  dpkg-source -i --after-build .
 dpkg-buildpackage: info: binary-only upload (no source included)
-Now running lintian my-repo_0.1-1_amd64.changes ...
+Now running lintian my-repo_1.0-0_amd64.changes ...
 running with root privileges is not recommended!
 E: my-repo: bogus-mail-host Maintainer no@mail.plz
 E: my-repo changes: bogus-mail-host Changed-By no@mail.plz
 E: my-repo changes: bogus-mail-host Maintainer no@mail.plz
-E: my-repo: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
+E: my-repo: bogus-mail-host-in-debian-changelog no@mail.plz version 1.0-0 (line 1)
 E: my-repo: copyright-contains-dh_make-todo-boilerplate
+E: my-repo: debian-revision-is-zero 1.0-0
+E: my-repo changes: debian-revision-is-zero 1.0-0
+E: my-repo buildinfo: debian-revision-is-zero 1.0-0
 E: my-repo: helper-templates-in-copyright
 E: my-repo: package-installs-apt-sources etc/apt/sources.list.d/my-repo.list
 E: my-repo: section-is-dh_make-template
 W: my-repo: copyright-has-url-from-dh_make-boilerplate
-W: my-repo: initial-upload-closes-no-bugs
 Finished running lintian.

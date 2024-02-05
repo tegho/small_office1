@@ -1,5 +1,5 @@
-my-repo (0.1-1) jammy; urgency=medium
+my-repo (1.0-0) jammy; urgency=medium
 
   * Initial release
 
- -- admin <no@mail.plz>  Mon, 05 Feb 2024 06:42:33 +0300
+ -- admin <no@mail.plz>  Mon, 05 Feb 2024 18:57:35 +0300
