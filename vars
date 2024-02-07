@@ -1,2 +1,2 @@
-secret_dir="../keys"
+secret_dir="keys"
 repo_webroot="apt-repo"
