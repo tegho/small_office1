@@ -4,14 +4,14 @@ Binary: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- 26d4edfbdea1d1f6c7daf1c2286e8f62 3464 ddns-afraid-org_0.1-1_all.deb
+ c61070d8213abaea9f5f51be0f6e04b3 3588 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha1:
- ccc5d07264c57f4b8cc424027e4e472cc237dec6 3464 ddns-afraid-org_0.1-1_all.deb
+ 84eb9c8be7f8e55342559bb3855f3890b868bed5 3588 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha256:
- 6dca5aa5e0658536e3d923791b8d6f3dbb326f16f8f5de515985d714d3f822f0 3464 ddns-afraid-org_0.1-1_all.deb
+ 34fc05bcde0d31e192a57a577767acc97f93da212d6eb61e3dcc4ac892eaf776 3588 ddns-afraid-org_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 04 Feb 2024 02:06:40 +0300
+Build-Date: Sat, 24 Feb 2024 01:12:58 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -29,7 +29,7 @@ Installed-Build-Depends:
  bsdutils (= 1:2.37.2-4ubuntu3),
  build-essential (= 12.9ubuntu3),
  bzip2 (= 1.0.8-5build1),
- coreutils (= 8.32-4.1ubuntu1),
+ coreutils (= 8.32-4.1ubuntu1.1),
  cpp (= 4:11.2.0-1ubuntu1),
  cpp-11 (= 11.4.0-1ubuntu1~22.04),
  dash (= 0.5.11+git20210903+057cd650a4ed-3build1),
@@ -128,7 +128,7 @@ Installed-Build-Depends:
  libselinux1 (= 3.3-1build2),
  libsigsegv2 (= 2.13-1ubuntu3),
  libsmartcols1 (= 2.37.2-4ubuntu3),
- libssl3 (= 3.0.2-0ubuntu1.13),
+ libssl3 (= 3.0.2-0ubuntu1.14),
  libstdc++-11-dev (= 11.4.0-1ubuntu1~22.04),
  libstdc++6 (= 12.3.0-1ubuntu1~22.04),
  libsub-override-perl (= 0.09-2),
@@ -146,8 +146,8 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.3),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-92.102),
- login (= 1:4.8.1-2ubuntu2.1),
+ linux-libc-dev (= 5.15.0-94.104),
+ login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
  m4 (= 1.4.18-5ubuntu2),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1707001459"
+ SOURCE_DATE_EPOCH="1708726367"

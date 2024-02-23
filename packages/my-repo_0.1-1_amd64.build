@@ -1,0 +1,52 @@
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package my-repo
+dpkg-buildpackage: info: source version 0.1-1
+dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source changed by admin <no@mail.plz>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/my-repo/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   debian/rules override_dh_builddeb
+make[1]: Entering directory '/root/proj/small_office1/packages/my-repo'
+dh_builddeb -- -Zgzip
+dpkg-deb: building package 'my-repo' in '../my-repo_0.1-1_all.deb'.
+make[1]: Leaving directory '/root/proj/small_office1/packages/my-repo'
+ dpkg-genbuildinfo --build=binary -O../my-repo_0.1-1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../my-repo_0.1-1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian my-repo_0.1-1_amd64.changes ...
+running with root privileges is not recommended!
+E: my-repo: bogus-mail-host Maintainer no@mail.plz
+E: my-repo changes: bogus-mail-host Changed-By no@mail.plz
+E: my-repo changes: bogus-mail-host Maintainer no@mail.plz
+E: my-repo: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
+E: my-repo: copyright-contains-dh_make-todo-boilerplate
+E: my-repo: helper-templates-in-copyright
+E: my-repo: package-installs-apt-sources etc/apt/sources.list.d/my-repo.list
+E: my-repo: section-is-dh_make-template
+W: my-repo: copyright-has-url-from-dh_make-boilerplate
+W: my-repo: initial-upload-closes-no-bugs
+Finished running lintian.

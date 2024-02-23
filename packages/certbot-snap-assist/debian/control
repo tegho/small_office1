@@ -13,8 +13,6 @@ Package: certbot-snap-assist
 Architecture: all
 Depends: snapd
 Description: Helps to setup certbot
- 1
- 2
- 3
- 4
+ multiline
+ description
 Breaks: certbot

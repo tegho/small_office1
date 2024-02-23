@@ -1,0 +1,17 @@
+Source: easy-pki
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/easy-pki
+#Vcs-Git: https://salsa.debian.org/debian/easy-pki.git
+Rules-Requires-Root: no
+
+Package: easy-pki
+Architecture: all
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ multiline
+ description

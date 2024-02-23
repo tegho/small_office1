@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 24 Feb 2024 01:15:56 +0300
+Source: my-repo
+Binary: my-repo
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-1
+Distribution: jammy
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ my-repo    - Install my-repo apt repository
+Changes:
+ my-repo (0.1-1) jammy; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ f3280b2b3f710efba22b3922eebf35c9b88c9c7d 2570 my-repo_0.1-1_all.deb
+ b13b5460092f5ea38832f8e20be6f7189b8faa24 5918 my-repo_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ f37cad01809106a0dca63a4a2e64565b02344a44031a98124fde3d1e9ef21b4d 2570 my-repo_0.1-1_all.deb
+ dd846306117285c07ea164f0ec1168015bb64a370f3663610e2ec8f9ab1eb3b6 5918 my-repo_0.1-1_amd64.buildinfo
+Files:
+ dbe0830c8d2a4693a431706991238696 2570 unknown optional my-repo_0.1-1_all.deb
+ cfbe4be23e1b2956f649ec8ecfb06fdb 5918 unknown optional my-repo_0.1-1_amd64.buildinfo

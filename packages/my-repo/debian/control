@@ -13,7 +13,5 @@ Package: my-repo
 Architecture: all
 Depends: 
 Description: Install my-repo apt repository
- 1
- 2
- 3
- 4
+ multiline
+ description

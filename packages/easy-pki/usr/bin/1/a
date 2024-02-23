@@ -1,0 +1,13 @@
+# $SUBSTKEYNAME
+
+dev-type        tun
+dev             tun
+remote          evpn.oport.org 993 tcp4
+client
+float
+remote-cert-tls server
+verb            1
+$SUBSTKEY
+$SUBSTCA
+$SUBSTCERT
+$SUBSTTLS

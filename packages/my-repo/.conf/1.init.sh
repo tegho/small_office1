@@ -19,7 +19,7 @@ sed -i 's,^Depends: .*,Depends: '"$package_depends"',' "$package_dir/debian/cont
 sed -i 's,^Description: .*,Description: '"$package_short"',' "$package_dir/debian/control"
 sed -n 's/^\(.*\)$/ \1/p' $current_dir/doc.txt | sed -i '/ <insert long description, indented with spaces>/{r /dev/stdin
 d}' "$package_dir/debian/control"
-
+echo -e "override_dh_builddeb:\n\tdh_builddeb -- -Zgzip" >> "$package_dir/debian/rules"
 
 echo "###########"
 echo "NEXT:"

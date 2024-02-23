@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Sun, 04 Feb 2024 03:01:15 +0300
+Date: Sat, 24 Feb 2024 01:11:01 +0300
 Source: certbot-snap-assist
 Binary: certbot-snap-assist
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: UNRELEASED
+Distribution: jammy
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
  certbot-snap-assist - Helps to setup certbot
 Changes:
- certbot-snap-assist (0.1-1) UNRELEASED; urgency=medium
+ certbot-snap-assist (0.1-1) jammy; urgency=medium
  .
    * Initial release
 Checksums-Sha1:
- ed27c3689a1a54e5503131ebb4934d2441fb964c 2294 certbot-snap-assist_0.1-1_all.deb
- 8427a0702d5d50d712ae1abe253e8a5267c0a22b 5976 certbot-snap-assist_0.1-1_amd64.buildinfo
+ e8dc1c7f455a1bd8e37715f2f8355ecc1cd8adb0 2360 certbot-snap-assist_0.1-1_all.deb
+ dfdfd8aeb270e8dd27d94bd9fb0c97e8aed92939 5978 certbot-snap-assist_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- 1357d07b3467d446eb7fda2be32e0b571cd34ac24e82e91387c5028158d196a8 2294 certbot-snap-assist_0.1-1_all.deb
- 285e1a1e261528036d598e40ed23939483070d22949dff39e8d403c61c955eeb 5976 certbot-snap-assist_0.1-1_amd64.buildinfo
+ 052ff3fcb6340c984cd8856b63f0a560d00f6ff1710f4d688c7a0b653c8edd16 2360 certbot-snap-assist_0.1-1_all.deb
+ 228c990e1a3c5c17cf6cdc17749e78a3b52c1e6d8e7796b580e112c8f4d50556 5978 certbot-snap-assist_0.1-1_amd64.buildinfo
 Files:
- 595029c88c2450fcfd00b80a9ac77bf2 2294 unknown optional certbot-snap-assist_0.1-1_all.deb
- 5a7f7689d7393455c6b4fffff153e594 5976 unknown optional certbot-snap-assist_0.1-1_amd64.buildinfo
+ 0594e94c77f0fef936c5c4c1a35d5919 2360 unknown optional certbot-snap-assist_0.1-1_all.deb
+ c2de9ef1687115351629693abf982cdb 5978 unknown optional certbot-snap-assist_0.1-1_amd64.buildinfo

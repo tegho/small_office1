@@ -8,17 +8,15 @@ Installed-Size: 11
 Depends: snapd
 Breaks: certbot
 Filename: pool/main/certbot-snap-assist_0.1-1_all.deb
-Size: 2294
-MD5sum: 595029c88c2450fcfd00b80a9ac77bf2
-SHA1: ed27c3689a1a54e5503131ebb4934d2441fb964c
-SHA256: 1357d07b3467d446eb7fda2be32e0b571cd34ac24e82e91387c5028158d196a8
-SHA512: d9f05a96bdcfbc186e08b7fa28ace9dece01c3d589a4692e09287928c30fead42e8e81ac3bc6094ecac37f44eaedf814216c03f4b3f844ed66c608b3f1574997
+Size: 2360
+MD5sum: 0594e94c77f0fef936c5c4c1a35d5919
+SHA1: e8dc1c7f455a1bd8e37715f2f8355ecc1cd8adb0
+SHA256: 052ff3fcb6340c984cd8856b63f0a560d00f6ff1710f4d688c7a0b653c8edd16
+SHA512: 0d1a9aaa8ab83309e3b2394cf99e1f4a5db356f29d2a85bd61391400b1305d801b03882dffd02041db3359da60e44df6a722f3322c50b773e806286c55785841
 Homepage: https://github.com/tegho
 Description: Helps to setup certbot
- 1
- 2
- 3
- 4
+ multiline
+ description
 
 Package: ddns-afraid-org
 Architecture: all
@@ -28,35 +26,31 @@ Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 25
 Filename: pool/main/ddns-afraid-org_0.1-1_all.deb
-Size: 3464
-MD5sum: 26d4edfbdea1d1f6c7daf1c2286e8f62
-SHA1: ccc5d07264c57f4b8cc424027e4e472cc237dec6
-SHA256: 6dca5aa5e0658536e3d923791b8d6f3dbb326f16f8f5de515985d714d3f822f0
-SHA512: d8e8ddbc5660c254cd2bc974b8789d11ad6870206308cc02106f08ad778c22066aa6e65f956692be4a2f1dcb6444d04337132956829992fd1a7019ac5f85890d
+Size: 3588
+MD5sum: c61070d8213abaea9f5f51be0f6e04b3
+SHA1: 84eb9c8be7f8e55342559bb3855f3890b868bed5
+SHA256: 34fc05bcde0d31e192a57a577767acc97f93da212d6eb61e3dcc4ac892eaf776
+SHA512: 78a3cce17b000d69dea5eec36dd7af0d0cc0ee8285171e8bef8ec576e7ce34e50d1c79577b288eb795a6598b7cc29fce154157ebd84f32f2b61ffb00e5ebc420
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
- 1
- 2
- 3
- 4
+ multiline
+ description
 
 Package: my-repo
 Architecture: all
-Version: 1.0-0
+Version: 0.1-1
 Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 16
-Filename: pool/main/my-repo_1.0-0_all.deb
-Size: 2442
-MD5sum: 5e3365d20374352c986f5d96fa3d564b
-SHA1: 150cf7864e8de36fe610468f72b67e1b2e5e317f
-SHA256: f8bc6b568701796065b3653ce2cf0eecaaba47cc8246959019cbff117026f82e
-SHA512: 46e81cdd810efc082846fdf972c3c362bc2ab36d8f2d3a56f74535648580689d238ae4542ff956c54778ad77311183e97b57e0731d56e07f7bffa1cb25d0b4d6
+Filename: pool/main/my-repo_0.1-1_all.deb
+Size: 2570
+MD5sum: dbe0830c8d2a4693a431706991238696
+SHA1: f3280b2b3f710efba22b3922eebf35c9b88c9c7d
+SHA256: f37cad01809106a0dca63a4a2e64565b02344a44031a98124fde3d1e9ef21b4d
+SHA512: f75a26a5d7373924ea7097183dbc71bd7a46ed040c3ec263d578b3d2440fdd5e67536406f7a494fe4b240d25c01e5933282615c08de9a10db1c87e0fdc89984f
 Homepage: https://github.com/tegho
 Description: Install my-repo apt repository
- 1
- 2
- 3
- 4
+ multiline
+ description
 

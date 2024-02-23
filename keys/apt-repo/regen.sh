@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exit
+#exit
 
 function exitinfo() {
   echo $1
@@ -29,6 +29,8 @@ unset GNUPGHOME
 echo "###########"
 echo "NEXT:"
 echo "  Rebuild my-repo package to update public key"
+echo "  AND"
+echo "  Update first install URL"
 echo "  AND"
 echo "  Rebuild and upload apt repository"
 

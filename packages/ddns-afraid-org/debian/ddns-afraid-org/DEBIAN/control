@@ -7,7 +7,5 @@ Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
- 1
- 2
- 3
- 4
+ multiline
+ description

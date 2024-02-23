@@ -1,0 +1,3 @@
+package_url='https://github.com/tegho'
+package_short="Install easy-rsa, creates PKI structure and helpers"
+package_depends='easy-rsa,cryptsetup'

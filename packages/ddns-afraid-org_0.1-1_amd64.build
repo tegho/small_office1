@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package ddns-afraid-org
 dpkg-buildpackage: info: source version 0.1-1
-dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source distribution jammy
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64
@@ -27,8 +27,11 @@ dh binary
    dh_installdeb
    dh_gencontrol
    dh_md5sums
-   dh_builddeb
+   debian/rules override_dh_builddeb
+make[1]: Entering directory '/root/proj/small_office1/packages/ddns-afraid-org'
+dh_builddeb -- -Zgzip
 dpkg-deb: building package 'ddns-afraid-org' in '../ddns-afraid-org_0.1-1_all.deb'.
+make[1]: Leaving directory '/root/proj/small_office1/packages/ddns-afraid-org'
  dpkg-genbuildinfo --build=binary -O../ddns-afraid-org_0.1-1_amd64.buildinfo
  dpkg-genchanges --build=binary -O../ddns-afraid-org_0.1-1_amd64.changes
 dpkg-genchanges: info: binary-only upload (no source code included)
