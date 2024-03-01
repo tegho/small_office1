@@ -15,8 +15,8 @@ DEBEMAIL="no@mail.plz" DEBFULLNAME="admin" dh_make --indep -f "$(dirname $packag
 
 rm -f "$package_dir/debian/"README* "$package_dir/debian/"*.docs "$package_dir/debian/"*.ex
 sed -i 's,^Homepage: .*,Homepage: '"$package_url"',' "$package_dir/debian/control"
-sed -i 's,^Depends: .*,Depends: '"$package_depends"',' "$package_dir/debian/control"
-sed -i 's,^Description: .*,Description: '"$package_short"',' "$package_dir/debian/control"
+sed -i 's!^Depends: .*!Depends: '"$package_depends"'!' "$package_dir/debian/control"
+sed -i 's!^Description: .*!Description: '"$package_short"'!' "$package_dir/debian/control"
 sed -n 's/^\(.*\)$/ \1/p' $current_dir/doc.txt | sed -i '/ <insert long description, indented with spaces>/{r /dev/stdin
 d}' "$package_dir/debian/control"
 echo -e "override_dh_builddeb:\n\tdh_builddeb -- -Zgzip" >> "$package_dir/debian/rules"

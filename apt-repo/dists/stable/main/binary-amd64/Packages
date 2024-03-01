@@ -18,6 +18,25 @@ Description: Helps to setup certbot
  multiline
  description
 
+Package: crypt-pki
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-1_all.deb
+Size: 9674
+MD5sum: 4d4a905e14d87a9aee0ed2fe940023a0
+SHA1: 7f61868d12fe4a1de2913808e1e41be7807f8d51
+SHA256: 8101fde2f89f4d1fd44c331bfaa42f48a732e2a1930393cf839ac778357d4230
+SHA512: 5c88753ddf7472ddd9ac18395ed1d10068d9af56c23c4c0289bc73d41f6828a1677b0f2b028d77d65fc54a98ed94b1dcfdb91a198d79534c2f7c4cf678c6e48f
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
@@ -31,6 +50,43 @@ MD5sum: c61070d8213abaea9f5f51be0f6e04b3
 SHA1: 84eb9c8be7f8e55342559bb3855f3890b868bed5
 SHA256: 34fc05bcde0d31e192a57a577767acc97f93da212d6eb61e3dcc4ac892eaf776
 SHA512: 78a3cce17b000d69dea5eec36dd7af0d0cc0ee8285171e8bef8ec576e7ce34e50d1c79577b288eb795a6598b7cc29fce154157ebd84f32f2b61ffb00e5ebc420
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ multiline
+ description
+
+Package: ddns-afraid-org
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Filename: pool/main/ddns-afraid-org_0.1-2_all.deb
+Size: 3646
+MD5sum: 84245e7f3d53770bacea82ee70ede296
+SHA1: 4999e6359147cf104c754a55fdd1ed7beeebbfb9
+SHA256: d5f0abcd1e480ffec9dbb114db66f6a9900bc3cd4f066e0e568b0732339c078c
+SHA512: 7379133a23f392e10cdd234af81918c197e7914ead40144c7bfc26c7a3618f862f10a0e61ddf2f390bc7b2597dfdc2d1a9a4bf3779125599d19c756dce487d0c
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ multiline
+ description
+
+Package: ddns-afraid-org
+Architecture: all
+Version: 0.1-3
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Depends: systemd, curl | wget
+Filename: pool/main/ddns-afraid-org_0.1-3_all.deb
+Size: 3684
+MD5sum: 79734fa8755ee7072cd52c3f541b09ba
+SHA1: 882bf8efca07fc6c5159e85dce30f14806c41e30
+SHA256: 060a2332b7d9a28541df3253f5d16232d076ccf3a921f8bed21f90c7a065c50f
+SHA512: d409bbcbb7c53e1897d642bd22a0fe9285940100fc51579e98a4ff06d2505927ec50e40d4df897c4d551619d353042a8311655ba8c70e30ead964964fd69bad1
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
  multiline

@@ -1,0 +1,5 @@
+usr/bin/crypt-pki /usr/bin/
+usr/share/crypt-pki/templates/android-in /usr/share/crypt-pki/templates/
+usr/share/crypt-pki/templates/win-api /usr/share/crypt-pki/templates/
+usr/share/crypt-pki/templates/android-api /usr/share/crypt-pki/templates/
+usr/share/crypt-pki/templates/win-in /usr/share/crypt-pki/templates/

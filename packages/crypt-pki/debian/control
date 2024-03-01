@@ -1,0 +1,17 @@
+Source: crypt-pki
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/crypt-pki
+#Vcs-Git: https://salsa.debian.org/debian/crypt-pki.git
+Rules-Requires-Root: no
+
+Package: crypt-pki
+Architecture: all
+Depends: easy-rsa,cryptsetup
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description

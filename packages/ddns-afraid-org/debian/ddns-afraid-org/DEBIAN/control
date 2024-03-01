@@ -1,8 +1,9 @@
 Package: ddns-afraid-org
-Version: 0.1-1
+Version: 0.1-3
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 25
+Depends: systemd, curl | wget
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho

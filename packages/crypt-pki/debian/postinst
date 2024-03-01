@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+case "$1" in
+    configure)
+#        chmod -R 640 /etc/ddns-afraid-org.d
+#        systemctl daemon-reload && \
+#        systemctl enable ddns-afraid-org.service && \
+#        systemctl enable ddns-afraid-org.timer && \
+#        systemctl start ddns-afraid-org.service && \
+#        systemctl start ddns-afraid-org.timer
+    ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+exit 0
