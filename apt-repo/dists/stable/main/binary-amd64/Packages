@@ -138,11 +138,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 37
 Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
 Filename: pool/main/setup-montana_0.1-1_all.deb
-Size: 4922
-MD5sum: 1c8f8683d16e15f7382ba355c7c4155e
-SHA1: d590b8cf9dbadff88d65673ba23b0a188f710538
-SHA256: 4a6b32428144c8fef202a8dba98b64340b0618e4bec0202e2ffaeac807da42a3
-SHA512: 63df567b060ee1d0d08e0dc83d4b217a64bf3be4b3420273ec7e9f5f3260a267c6c26919df96a242e1df0ab90f7134d7917550c12a5157eb22e45e62e235b23a
+Size: 4924
+MD5sum: c082e9d056b012bc97951950734b4afe
+SHA1: 2a17b3f0fd398ab79fc7072be4f1c04e811a25df
+SHA256: b0450c23ea1c193f172c0b47ff8825226e5afd6afd2f8023352ab76a2301a6d1
+SHA512: d6d33f6c0327d55bc83b1f76ec423282951b866afb60ba395de0a9c471f052885bd627be6869f923b5e2190c442bb0012d7b850780c24af24a40ce11882999b7
 Homepage: https://github.com/tegho
 Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline
