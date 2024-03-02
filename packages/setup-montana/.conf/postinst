@@ -9,14 +9,14 @@ case "$1" in
         find /root/pki-montana -type d -exec chmod 700 '{}' \;
         find /root/pki-montana -type f -exec chmod 600 '{}' \;
         find /root/pki-montana -type f -name *.sh -exec chmod 700 '{}' \;
-        /root/pki-montana/1.first_run.sh
-        [ invoke-rc.d nginx status &> /dev/null ] && invoke-rc.d nginx reload
 
-#        systemctl daemon-reload && \
-#        systemctl enable ddns-afraid-org.service && \
-#        systemctl enable ddns-afraid-org.timer && \
-#        systemctl start ddns-afraid-org.service && \
-#        systemctl start ddns-afraid-org.timer
+        /root/pki-montana/1.first_run.sh
+
+        mkdir -p /etc/nginx/sites-enabled/
+        ln -fs /etc/nginx/sites-available/crl  /etc/nginx/sites-enabled/crl
+        ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
+
+        [ invoke-rc.d nginx status &> /dev/null ] && invoke-rc.d nginx reload
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

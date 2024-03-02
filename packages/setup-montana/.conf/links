@@ -1,2 +1,0 @@
-/etc/nginx/sites-available/crl  /etc/nginx/sites-enabled/crl
-/etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
