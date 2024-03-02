@@ -59,8 +59,6 @@ E: setup-montana: section-is-dh_make-template
 W: setup-montana: copyright-has-url-from-dh_make-boilerplate
 W: setup-montana: initial-upload-closes-no-bugs
 W: setup-montana: maintainer-script-empty [prerm]
-W: setup-montana: possible-bashism-in-maintainer-script '&>' [postinst:19]
-W: setup-montana: possible-bashism-in-maintainer-script '&>' [postrm:10]
 W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:7]
 W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:6]
 W: setup-montana: recursive-privilege-change "find /root/pki-montana -type d -exec chmod" [postinst:9]
