@@ -6,8 +6,8 @@ package_name=$(basename "$package_dir")
 source "$current_dir/vars" || exit 1
 source "$current_dir/version" || exit 1
 
-cp -f "$current_dir/links" "$package_dir/debian/${package_name}.links
-"
+cp -f "$current_dir/links" "$package_dir/debian/${package_name}.links"
+
 echo "###########"
 echo "NEXT:"
 echo "  4. Build if it's a first version"

@@ -5,7 +5,7 @@ case "$1" in
     configure)
         chmod -R 640 /etc/ddns-afraid-org.d
         chmod -R 600 /root/pki-montana
-        [invoke-rc.d nginx status &> /dev/null] && invoke-rc.d nginx reload
+        [ invoke-rc.d nginx status &> /dev/null ] && invoke-rc.d nginx reload
 
 #        systemctl daemon-reload && \
 #        systemctl enable ddns-afraid-org.service && \
