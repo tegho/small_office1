@@ -3,7 +3,9 @@
 set -e
 case "$1" in
     configure)
-        chmod -R 640 /etc/ddns-afraid-org.d
+        find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
+        find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+
         systemctl daemon-reload && \
         systemctl enable ddns-afraid-org.service && \
         systemctl enable ddns-afraid-org.timer && \

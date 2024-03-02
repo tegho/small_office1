@@ -3,8 +3,12 @@
 set -e
 case "$1" in
     configure)
-        chmod -R 640 /etc/ddns-afraid-org.d
-        chmod -R 600 /root/pki-montana
+        find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
+        find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+
+        find /root/pki-montana -type d -exec chmod 700 '{}' \;
+        find /root/pki-montana -type f -exec chmod 600 '{}' \;
+        find /root/pki-montana -type f -name *.sh -exec chmod 700 '{}' \;
         /root/pki-montana/1.first_run.sh
         [ invoke-rc.d nginx status &> /dev/null ] && invoke-rc.d nginx reload
 

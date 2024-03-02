@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Sat, 24 Feb 2024 01:12:47 +0300
+Date: Sat, 02 Mar 2024 06:12:58 +0300
 Source: ddns-afraid-org
 Binary: ddns-afraid-org
 Built-For-Profiles: noudeb
@@ -16,11 +16,11 @@ Changes:
  .
    * Initial release
 Checksums-Sha1:
- 84eb9c8be7f8e55342559bb3855f3890b868bed5 3588 ddns-afraid-org_0.1-1_all.deb
- b0cbc10c0e4179b44bbfa0ca6d8c604d9d5de42d 5958 ddns-afraid-org_0.1-1_amd64.buildinfo
+ 97a2f0edda7e9a53a46ae284cd47b10d195e5508 3640 ddns-afraid-org_0.1-1_all.deb
+ 8df5dfbdb44a6664e5141e823643850835573d90 5958 ddns-afraid-org_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- 34fc05bcde0d31e192a57a577767acc97f93da212d6eb61e3dcc4ac892eaf776 3588 ddns-afraid-org_0.1-1_all.deb
- 0ca18136a87e96a6181cdce37263ed38521813eb9c1594cc224185e93db066b7 5958 ddns-afraid-org_0.1-1_amd64.buildinfo
+ 3bd4eae6747914e9cff3c4654a35b1ec5f005cc9d4199badf1aae428eba1195d 3640 ddns-afraid-org_0.1-1_all.deb
+ 6273ac3c7af542cacf0251e240c73721ac5e3c9512af38cd72b8fc19e70a9df1 5958 ddns-afraid-org_0.1-1_amd64.buildinfo
 Files:
- c61070d8213abaea9f5f51be0f6e04b3 3588 unknown optional ddns-afraid-org_0.1-1_all.deb
- bb91f1272286b3805f330c35c4c10a21 5958 unknown optional ddns-afraid-org_0.1-1_amd64.buildinfo
+ da4b28c6b4e55dc9a254643ff6c2c9bc 3640 unknown optional ddns-afraid-org_0.1-1_all.deb
+ 59844f754bd93f209a28489e07d3aef6 5958 unknown optional ddns-afraid-org_0.1-1_amd64.buildinfo

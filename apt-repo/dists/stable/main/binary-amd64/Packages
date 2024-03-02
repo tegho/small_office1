@@ -63,12 +63,13 @@ Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 25
+Depends: systemd, curl | wget
 Filename: pool/main/ddns-afraid-org_0.1-1_all.deb
-Size: 3588
-MD5sum: c61070d8213abaea9f5f51be0f6e04b3
-SHA1: 84eb9c8be7f8e55342559bb3855f3890b868bed5
-SHA256: 34fc05bcde0d31e192a57a577767acc97f93da212d6eb61e3dcc4ac892eaf776
-SHA512: 78a3cce17b000d69dea5eec36dd7af0d0cc0ee8285171e8bef8ec576e7ce34e50d1c79577b288eb795a6598b7cc29fce154157ebd84f32f2b61ffb00e5ebc420
+Size: 3640
+MD5sum: da4b28c6b4e55dc9a254643ff6c2c9bc
+SHA1: 97a2f0edda7e9a53a46ae284cd47b10d195e5508
+SHA256: 3bd4eae6747914e9cff3c4654a35b1ec5f005cc9d4199badf1aae428eba1195d
+SHA512: 221034a90ef89c7fcfc75482ed927f0b9c38c7fb5ae77905e3ec7649bff2ed8c130f2b5e2b654e501aa9fecf428fa3f07493b626414a2a09d3d8586a9c4d32cd
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
  multiline
@@ -138,11 +139,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 37
 Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
 Filename: pool/main/setup-montana_0.1-1_all.deb
-Size: 4924
-MD5sum: c082e9d056b012bc97951950734b4afe
-SHA1: 2a17b3f0fd398ab79fc7072be4f1c04e811a25df
-SHA256: b0450c23ea1c193f172c0b47ff8825226e5afd6afd2f8023352ab76a2301a6d1
-SHA512: d6d33f6c0327d55bc83b1f76ec423282951b866afb60ba395de0a9c471f052885bd627be6869f923b5e2190c442bb0012d7b850780c24af24a40ce11882999b7
+Size: 4970
+MD5sum: 05f8d1afa9798383f81c4934289b18f8
+SHA1: fd34d3ab1142bac7416f013b3bf2f2b7f5aefc58
+SHA256: 47b5c41242ca8e31558c4f5c884aaaa27ac13a7a46ea2c28d99355003cc647c8
+SHA512: 73c0da48968bf286292ab8220ae7a3e79c04f7d77a12b243bf1371dfac3d472c1caf0aef483b7f2474948129e22d0ee21655123a54e254c0c9ee82dc3fde6d94
 Homepage: https://github.com/tegho
 Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline
