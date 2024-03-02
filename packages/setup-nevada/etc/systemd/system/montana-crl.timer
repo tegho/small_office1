@@ -1,0 +1,9 @@
+[Unit]
+Description=Download montana-pki CRL (timer)
+
+[Timer]
+OnCalendar=*:0/10:0
+RandomizedDelaySec=1m
+
+[Install]
+WantedBy=timers.target

@@ -112,3 +112,22 @@ Description: Install PKI, DDNS client, CRL distribution point and monitoring age
  multiline
  description
 
+Package: setup-nevada
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 31
+Depends: systemd, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins
+Filename: pool/main/setup-nevada_0.1-1_all.deb
+Size: 4458
+MD5sum: 6e6b983f4d798b97bae4a4c65865db44
+SHA1: 7dbf67355b78b53e5eecbc658773f8c9dd1842fe
+SHA256: 200d11484a2b8e09e345747827b9c0f0a3715fa8dfe0286359e940f247d3f4a0
+SHA512: 01257ca52db5879ebd75e2417532db15b915f0449eebb55985270b6f6a78311aa9145b621f7259113387279992bbb55ffbee118fced5ae3540b96ac8ea377dc6
+Homepage: https://github.com/tegho
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+

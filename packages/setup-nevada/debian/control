@@ -1,0 +1,17 @@
+Source: setup-nevada
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/setup-nevada
+#Vcs-Git: https://salsa.debian.org/debian/setup-nevada.git
+Rules-Requires-Root: no
+
+Package: setup-nevada
+Architecture: all
+Depends: systemd,openvpn,nginx,ddns-afraid-org,zip,curl,strongswan,strongswan-swanctl,libcharon-extra-plugins
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description

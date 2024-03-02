@@ -1,0 +1,7 @@
+./etc/openvpn/server/vpn1.conf
+./etc/swanctl/swanctl.conf
+./etc/ddns-afraid-org.d/nevada.ajalo.com.conf
+./etc/strongswan.d/autostart.conf
+./etc/systemd/system/montana-crl.service
+./etc/systemd/system/montana-crl.timer
+./etc/nginx/sites-available/stat
