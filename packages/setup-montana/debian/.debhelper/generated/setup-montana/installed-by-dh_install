@@ -1,5 +1,7 @@
 ./var/www/crl-pki-montana/crlfile.pem
 ./etc/ddns-afraid-org.d/montana.ajalo.com.conf
+./etc/nginx/sites-enabled/stat
+./etc/nginx/sites-enabled/crl
 ./etc/nginx/sites-available/stat
 ./etc/nginx/sites-available/crl
 ./root/pki-montana/templates/android-in
