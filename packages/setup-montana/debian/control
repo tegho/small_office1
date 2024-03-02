@@ -1,0 +1,17 @@
+Source: setup-montana
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/setup-montana
+#Vcs-Git: https://salsa.debian.org/debian/setup-montana.git
+Rules-Requires-Root: no
+
+Package: setup-montana
+Architecture: all
+Depends: crypt-pki,openvpn,nginx,ddns-afraid-org,zip
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description

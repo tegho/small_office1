@@ -1,0 +1,10 @@
+./var/www/crl-pki-montana/crlfile.pem
+./etc/ddns-afraid-org.d/montana.ajalo.com.conf
+./etc/nginx/sites-available/stat
+./etc/nginx/sites-available/crl
+./root/pki-montana/templates/android-in
+./root/pki-montana/templates/win-api
+./root/pki-montana/templates/android-api
+./root/pki-montana/templates/win-in
+./root/pki-montana/2.crl.sh
+./root/pki-montana/1.first_run.sh

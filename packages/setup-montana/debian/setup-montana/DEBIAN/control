@@ -1,0 +1,12 @@
+Package: setup-montana
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description

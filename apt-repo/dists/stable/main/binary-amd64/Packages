@@ -37,6 +37,25 @@ Description: Install easy-rsa, creates PKI structure and helpers
  multiline
  description
 
+Package: crypt-pki
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-2_all.deb
+Size: 9700
+MD5sum: d6e636c5d4f9c302375b5a0651623aa5
+SHA1: 7dc9ea84bb77da4fd641f51122dcd5650c24b9f3
+SHA256: f68ef8c51f6a077037e798fdb3d98bfd20c3b8a281f122190f9ceb5a9c44ac82
+SHA512: c2572f32e1d936e7ca971221ed2845a3f1bd244e652fee453fdeb39f62e1da0751e0fb52fcb19f637c4a709bb347495c3a93e99670752c125ed606611c89748b
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
@@ -107,6 +126,25 @@ SHA256: f37cad01809106a0dca63a4a2e64565b02344a44031a98124fde3d1e9ef21b4d
 SHA512: f75a26a5d7373924ea7097183dbc71bd7a46ed040c3ec263d578b3d2440fdd5e67536406f7a494fe4b240d25c01e5933282615c08de9a10db1c87e0fdc89984f
 Homepage: https://github.com/tegho
 Description: Install my-repo apt repository
+ multiline
+ description
+
+Package: setup-montana
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-1_all.deb
+Size: 4852
+MD5sum: 139bb7224499c0c813c3caceb05bfa20
+SHA1: 07e2395346d3160c15a565516b8e57ee03c12cd9
+SHA256: c93b3acfd5295b84eecf6d6cbc0eb39de8e42effeb9f34fcf1bedad6031f4478
+SHA512: 963fd4e0155e3e77e4f22a0a20890d0555cc42e2951b20c8d70d91812e62a6dd4f91b0bb83c551fadbd2cddd539be8da030f95406fb1dc9137d8a71ae1d38d1d
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline
  description
 

@@ -1,0 +1,3 @@
+package_url='https://github.com/tegho'
+package_short="Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com."
+package_depends='crypt-pki,openvpn,nginx,ddns-afraid-org,zip'

@@ -787,8 +787,7 @@ VARS
     [ $ret -ne 0 ] && errorinfo "Cert not found."
 
     [ $ret -eq 0 ] && ! exec_inside "$crypto_dir" "easy-rsa/easyrsa revoke $internalname" && ret=1
-    exec_inside "$crypto_dir" "easy-rsa/easyrsa gen-crl" || ret=1
-    exec_inside "$crypto_dir" "cp -f pki/crl.pem \"$crl_file\"" || ret=1
+    exec_inside "$crypto_dir" "easy-rsa/easyrsa gen-crl" && cp -f "$crypto_dir/pki/crl.pem" "$crl_file" || ret=1
     close_container "$pki_container" || ret=1
 
     exit $ret
@@ -814,8 +813,7 @@ VARS
     fi
 
     ret=0
-    exec_inside "$crypto_dir" "easy-rsa/easyrsa gen-crl" || ret=1
-    exec_inside "$crypto_dir" "cp -f pki/crl.pem \"$crl_file\"" || ret=1
+    exec_inside "$crypto_dir" "easy-rsa/easyrsa gen-crl" && cp -f "$crypto_dir/pki/crl.pem" "$crl_file" || ret=1
     close_container "$pki_container" || ret=1
 
     exit $ret
