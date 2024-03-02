@@ -27,6 +27,7 @@ keyfile=$(realpath -ms ${keyfile_cmdline:-"$project_root/$secret_dir/apt-repo/ap
 [ ! -f "$keyfile" ] || [ ! -r "$keyfile" ] && exitinfo "No access to keyfile $keyfile"
 
 mkdir -p "$repo_webroot/dists/stable/main/binary-amd64" "$repo_webroot/pool/main" || exitinfo "Cannot create repo structure"
+rm -f "$repo_webroot/pool/main/"*.deb || exitinfo "Cannot clear deb files"
 cp "$project_root/packages/"*.deb "$repo_webroot/pool/main/" || exitinfo "Cannot copy .deb files"
 
 cd "$repo_webroot/" && \
