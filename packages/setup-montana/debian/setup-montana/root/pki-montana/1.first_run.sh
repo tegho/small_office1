@@ -65,9 +65,9 @@ if [ -s "$pki_pwd_file" ] && [ -s "$container_file" ] ; then
 fi
 
 if [ $ret -eq 0 ]; then
-  echo "PKI container is ready. Now secure the passwords and copy server.zip to a vpn server."
+  echo -e "==========\nPKI container is ready. Now secure the passwords and copy server.zip to a vpn server.\n==========\n"
 else
-  echo "ERROR. Some PKI operations are failed."
+  echo "==========\nERROR. Some PKI operations are failed.\n==========\n"
 fi
 
 
