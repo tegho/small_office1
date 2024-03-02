@@ -2,7 +2,7 @@ Package: setup-montana
 Version: 0.1-1
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 37
+Installed-Size: 34
 Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
 Section: unknown
 Priority: optional

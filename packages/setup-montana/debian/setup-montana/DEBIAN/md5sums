@@ -4,6 +4,6 @@
 32ff6487ca8a6df3007dc328cc3e9a28  root/pki-montana/templates/android-in
 8e83d67e0cf1840f9788821340243a47  root/pki-montana/templates/win-api
 32ff6487ca8a6df3007dc328cc3e9a28  root/pki-montana/templates/win-in
-7f7d8c33221c7dc3e6b946b42d4e0d70  usr/share/doc/setup-montana/changelog.Debian.gz
+796c1d9b859de6b49ca8e3e8daef4575  usr/share/doc/setup-montana/changelog.Debian.gz
 e49bf0737c91344d805a21afd2d72300  usr/share/doc/setup-montana/copyright
 d41d8cd98f00b204e9800998ecf8427e  var/www/crl-pki-montana/crlfile.pem
