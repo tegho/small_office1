@@ -27,30 +27,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 52
 Depends: easy-rsa, cryptsetup
 Filename: pool/main/crypt-pki_0.1-1_all.deb
-Size: 9674
-MD5sum: 4d4a905e14d87a9aee0ed2fe940023a0
-SHA1: 7f61868d12fe4a1de2913808e1e41be7807f8d51
-SHA256: 8101fde2f89f4d1fd44c331bfaa42f48a732e2a1930393cf839ac778357d4230
-SHA512: 5c88753ddf7472ddd9ac18395ed1d10068d9af56c23c4c0289bc73d41f6828a1677b0f2b028d77d65fc54a98ed94b1dcfdb91a198d79534c2f7c4cf678c6e48f
-Homepage: https://github.com/tegho
-Description: Install easy-rsa, creates PKI structure and helpers
- multiline
- description
-
-Package: crypt-pki
-Architecture: all
-Version: 0.1-2
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 52
-Depends: easy-rsa, cryptsetup
-Filename: pool/main/crypt-pki_0.1-2_all.deb
-Size: 9700
-MD5sum: d6e636c5d4f9c302375b5a0651623aa5
-SHA1: 7dc9ea84bb77da4fd641f51122dcd5650c24b9f3
-SHA256: f68ef8c51f6a077037e798fdb3d98bfd20c3b8a281f122190f9ceb5a9c44ac82
-SHA512: c2572f32e1d936e7ca971221ed2845a3f1bd244e652fee453fdeb39f62e1da0751e0fb52fcb19f637c4a709bb347495c3a93e99670752c125ed606611c89748b
+Size: 9556
+MD5sum: 14d854866c8d812d87ba8b2c5929aad1
+SHA1: bcf93501afc477298ed519be717aad14e9bd4650
+SHA256: e96ea1a550a900383df20fb6fe2f1754f9dfcad69c2c8e5210c1a0eb1f5fdf5a
+SHA512: 1c3dce9925864e8fa0df176d4dfcee92078d920a0eded88ff45097794ec169d50307419df84427d11021ea315deb386388378b1847005d4e3fba5e704c6f620a
 Homepage: https://github.com/tegho
 Description: Install easy-rsa, creates PKI structure and helpers
  multiline
@@ -65,11 +46,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 25
 Depends: systemd, curl | wget
 Filename: pool/main/ddns-afraid-org_0.1-1_all.deb
-Size: 3640
-MD5sum: da4b28c6b4e55dc9a254643ff6c2c9bc
-SHA1: 97a2f0edda7e9a53a46ae284cd47b10d195e5508
-SHA256: 3bd4eae6747914e9cff3c4654a35b1ec5f005cc9d4199badf1aae428eba1195d
-SHA512: 221034a90ef89c7fcfc75482ed927f0b9c38c7fb5ae77905e3ec7649bff2ed8c130f2b5e2b654e501aa9fecf428fa3f07493b626414a2a09d3d8586a9c4d32cd
+Size: 3650
+MD5sum: aac3f99d8d7440e8be326e3c702758be
+SHA1: 42d7915225a66ea5380f58a28aafe7a0b9e7e8e3
+SHA256: 8ddaebe256076d8740a7659637fe5a1ff84896a94f8f36eed7c16e70ff9f1239
+SHA512: f08ea5045ad33a61ffdad9352a93bdf05403fc9796644a2de7cb29833924271efe495c8b95001b2fad393c9e80c02845eea3213813bf2c4e5265735b298238bd
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
  multiline
@@ -102,11 +83,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 34
 Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
 Filename: pool/main/setup-montana_0.1-1_all.deb
-Size: 4914
-MD5sum: 4ead0a12be2eb20f2d5c79607f88d95e
-SHA1: 15555f0447f7f241d1672c0c5f79ec49cb54a32f
-SHA256: 15e00c6d486622d31959dbfae08d8a19014f127c88ca1a3de3d7c8e7b98cbacf
-SHA512: 950e31e0b5df9c4b61d25737c41b391a98de5a0cd2337b52a36d2b6dd47aae46188a4abd21ab3793d12e1d3c84f6a47cbcb305a9b07cefe4768bdd1334378923
+Size: 4918
+MD5sum: b81afc2fd28e0cd2b4550aaa63748a17
+SHA1: 230692d5c6419c1a4ca261dd56b46dd423f01333
+SHA256: a009d9c56c1387875670a7fe46c8e7fa3963d16cb48814e0448228a6a63ab4c2
+SHA512: 1ebfea82bc0c352896680f0632494c76b3a5a21cae60308bf3a0fa33c994db2df20c369e835a6969b76985fefedae2a9aa6c038e844853005fe03859a4232d5e
 Homepage: https://github.com/tegho
 Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline
@@ -121,11 +102,11 @@ Maintainer: admin <no@mail.plz>
 Installed-Size: 41
 Depends: systemd, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins
 Filename: pool/main/setup-nevada_0.1-1_all.deb
-Size: 5402
-MD5sum: 878b9b3d7c06183f6a5a21ac2e85ada0
-SHA1: 5ec49a62f17732681dafa56cc082f4c370e695f0
-SHA256: 32e2cf9c7fe051fa5221c71205390237addd74c1efb18935d64eab6c6296d66f
-SHA512: 057d159c7ea8077db5231d62f2e601a0868e775d804985dc96f32ea78ee57f6939caec6cf088002bc739b83e56d8c941ae4f0dd6093f7263792949102ea0d1df
+Size: 5396
+MD5sum: 2ffe57edec055ed927e2d021902ee48e
+SHA1: bab00b438795247db4f548992dcde502d1ceea04
+SHA256: e93dc410862ce85f75a11a79e67adb027fce560746d70d1c79ee0a03260946a6
+SHA512: ec4df0181a4fed0c60656ffe1ada0daf772b220a7879d4af385471bd371edd9ac5c365f43be4a2c02049cc8b3c72ba86fde0039be169be30139b80ae76731c6c
 Homepage: https://github.com/tegho
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
  multiline

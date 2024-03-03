@@ -5,11 +5,11 @@ case "$1" in
     remove|upgrade|deconfigure)
 
         deb-systemd-invoke disable montana-crl.timer && \
-        deb-systemd-invoke stop montana-crl.timer && \
-        deb-systemd-invoke disable montana-crl.service && \
-        deb-systemd-invoke stop montana-crl.service
+          deb-systemd-invoke stop montana-crl.timer && \
+          deb-systemd-invoke disable montana-crl.service && \
+          deb-systemd-invoke stop montana-crl.service
 
-        deb-systemd-invoke disable iptables
+        deb-systemd-invoke disable iptables.service
     ;;
 
     failed-upgrade)

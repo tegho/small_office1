@@ -1,11 +1,5 @@
-crypt-pki (0.1-2) jammy; urgency=medium
-
-  * Fixed crl export
-
- -- admin <no@mail.plz>  Fri, 01 Mar 2024 22:07:33 +0300
-
 crypt-pki (0.1-1) jammy; urgency=medium
 
   * Initial release
 
- -- admin <no@mail.plz>  Fri, 01 Mar 2024 03:25:21 +0300
+ -- admin <no@mail.plz>  Sun, 03 Mar 2024 03:49:44 +0300

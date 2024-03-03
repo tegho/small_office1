@@ -45,8 +45,6 @@ E: setup-nevada changes: bogus-mail-host Maintainer no@mail.plz
 E: setup-nevada: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
 E: setup-nevada: copyright-contains-dh_make-todo-boilerplate
 E: setup-nevada: helper-templates-in-copyright
-E: setup-nevada: init.d-script-not-included-in-package etc/init.d/iptables
-E: setup-nevada: postrm-does-not-call-updaterc.d-for-init.d-script etc/init.d/iptables
 E: setup-nevada: section-is-dh_make-template
 E: setup-nevada: systemd-service-in-odd-location [etc/systemd/system/iptables.service]
 E: setup-nevada: systemd-service-in-odd-location [etc/systemd/system/montana-crl.service]

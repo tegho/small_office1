@@ -4,14 +4,14 @@ Binary: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- da4b28c6b4e55dc9a254643ff6c2c9bc 3640 ddns-afraid-org_0.1-1_all.deb
+ aac3f99d8d7440e8be326e3c702758be 3650 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha1:
- 97a2f0edda7e9a53a46ae284cd47b10d195e5508 3640 ddns-afraid-org_0.1-1_all.deb
+ 42d7915225a66ea5380f58a28aafe7a0b9e7e8e3 3650 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha256:
- 3bd4eae6747914e9cff3c4654a35b1ec5f005cc9d4199badf1aae428eba1195d 3640 ddns-afraid-org_0.1-1_all.deb
+ 8ddaebe256076d8740a7659637fe5a1ff84896a94f8f36eed7c16e70ff9f1239 3650 ddns-afraid-org_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sat, 02 Mar 2024 06:13:08 +0300
+Build-Date: Sun, 03 Mar 2024 03:48:26 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1709349178"
+ SOURCE_DATE_EPOCH="1709426893"

@@ -7,10 +7,10 @@ case "$1" in
         find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
 
         systemctl daemon-reload && \
-        systemctl enable ddns-afraid-org.service && \
-        systemctl enable ddns-afraid-org.timer && \
-        systemctl start ddns-afraid-org.service && \
-        systemctl start ddns-afraid-org.timer
+        deb-systemd-invoke enable ddns-afraid-org.service && \
+        deb-systemd-invoke enable ddns-afraid-org.timer && \
+        deb-systemd-invoke start ddns-afraid-org.service && \
+        deb-systemd-invoke start ddns-afraid-org.timer
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

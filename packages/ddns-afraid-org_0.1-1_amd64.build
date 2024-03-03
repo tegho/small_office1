@@ -49,14 +49,6 @@ E: ddns-afraid-org: section-is-dh_make-template
 E: ddns-afraid-org: systemd-service-in-odd-location [etc/systemd/system/ddns-afraid-org.service]
 W: ddns-afraid-org: copyright-has-url-from-dh_make-boilerplate
 W: ddns-afraid-org: initial-upload-closes-no-bugs
-W: ddns-afraid-org: maintainer-script-calls-systemctl [postinst:10]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [postinst:11]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [postinst:12]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [postinst:13]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [prerm:6]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [prerm:7]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [prerm:8]
-W: ddns-afraid-org: maintainer-script-calls-systemctl [prerm:9]
 W: ddns-afraid-org: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:7]
 W: ddns-afraid-org: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:6]
 Finished running lintian.

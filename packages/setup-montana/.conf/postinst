@@ -16,7 +16,7 @@ case "$1" in
         ln -fs /etc/nginx/sites-available/crl  /etc/nginx/sites-enabled/crl
         ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
 
-        invoke-rc.d nginx status >/dev/null 2>&1 && invoke-rc.d nginx reload
+        deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

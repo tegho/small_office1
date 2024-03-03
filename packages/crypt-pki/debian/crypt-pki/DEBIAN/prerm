@@ -3,10 +3,6 @@
 set -e
 case "$1" in
     remove|upgrade|deconfigure)
-#        systemctl disable ddns-afraid-org.timer && \
-#        systemctl stop ddns-afraid-org.timer && \
-#        systemctl disable ddns-afraid-org.service && \
-#        systemctl stop ddns-afraid-org.service
     ;;
 
     failed-upgrade)

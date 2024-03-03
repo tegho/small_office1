@@ -1,9 +1,9 @@
-a11ba7d94acab9afca995328e31e7667  root/pki-montana/1.first_run.sh
+5a726938961c40e01ef93cc15287fd9a  root/pki-montana/1.first_run.sh
 0de555777e3a8e54c6d4cdd93cdebbc4  root/pki-montana/2.crl.sh
 8e83d67e0cf1840f9788821340243a47  root/pki-montana/templates/android-api
 32ff6487ca8a6df3007dc328cc3e9a28  root/pki-montana/templates/android-in
 8e83d67e0cf1840f9788821340243a47  root/pki-montana/templates/win-api
 32ff6487ca8a6df3007dc328cc3e9a28  root/pki-montana/templates/win-in
-e218e47d7500aed39df9a5537d149785  usr/share/doc/setup-montana/changelog.Debian.gz
+e1109460bcf7e0670fade6e11f8a643f  usr/share/doc/setup-montana/changelog.Debian.gz
 e49bf0737c91344d805a21afd2d72300  usr/share/doc/setup-montana/copyright
 d41d8cd98f00b204e9800998ecf8427e  var/www/crl-pki-montana/crlfile.pem

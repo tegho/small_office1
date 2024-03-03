@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Sat, 02 Mar 2024 21:30:28 +0300
+Date: Sun, 03 Mar 2024 03:51:39 +0300
 Source: setup-montana
 Binary: setup-montana
 Built-For-Profiles: noudeb
@@ -16,11 +16,11 @@ Changes:
  .
    * Initial release
 Checksums-Sha1:
- 15555f0447f7f241d1672c0c5f79ec49cb54a32f 4914 setup-montana_0.1-1_all.deb
- 4b380a80ac247e6f54ef7e2f4ffde22939f7025f 5948 setup-montana_0.1-1_amd64.buildinfo
+ 230692d5c6419c1a4ca261dd56b46dd423f01333 4918 setup-montana_0.1-1_all.deb
+ 9ddd9cbff8576f8e6da253ad066dcf2c894b4ffe 5948 setup-montana_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- 15e00c6d486622d31959dbfae08d8a19014f127c88ca1a3de3d7c8e7b98cbacf 4914 setup-montana_0.1-1_all.deb
- b51c6ca247f98e2301e60b8c9e01a517558d116ddef8e6b4d723f0ddd7062f9b 5948 setup-montana_0.1-1_amd64.buildinfo
+ a009d9c56c1387875670a7fe46c8e7fa3963d16cb48814e0448228a6a63ab4c2 4918 setup-montana_0.1-1_all.deb
+ 465d8b938bad439414ebc139456690a9e5aa81df2d1403a7249654a1f7f93608 5948 setup-montana_0.1-1_amd64.buildinfo
 Files:
- 4ead0a12be2eb20f2d5c79607f88d95e 4914 unknown optional setup-montana_0.1-1_all.deb
- b67032d89c4cd01e2f0362767be22d62 5948 unknown optional setup-montana_0.1-1_amd64.buildinfo
+ b81afc2fd28e0cd2b4550aaa63748a17 4918 unknown optional setup-montana_0.1-1_all.deb
+ 233c52db4928ca9484c40046829781c4 5948 unknown optional setup-montana_0.1-1_amd64.buildinfo

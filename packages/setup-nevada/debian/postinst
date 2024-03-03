@@ -10,13 +10,13 @@ case "$1" in
         ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
 
         systemctl daemon-reload && \
-        deb-systemd-invoke enable montana-crl.service && \
-        deb-systemd-invoke enable montana-crl.timer && \
-        deb-systemd-invoke start montana-crl.service && \
-        deb-systemd-invoke start montana-crl.timer
+          deb-systemd-invoke enable montana-crl.service && \
+          deb-systemd-invoke enable montana-crl.timer && \
+          deb-systemd-invoke start montana-crl.service && \
+          deb-systemd-invoke start montana-crl.timer
 
-        deb-systemd-invoke restart iptables.service
-        update-rc.d iptables enable
+        deb-systemd-invoke enable iptables.service && \
+          deb-systemd-invoke restart iptables.service
 
         # sysctl
         deb-systemd-invoke restart procps.service
