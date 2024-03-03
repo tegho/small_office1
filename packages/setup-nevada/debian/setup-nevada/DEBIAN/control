@@ -2,7 +2,7 @@ Package: setup-nevada
 Version: 0.1-1
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 31
+Installed-Size: 41
 Depends: systemd, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins
 Section: unknown
 Priority: optional
