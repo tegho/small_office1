@@ -21,7 +21,9 @@ case "$1" in
         # sysctl
         deb-systemd-invoke restart procps.service
 
+        #deb-systemd-invoke reload strongswan-starter.service
         deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
+
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

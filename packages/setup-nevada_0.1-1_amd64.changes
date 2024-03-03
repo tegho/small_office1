@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Sun, 03 Mar 2024 03:53:46 +0300
+Date: Sun, 03 Mar 2024 05:06:29 +0300
 Source: setup-nevada
 Binary: setup-nevada
 Built-For-Profiles: noudeb
@@ -16,11 +16,11 @@ Changes:
  .
    * Initial release
 Checksums-Sha1:
- bab00b438795247db4f548992dcde502d1ceea04 5396 setup-nevada_0.1-1_all.deb
- 35ece33c48632f50bd59038545d16805a8f25c83 5943 setup-nevada_0.1-1_amd64.buildinfo
+ 4a6d611b272b4e1e5ab1ed0d00a339148329a4b2 5414 setup-nevada_0.1-1_all.deb
+ 7af8005e68fc62d8862aa40af1380288619b934f 5943 setup-nevada_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- e93dc410862ce85f75a11a79e67adb027fce560746d70d1c79ee0a03260946a6 5396 setup-nevada_0.1-1_all.deb
- 279381127452c61093d970a2f9c5af9496a826af3da0d2f8503cc3644408c1d6 5943 setup-nevada_0.1-1_amd64.buildinfo
+ de997ce1f4afa327ec3aecc0ef874d563b2c63bec22c18f761e21148775d0758 5414 setup-nevada_0.1-1_all.deb
+ a61673f0c69b9850f63422b63f59e27d04400a0cf7994125aef4b9400a687017 5943 setup-nevada_0.1-1_amd64.buildinfo
 Files:
- 2ffe57edec055ed927e2d021902ee48e 5396 unknown optional setup-nevada_0.1-1_all.deb
- 88b0ca1d11613e0937cfa9b6b289acce 5943 unknown optional setup-nevada_0.1-1_amd64.buildinfo
+ e931928e63102ef281153cd15c45aab2 5414 unknown optional setup-nevada_0.1-1_all.deb
+ ff73f67c0b001529a071646e92b07299 5943 unknown optional setup-nevada_0.1-1_amd64.buildinfo

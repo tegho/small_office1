@@ -16,4 +16,4 @@ tmp_dir=$(mktemp -d /tmp/impXXXXXX) && \
   mv -f "${tmp_dir}/"*.crt /etc/swanctl/x509 && \
   mv -f "${tmp_dir}/"*.key /etc/swanctl/private
 
-rm -f "$tmp_dir"
+rm -rf "$tmp_dir"

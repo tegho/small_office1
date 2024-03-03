@@ -4,14 +4,14 @@ Binary: setup-nevada
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- 2ffe57edec055ed927e2d021902ee48e 5396 setup-nevada_0.1-1_all.deb
+ e931928e63102ef281153cd15c45aab2 5414 setup-nevada_0.1-1_all.deb
 Checksums-Sha1:
- bab00b438795247db4f548992dcde502d1ceea04 5396 setup-nevada_0.1-1_all.deb
+ 4a6d611b272b4e1e5ab1ed0d00a339148329a4b2 5414 setup-nevada_0.1-1_all.deb
 Checksums-Sha256:
- e93dc410862ce85f75a11a79e67adb027fce560746d70d1c79ee0a03260946a6 5396 setup-nevada_0.1-1_all.deb
+ de997ce1f4afa327ec3aecc0ef874d563b2c63bec22c18f761e21148775d0758 5414 setup-nevada_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 03 Mar 2024 03:53:57 +0300
+Build-Date: Sun, 03 Mar 2024 05:06:39 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1709427226"
+ SOURCE_DATE_EPOCH="1709431589"
