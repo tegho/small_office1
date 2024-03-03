@@ -37,6 +37,25 @@ Description: Install easy-rsa, creates PKI structure and helpers
  multiline
  description
 
+Package: crypt-pki
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-2_all.deb
+Size: 9610
+MD5sum: ea510d2f92b7df321e7cfddc5552625f
+SHA1: 96875c324651896377bbe7cc4a7c931fcca94086
+SHA256: 3441b48694875a1931a427df0568e04c2887eb0010815c2ca14bcb5f10f1bba9
+SHA512: 3c0f7c00ee59529d715df1d17174cf1052ff8f0e626640e531db2447eee5d727f298a8373fc5f8ad19fbedd48a15f33751fed2f848fb83e9b7a92a0ea7850347
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: ddns-afraid-org
 Architecture: all
 Version: 0.1-1

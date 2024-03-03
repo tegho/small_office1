@@ -312,9 +312,10 @@ function exec_inside() {
   local crypto_dir="$1"
   local command=${@:2}
   local ret
+  local work_dir=$(pwd)
 
 #  echo "$command"
-  command='export SECD="'$crypto_dir'"; cd "$SECD"; '$command'; ret=$?; cd "'$current_dir'"; return $ret'
+  command='export SECD="'$crypto_dir'"; cd "$SECD"; '$command'; ret=$?; cd "'$work_dir'"; return $ret'
   eval "$command"
 #  echo "$command"
 
