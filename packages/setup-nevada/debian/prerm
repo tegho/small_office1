@@ -3,12 +3,13 @@
 set -e
 case "$1" in
     remove|upgrade|deconfigure)
-        systemctl disable montana-crl.timer && \
-        systemctl stop montana-crl.timer && \
-        systemctl disable montana-crl.service && \
-        systemctl stop montana-crl.service
 
-        update-rc.d iptables disable
+        deb-systemd-invoke disable montana-crl.timer && \
+        deb-systemd-invoke stop montana-crl.timer && \
+        deb-systemd-invoke disable montana-crl.service && \
+        deb-systemd-invoke stop montana-crl.service
+
+        deb-systemd-invoke disable iptables
     ;;
 
     failed-upgrade)
