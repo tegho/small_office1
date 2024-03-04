@@ -11,3 +11,5 @@ persist-key
 verb 1
 
 $SUBSTCERTAPI
+$SUBSTCA
+$SUBSTTLS
