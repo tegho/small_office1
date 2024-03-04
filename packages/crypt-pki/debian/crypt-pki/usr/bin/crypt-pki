@@ -71,10 +71,10 @@ $me cryptfile --signserver --internalname internalname --dns dns [--userid useri
   EASYRSA_PASSIN variable is a password for ca key if being used in batch mode.
   Exit code is 0 if signed successfully.
 
-$me cryptfile --signclient --internalname internalname [--dns dns] [--userid userid]
+$me cryptfile --signclient --internalname internalname [--userid userid]
   Sign cert request inside container.
   If userid is not specified then userid=internalname.
-  Adds dns and rfc822Name(userid) in subject-alt-name. DNS might not be important for client certs, but
+  Adds dns and rfc822Name(userid) in subject-alt-name. DNS goes the same as CN for strongswan.
   rfc822Name(userid) might be used as user unique identificator by server.
   EASYRSA_PASSIN variable is a password for ca key if being used in batch mode.
   Exit code is 0 if signed successfully.
@@ -314,11 +314,8 @@ function exec_inside() {
   local ret
   local work_dir=$(pwd)
 
-#  echo "$command"
   command='export SECD="'$crypto_dir'"; cd "$SECD"; '$command'; ret=$?; cd "'$work_dir'"; return $ret'
   eval "$command"
-#  echo "$command"
-
   return $?
 }
 
@@ -650,7 +647,7 @@ VARS
     fi
 
     userid=$(getparam "--userid" "$@") || userid="$internalname"
-    dnsname=$(getparam "--dns" "$@") || dnsname=""
+#    dnsname=$(getparam "--dns" "$@") || dnsname=""
 
     if ! close_container "$pki_container"; then
       exit 1
@@ -667,9 +664,12 @@ VARS
     fi
     if [ $ret -eq 0 ] && [ -f "$crypto_dir/pki/issued/${internalname}.crt" ] ; then
       ret=1
-      errorinfo "Cert with this internalname have already been issued: ${internalname}"
+      errorinfo "Cert with this internalname have been already issued: ${internalname}"
     fi
+
     if [ $ret -eq 0 ]; then
+      # parse subject, trim
+      dnsname=$(openssl req -in "$crypto_dir/pki/reqs/${internalname}.req" -noout -subject | sed 's/.*CN[ \t]*=[ \t]*\([^,]\+\).*/\1/' | sed 's/^[ \t]*//;s/[ \t]*$//' ) #'
       [ -n "$dnsname" ] && dnsname="DNS:${dnsname},"
       exec_inside "$crypto_dir" "easy-rsa/easyrsa --subject-alt-name='${dnsname}email:$userid' sign-req client $internalname" || ret=1
     fi

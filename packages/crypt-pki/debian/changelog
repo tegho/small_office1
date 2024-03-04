@@ -1,3 +1,9 @@
+crypt-pki (0.1-3) jammy; urgency=medium
+
+  * Fix signclient dns for eap-tls
+
+ -- admin <no@mail.plz>  Mon, 04 Mar 2024 19:56:37 +0300
+
 crypt-pki (0.1-2) jammy; urgency=medium
 
   * Fix working dir issue
