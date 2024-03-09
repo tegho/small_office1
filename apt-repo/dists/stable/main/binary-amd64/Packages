@@ -133,6 +133,44 @@ Description: Install easy-rsa, creates PKI structure and helpers
  multiline
  description
 
+Package: crypt-pki
+Architecture: all
+Version: 0.1-6
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-6_all.deb
+Size: 9706
+MD5sum: 07974cc448be1ea2c81728bdb5f35caa
+SHA1: 4624ac224280c99ccbe55990d95b801c749bf3ef
+SHA256: d48bf0361a3d0befdb06ecceb72b8d3c8805355dc2f0dbdc185df9823d308320
+SHA512: e14dfc126d7cbf5386a35cbd5f2ae817389f28c04ba50735e9ca2011c21831ff8828414bddbaec8e8fff87eeaa0f5c44554314384aae7afaf490ba3495e10220
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
+Package: crypt-pki
+Architecture: all
+Version: 0.1-7
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-7_all.deb
+Size: 9708
+MD5sum: 68b627c5090c82e33f092cb3c48784bd
+SHA1: 62dec408764495edafe047561c9f7366f6616e5e
+SHA256: 5c82189f2299a987229fde6c6760ace25a58da05f43cac82d9172d8e4ce7a821
+SHA512: 74363d5d0949f7cffa8505f3cf96e4ee54232515a7cdba91aac1bb796bfaf2327f81df0daf53398127fc2e0dd19357bd7cb4abd494883c20954b63cdc5ac4358
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
@@ -147,6 +185,25 @@ MD5sum: aac3f99d8d7440e8be326e3c702758be
 SHA1: 42d7915225a66ea5380f58a28aafe7a0b9e7e8e3
 SHA256: 8ddaebe256076d8740a7659637fe5a1ff84896a94f8f36eed7c16e70ff9f1239
 SHA512: f08ea5045ad33a61ffdad9352a93bdf05403fc9796644a2de7cb29833924271efe495c8b95001b2fad393c9e80c02845eea3213813bf2c4e5265735b298238bd
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ multiline
+ description
+
+Package: ddns-afraid-org
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Depends: systemd, curl | wget
+Filename: pool/main/ddns-afraid-org_0.1-2_all.deb
+Size: 3742
+MD5sum: d1b2a93c327374945d63b600cf719116
+SHA1: 2190b50d6a2db8ef0d2359b5c152341310c5bd4e
+SHA256: 29de9a8e5fef3547076e6f347411be2ff247d9f0cc7e5ee18a77b1ddebd12161
+SHA512: 2b3dfe38bf32690f47e7c982da4a14056b5a68e06569932daadb688569d84564eef4d76bcbe55d06bf2bb1258f56b46fe6d7d7aaf6826be68aaa064bf33ffebb
 Homepage: https://github.com/tegho
 Description: Updates DDNS records on afraid.org
  multiline
@@ -189,6 +246,25 @@ Description: Install PKI, DDNS client, CRL distribution point and monitoring age
  multiline
  description
 
+Package: setup-montana
+Architecture: all
+Version: 0.1-4
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-4_all.deb
+Size: 5042
+MD5sum: 087de4b09807661a43e90b468be00dab
+SHA1: 6ad4e9b19493ea59c616d6260018f21d63b352e0
+SHA256: dbf13ed92af8f3f7d62e2fe245421b095f54e7856373c36381328b8cc3b8b09a
+SHA512: 82642bc15639c2ac3bd62e7bc9b4825cbeb5264af6f06167afd11cb7f53b4f2d9aea441bb9a2905364433316630ce85618a96eaae93525abf049f6745eb12a5f
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
 Package: setup-nevada
 Architecture: all
 Version: 0.1-1
@@ -224,6 +300,25 @@ SHA256: 4017a7a080bf1f52858dfa4df86bd12c941c59b924d34f3207d82d037440474d
 SHA512: 375a440ca3350dd2cb8584f61767d7f4d99fdf547a01e367b9d924ff3fa234495573b582e37ab136944a59e12c2268204c18a012adb21ffb0a4191bfd8719348
 Homepage: https://github.com/tegho
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
+Package: test01
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 18
+Depends: bind9, dnsutils
+Filename: pool/main/test01_0.1-1_all.deb
+Size: 3044
+MD5sum: 7c3868830c60c53affc0ff7888f26aa2
+SHA1: 3f6241aef236040c9e69fa0c9b1cd755e58b85be
+SHA256: 14b71559f6166494db7ea3bec77794e6d8b40d80819ef02a2f39ef246963dc56
+SHA512: 1a73c63b974b966c42dc9344764641f6ac1bc8dc21b4db96663d781403c7d90878f732f7d918f8d31b5a41538b10e51ae3966a766e61ec8493a3ec903746f7de
+Homepage: https://github.com/tegho
+Description: test01
  multiline
  description
 
