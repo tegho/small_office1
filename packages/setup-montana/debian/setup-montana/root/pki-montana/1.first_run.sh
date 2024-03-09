@@ -15,22 +15,22 @@ ca_name="Montana vpn CA"
 
 # pki container is exist
 if [ -s "$container_file" ] ; then
-  echo "PKI container already exist"
-  exit 1
+  echo "==========\nERROR. PKI container already exist.\n==========\n"
+  exit 0
 fi
 
-# remove the container and password files if exists
+# remove the container and password files if any exist
 rm -f "$ca_pwd_file" "$pki_pwd_file" "$container_file"
 if [ -f "$ca_pwd_file" ] || [ -f "$pki_pwd_file" ] || [ -f "$container_file" ] ; then
   echo "Can not delete files"
-  exit 1
+  exit 0
 fi
 
 # generate password for CA key
 openssl rand -base64 18 > "$ca_pwd_file"
 if [ ! -s "$ca_pwd_file" ] ; then
   echo "Cannot generate CA password"
-  exit 1
+  exit 0
 fi
 chmod 600 "$ca_pwd_file"
 
@@ -38,7 +38,7 @@ chmod 600 "$ca_pwd_file"
 ctkey=$(crypt-pki "$container_file" --init --url "$crl_url") && [ -n "$ctkey" ] && echo "$ctkey" > "$pki_pwd_file"
 if [ ! -s "$container_file" ] || [ ! -s "$pki_pwd_file" ] ; then
   echo "Cannot create PKI container"
-  exit 1
+  exit 0
 fi
 
 ret=0
@@ -71,4 +71,4 @@ else
 fi
 
 
-exit $ret
+exit 0

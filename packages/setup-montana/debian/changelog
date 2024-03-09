@@ -1,3 +1,9 @@
+setup-montana (0.1-5) jammy; urgency=medium
+
+  * Fix 1st-run script
+
+ -- admin <no@mail.plz>  Sat, 09 Mar 2024 23:31:55 +0300
+
 setup-montana (0.1-4) jammy; urgency=medium
 
   * Fix2
