@@ -9,7 +9,7 @@ source "$current_dir/version" || exit 1
 cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
 
-DEBEMAIL="no@mail.plz" DEBFULLNAME="admin" dch -r
+DEBEMAIL="no@mail.plz" DEBFULLNAME="admin" debchange --release ""
 
 echo "###########"
 echo "NEXT:"

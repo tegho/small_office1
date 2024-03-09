@@ -1,3 +1,9 @@
+setup-nevada (0.1-2) jammy; urgency=medium
+
+  * Multiple fixes
+
+ -- admin <no@mail.plz>  Tue, 05 Mar 2024 14:59:43 +0300
+
 setup-nevada (0.1-1) jammy; urgency=medium
 
   * Initial release

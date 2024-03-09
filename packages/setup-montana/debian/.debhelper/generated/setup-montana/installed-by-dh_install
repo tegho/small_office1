@@ -1,4 +1,4 @@
-./var/www/crl-pki-montana/crlfile.pem
+./var/www/crl-pki-montana/.placeholder
 ./etc/ddns-afraid-org.d/montana.ajalo.com.conf
 ./etc/nginx/sites-available/stat
 ./etc/nginx/sites-available/crl

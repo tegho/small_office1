@@ -6,6 +6,8 @@ case "$1" in
         find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
         find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
 
+        chown -R bind:bind /var/cache/bind/zones
+
         mkdir -p /etc/nginx/sites-enabled/
         ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
 

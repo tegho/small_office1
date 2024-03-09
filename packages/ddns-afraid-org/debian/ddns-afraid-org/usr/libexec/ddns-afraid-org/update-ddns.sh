@@ -27,16 +27,16 @@ parse_config() {
   IFS="$oldifs"
 
   if [ -z "$DDNS_URL" ] ; then
-    alert "DDNS_URL is not set in $config_file"
+    [ "$(basename $config_file)" != "example.conf" ] && alert "DDNS_URL is not set in $config_file"
     return 1
   fi
 
-  echo ">> $DDNS_URL"
+  # echo ">> $DDNS_URL"
 
   if which curl &> /dev/null ; then
-    curl --silent "$DDNS_URL" &> /dev/null && return 0
+    curl --silent "$DDNS_URL" &> /dev/null && echo "DDNS updated from $config_file" && return 0
   elif which wget &> /dev/null ; then
-    wget  --quiet -O - "$DDNS_URL" &> /dev/null && return 0
+    wget  --quiet -O - "$DDNS_URL" &> /dev/null && echo "DDNS updated from $config_file" && return 0
   else
     alert "Neither curl nor wget is installed. DDNS update canceled"
     return 1
@@ -47,6 +47,6 @@ parse_config() {
 }
 
 
-for conf in $config_dir/*.conf ; do
-  parse_config "$conf"
+ls "$config_dir"/*.conf | while read fname; do
+  parse_config "$fname"
 done

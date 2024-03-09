@@ -1,0 +1,5 @@
+push        "dhcp-option DOMAIN nevada"
+push        "dhcp-option DNS 192.168.194.1"
+
+# push        "route 192.168.192.0  255.255.252.0"
+push        "redirect-gateway def1"

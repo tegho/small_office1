@@ -1,0 +1,12 @@
+Package: test01
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 18
+Depends: bind9, dnsutils
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: test01
+ multiline
+ description

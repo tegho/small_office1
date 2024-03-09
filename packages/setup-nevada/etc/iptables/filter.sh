@@ -11,8 +11,7 @@ $IPT -t mangle -F
 
 $IPS -quiet destroy vpnnets
 $IPS create vpnnets hash:net -exist
-$IPS add vpnnets 192.168.56.0/24
-$IPS add vpnnets 192.168.57.0/24
+$IPS add vpnnets 192.168.192.0/22
 
 # default policy
 $IPT -t filter -P INPUT ACCEPT

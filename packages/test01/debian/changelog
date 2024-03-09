@@ -1,0 +1,5 @@
+test01 (0.1-1) jammy; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- admin <no@mail.plz>  Sat, 09 Mar 2024 23:13:01 +0300

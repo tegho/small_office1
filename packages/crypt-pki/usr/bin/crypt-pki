@@ -62,11 +62,10 @@ $me cryptfile --loadreq --file filename [--internalname internalname]
   Requests which dont have key or cert may be overwritten.
   Exit code is 0 if same internalname is available and request is loaded successfully.
 
-$me cryptfile --signserver --internalname internalname --dns dns [--userid userid]
+$me cryptfile --signserver --internalname internalname [--userid userid]
   Sign cert request inside container.
-  Dns must be valid in order to IPSEC work.
   If userid is not specified then userid=internalname.
-  Adds dns and rfc822Name(userid) in subject-alt-name. Correct DNS is important if you run ipsec server and
+  Adds dns and rfc822Name(userid) in subject-alt-name. Correct DNS is important if you run ipsec server.
   rfc822Name is being used as a some text tag.
   EASYRSA_PASSIN variable is a password for ca key if being used in batch mode.
   Exit code is 0 if signed successfully.
@@ -75,7 +74,7 @@ $me cryptfile --signclient --internalname internalname [--userid userid]
   Sign cert request inside container.
   If userid is not specified then userid=internalname.
   Adds dns and rfc822Name(userid) in subject-alt-name. DNS goes the same as CN for strongswan.
-  rfc822Name(userid) might be used as user unique identificator by server.
+  rfc822Name(userid) might be used as some user tag.
   EASYRSA_PASSIN variable is a password for ca key if being used in batch mode.
   Exit code is 0 if signed successfully.
 
@@ -152,16 +151,14 @@ EXAMPLES:
   # Generate cert request for a server with unencrypted private key
   CTKEY="$(cat ./ctkey)" $me ./cryptfile --newreq --internalname vpn.example.com --nopass
 
-  # Generate more cert requests. Any CN allowed
-  CTKEY="\$(cat ./ctkey)" $me ./cryptfile --newreq --internalname smith --cn "His majesty Georg VI" --nopass
-  EASYRSA_PASSOUT="pass:1234" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --newreq --internalname smith2 --cn "Alice Smith"
+  # Generate more cert requests
+  EASYRSA_PASSOUT="pass:1234" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --newreq --internalname smith2 --cn "user2"
 
   # Load clients request
   CTKEY="\$(cat ./ctkey)" $me ./cryptfile --loadreq --file ./client.req --internalname smith3
 
   # Sign requests
   EASYRSA_PASSIN="pass:\$(cat ./capwd)" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --signserver --internalname vpn.example.com
-  EASYRSA_PASSIN="pass:\$(cat ./capwd)" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --signclient --internalname smith --userid john_smith
   EASYRSA_PASSIN="pass:\$(cat ./capwd)" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --signclient --internalname smith2 --userid alice_smith
   EASYRSA_PASSIN="pass:\$(cat ./capwd)" CTKEY="\$(cat ./ctkey)" $me ./cryptfile --signclient --internalname smith3 --userid sandra_smith
 
@@ -358,7 +355,6 @@ function getparam() {
       "--cn" | \
       "--internalname" | \
       "--file" | \
-      "--dns" | \
       "--userid" | \
       "--serial" | \
       "--template" | \
@@ -504,7 +500,6 @@ VARS
     [ $? -ne 0 ] && ret=1 && errorinfo "Cannot write into container: $pki_container"
 
     [ $ret -eq 0 ] && [ -n "$crl_line" ] && ! echo "$crl_line" >> "$crypto_dir/easy-rsa/x509-types/COMMON" && ret=1 && errorinfo "Cannot write crl to COMMON"
-    [ $ret -eq 0 ] && ! sed 's/commonName[\t ]\+=[\t ]\+supplied/commonName\t= optional/' -i "$crypto_dir/easy-rsa/openssl-easyrsa.cnf" && ret=1 && errorinfo "Cannot make commonName optional"
     [ $ret -eq 0 ] && ! mkdir -p "$crypto_dir/templates" && ret=1 && errorinfo "Cannot create templates dir"
 
     [ $ret -eq 0 ] && ! "$crypto_dir/easy-rsa/easyrsa" --pki-dir="$crypto_dir/pki" init-pki >&2 && \
@@ -611,7 +606,6 @@ VARS
     fi
 
     userid=$(getparam "--userid" "$@") || userid="$internalname"
-    dnsname=$(getparam "--dns" "$@") || dnsname="$internalname"
 
     if ! close_container "$pki_container"; then
       exit 1
@@ -632,7 +626,16 @@ VARS
     fi
 
     if [ $ret -eq 0 ]; then
-      exec_inside "$crypto_dir" "easy-rsa/easyrsa --subject-alt-name='DNS:$dnsname,email:$userid' sign-req server $internalname" || ret=1
+      # parse subject, trim
+      dnsname=$(openssl req -in "$crypto_dir/pki/reqs/${internalname}.req" -noout -subject | sed 's/.*CN[ \t]*=[ \t]*\([^,]\+\).*/\1/' | sed 's/^[ \t]*//;s/[ \t]*$//' ) #'
+      [ -z "$dnsname" ]; then
+        ret=1
+        errorinfo "Cannot parse CN from request"
+      fi
+    fi
+
+    if [ $ret -eq 0 ]; then
+      exec_inside "$crypto_dir" "easy-rsa/easyrsa --subject-alt-name='DNS:${dnsname},email:$userid' sign-req server $internalname" || ret=1
     fi
 
     close_container "$pki_container" || ret=1
@@ -647,7 +650,6 @@ VARS
     fi
 
     userid=$(getparam "--userid" "$@") || userid="$internalname"
-#    dnsname=$(getparam "--dns" "$@") || dnsname=""
 
     if ! close_container "$pki_container"; then
       exit 1
@@ -670,8 +672,14 @@ VARS
     if [ $ret -eq 0 ]; then
       # parse subject, trim
       dnsname=$(openssl req -in "$crypto_dir/pki/reqs/${internalname}.req" -noout -subject | sed 's/.*CN[ \t]*=[ \t]*\([^,]\+\).*/\1/' | sed 's/^[ \t]*//;s/[ \t]*$//' ) #'
-      [ -n "$dnsname" ] && dnsname="DNS:${dnsname},"
-      exec_inside "$crypto_dir" "easy-rsa/easyrsa --subject-alt-name='${dnsname}email:$userid' sign-req client $internalname" || ret=1
+      [ -z "$dnsname" ]; then
+        ret=1
+        errorinfo "Cannot parse CN from request"
+      fi
+    fi
+
+    if [ $ret -eq 0 ]; then
+      exec_inside "$crypto_dir" "easy-rsa/easyrsa --subject-alt-name='DNS:${dnsname},email:$userid' sign-req client $internalname" || ret=1
     fi
     close_container "$pki_container" || ret=1
 

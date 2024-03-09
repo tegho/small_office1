@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 09 Mar 2024 23:00:01 +0300
+Source: crypt-pki
+Binary: crypt-pki
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-7
+Distribution: jammy
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ crypt-pki  - Install easy-rsa, creates PKI structure and helpers
+Changes:
+ crypt-pki (0.1-7) jammy; urgency=medium
+ .
+   * Fixes2
+Checksums-Sha1:
+ 62dec408764495edafe047561c9f7366f6616e5e 9708 crypt-pki_0.1-7_all.deb
+ ebefd7d566bb62b032bf0869e0d5f20cc0ddd58f 5929 crypt-pki_0.1-7_amd64.buildinfo
+Checksums-Sha256:
+ 5c82189f2299a987229fde6c6760ace25a58da05f43cac82d9172d8e4ce7a821 9708 crypt-pki_0.1-7_all.deb
+ bf73db42ca97ee4f7697fec0034c86ff86ba7ffa0d3d6aacf1769d0e59e38e82 5929 crypt-pki_0.1-7_amd64.buildinfo
+Files:
+ 68b627c5090c82e33f092cb3c48784bd 9708 unknown optional crypt-pki_0.1-7_all.deb
+ 573b5c9382b2c8a805bd59054e4a2344 5929 unknown optional crypt-pki_0.1-7_amd64.buildinfo

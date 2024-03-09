@@ -18,6 +18,26 @@ Description: Helps to setup certbot
  multiline
  description
 
+Package: certbot-snap-assist
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 11
+Depends: snapd
+Breaks: certbot
+Filename: pool/main/certbot-snap-assist_0.1-2_all.deb
+Size: 2434
+MD5sum: fb1c29fa92ce3e3934758f7c921e34e5
+SHA1: 2e867a63f19db3130c9963310d40b5016502cfd5
+SHA256: 8e5c8d43729c11ff974834713c9aaccb6538a7b44633ba2d118850ddb72fdee5
+SHA512: e355efd5d5348f33d0a94ab9e6a14d8d285b7437a44809c7815e9802535a20c59eed21689e30f5d6100710df4d38351ecd24fc6521ae16fe64b181475269aca8
+Homepage: https://github.com/tegho
+Description: Helps to setup certbot
+ multiline
+ description
+
 Package: crypt-pki
 Architecture: all
 Version: 0.1-1
@@ -70,6 +90,44 @@ MD5sum: 866817831579ed3bbe799b5af42471f0
 SHA1: c17a9faaa19b1f9c38a976f6d7490b8ff552cd86
 SHA256: 7c5041d737a16fb70944c917a132d9f4d01ae67d33af42426122ab2de734534e
 SHA512: 12f46e41bb25e38d6fda3bf081a667a696964ea0becd8d03fe9838100714693d59bb2bf41180b7fd558943901c9dfb07e8a60a46ac9417252db41cccf30281e4
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
+Package: crypt-pki
+Architecture: all
+Version: 0.1-4
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 53
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-4_all.deb
+Size: 9766
+MD5sum: 513b98c76ab4b05a1e86924165789611
+SHA1: 63adafe3a12767962e9c850d7161d11cea29cb9e
+SHA256: 672ce1dc9ac4e041351ac66c7d3b6a58c1e99a4627a39d5bb3cee48017da443d
+SHA512: 7af6b0ded87cfe6f90a32feeac7b24be10d5d0122a0d1d009df77642137c14112729bb83c78ae44127e5300428851cac9410531e4874b09e28444bd5a88b5be0
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
+Package: crypt-pki
+Architecture: all
+Version: 0.1-5
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 53
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-5_all.deb
+Size: 9768
+MD5sum: 7b16dc67da5d0b8d135bdd198fe6d8ce
+SHA1: 22ebea9b930a2e5e688b49b0135cb63da18809d7
+SHA256: cf264510d1a682395bb7631712f182408392594aa5a9d980387cc082eefea652
+SHA512: 4df1b2b747dd24f8482bea9015d46245527f3ac86cfadd50d206fa242b3e447fb8e686de38c8da912c500b58097fe6724949bb9be5bf6ab180824ebd7e1b9ebe
 Homepage: https://github.com/tegho
 Description: Install easy-rsa, creates PKI structure and helpers
  multiline
@@ -145,6 +203,25 @@ MD5sum: e931928e63102ef281153cd15c45aab2
 SHA1: 4a6d611b272b4e1e5ab1ed0d00a339148329a4b2
 SHA256: de997ce1f4afa327ec3aecc0ef874d563b2c63bec22c18f761e21148775d0758
 SHA512: fc42f81b0fc33ab9617c92f4ffa33a20749069f74c7ff7780e52b9aadbe3bc10afcec8e5e9025536745e606745b07428d44b11e1e8a1c5a67afebeda184da112
+Homepage: https://github.com/tegho
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 42
+Depends: systemd, iptables, ipset, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins
+Filename: pool/main/setup-nevada_0.1-2_all.deb
+Size: 5554
+MD5sum: bd21f2f9bd471cd3b7029464ccfd7513
+SHA1: c04cfdfa791c678208eb26ca8b2a79c04ba02eca
+SHA256: 4017a7a080bf1f52858dfa4df86bd12c941c59b924d34f3207d82d037440474d
+SHA512: 375a440ca3350dd2cb8584f61767d7f4d99fdf547a01e367b9d924ff3fa234495573b582e37ab136944a59e12c2268204c18a012adb21ffb0a4191bfd8719348
 Homepage: https://github.com/tegho
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
  multiline

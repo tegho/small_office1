@@ -1,0 +1,7 @@
+auto int
+iface int inet static
+    address 192.168.192.1/32
+    pre-up    ip link add int type dummy
+    post-down ip link del int
+    up   ip addr add 192.168.193.1/24 dev $IFACE label $IFACE:0
+    down ip addr del 192.168.193.1/24 dev $IFACE label $IFACE:0

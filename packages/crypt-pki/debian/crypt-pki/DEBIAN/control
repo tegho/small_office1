@@ -1,8 +1,8 @@
 Package: crypt-pki
-Version: 0.1-3
+Version: 0.1-7
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 53
+Installed-Size: 52
 Depends: easy-rsa, cryptsetup
 Section: unknown
 Priority: optional

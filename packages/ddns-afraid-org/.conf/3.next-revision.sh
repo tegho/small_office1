@@ -9,8 +9,10 @@ source "$current_dir/version" || exit 1
 cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
 
-DEBEMAIL="no@mail.plz" DEBFULLNAME="admin" dch -iU
+DEBEMAIL="no@mail.plz" DEBFULLNAME="admin" debchange -iU
 
 echo "###########"
 echo "NEXT:"
+echo "  3. Release"
+echo "  OR"
 echo "  4. Build"

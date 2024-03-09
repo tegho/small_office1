@@ -24,7 +24,7 @@ EASYRSA_PASSIN="file:$ca_pwd_file" crypt-pki "$container_file" --crl --file "$cr
 
 
 if [ $ret -eq 0 ]; then
-  echo "CRL generation succeed"
+  echo "CRL generation succeeded"
 else
   echo "ERROR. CRL generation failed"
 fi

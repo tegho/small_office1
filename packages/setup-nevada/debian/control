@@ -11,7 +11,7 @@ Rules-Requires-Root: no
 
 Package: setup-nevada
 Architecture: all
-Depends: systemd,iptables,ipset,openvpn,nginx,ddns-afraid-org,zip,curl,strongswan,strongswan-swanctl,libcharon-extra-plugins
+Depends: systemd,iptables,ipset,openvpn,nginx,ddns-afraid-org,zip,curl,strongswan,strongswan-swanctl,libcharon-extra-plugins,bind9,dnsutils
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
  multiline
  description

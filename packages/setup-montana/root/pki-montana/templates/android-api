@@ -1,15 +1,13 @@
 # $SUBSTKEYNAME
 
 client
-dev-type    tun
-dev         tun
-remote      nevada.ajalo.com 993 tcp
+dev-type        tun
+dev             tun
+remote          nevada.ajalo.com 993 tcp
+auth            sha256
 remote-cert-tls server
 float
-resolv-retry infinite
-persist-key
 verb 1
 
-$SUBSTCERTAPI
 $SUBSTCA
 $SUBSTTLS

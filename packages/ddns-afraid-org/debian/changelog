@@ -1,3 +1,9 @@
+ddns-afraid-org (0.1-2) jammy; urgency=medium
+
+  * Some fixes
+
+ -- admin <no@mail.plz>  Sat, 09 Mar 2024 22:33:02 +0300
+
 ddns-afraid-org (0.1-1) jammy; urgency=medium
 
   * Initial release
