@@ -484,3 +484,24 @@ Description: test01
  multiline
  description
 
+Package: test01
+Architecture: all
+Version: 0.1-6
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 18
+Provides: diverts-etc++bind++named.conf.debathena
+Depends: bind9, dnsutils
+Conflicts: diverts-etc++bind++named.conf.debathena
+Filename: pool/main/test01_0.1-6_all.deb
+Size: 3124
+MD5sum: 92ca0394652c53bca1950a1d5579a3e5
+SHA1: 02ab5f4b297fc289f183e05f305ff29b1425bfe3
+SHA256: d24371b12570ff60092cca4be98d797b788eaf8985bdbfcade3fa211a6c7a395
+SHA512: 2f4f0fe6e1f1f08518751f63f56d0eb6924f4aacdac7d659b2f589bb461f796de661276eea0b59d393e1cecab6a43f82d9a0b3dc93742c417d855fd31bae943d
+Homepage: https://github.com/tegho
+Description: test01
+ multiline
+ description
+
