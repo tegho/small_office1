@@ -159,6 +159,6 @@ check_undisplace_unhide()
 
 # End of displace.sh.in
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
-    undisplace_unlink /etc/bind/named.conf.moon
+    undisplace_unlink /etc/bind/named.conf.debathena
 fi
 # End automatically added section
