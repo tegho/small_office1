@@ -386,13 +386,15 @@ Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
+Provides: diverts-etc++bind++named.conf
 Depends: bind9, dnsutils
+Conflicts: diverts-etc++bind++named.conf
 Filename: pool/main/test01_0.1-1_all.deb
-Size: 3044
-MD5sum: 7c3868830c60c53affc0ff7888f26aa2
-SHA1: 3f6241aef236040c9e69fa0c9b1cd755e58b85be
-SHA256: 14b71559f6166494db7ea3bec77794e6d8b40d80819ef02a2f39ef246963dc56
-SHA512: 1a73c63b974b966c42dc9344764641f6ac1bc8dc21b4db96663d781403c7d90878f732f7d918f8d31b5a41538b10e51ae3966a766e61ec8493a3ec903746f7de
+Size: 3074
+MD5sum: 1db675f2f05c7f009c0a86ece6b89719
+SHA1: 35b556b8ce89efd546b985ef08e6225c423bc752
+SHA256: 511bdc92bd2c6b4ca33ca7ca84c7fb5350fc470775b609559ed124d81bb02ba5
+SHA512: 3eaa7e840f27fca7e3ecb6fab65435018e25951d67b9e50fd46eefaea06655563c877e516a5323c157f603b267216d8be0b5ff68d9a9877e7834074eb2a6e30e
 Homepage: https://github.com/tegho
 Description: test01
  multiline

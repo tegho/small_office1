@@ -21,6 +21,13 @@ sed -n 's/^\(.*\)$/ \1/p' $current_dir/doc.txt | sed -i '/ <insert long descript
 d}' "$package_dir/debian/control"
 echo -e "override_dh_builddeb:\n\tdh_builddeb -- -Zgzip" >> "$package_dir/debian/rules"
 
+cat << "HERE1" >> "$package_dir/debian/control"
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+HERE1
+sed -ri 's!^(Build-Depends: .*)$!\1, config-package-dev!' "$package_dir/debian/control"
+sed -ri 's!^(\tdh[\t ]+\$@)!\1 --with=config-package!' "$package_dir/debian/rules"
+
 echo "###########"
 echo "NEXT:"
 echo "  Check initial changelog"

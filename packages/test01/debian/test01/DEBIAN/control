@@ -4,6 +4,8 @@ Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
 Depends: bind9, dnsutils
+Conflicts: diverts-etc++bind++named.conf
+Provides: diverts-etc++bind++named.conf
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho

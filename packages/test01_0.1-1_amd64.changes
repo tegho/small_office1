@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Sat, 09 Mar 2024 23:13:01 +0300
+Date: Sun, 10 Mar 2024 00:44:22 +0300
 Source: test01
 Binary: test01
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: jammy
+Distribution: UNRELEASED
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
  test01     - test01
 Changes:
- test01 (0.1-1) jammy; urgency=medium
+ test01 (0.1-1) UNRELEASED; urgency=medium
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- 3f6241aef236040c9e69fa0c9b1cd755e58b85be 3044 test01_0.1-1_all.deb
- 4c38d9bc88918b1946bafe5e3eae407201aebdf7 5914 test01_0.1-1_amd64.buildinfo
+ 35b556b8ce89efd546b985ef08e6225c423bc752 3074 test01_0.1-1_all.deb
+ 259bad5698589f7e663e70bc38353cc2fbc4052e 5943 test01_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- 14b71559f6166494db7ea3bec77794e6d8b40d80819ef02a2f39ef246963dc56 3044 test01_0.1-1_all.deb
- 921c1dc08b962bea7d6f297ae074b22e436d184bd3667c4d77d59b516d32a97b 5914 test01_0.1-1_amd64.buildinfo
+ 511bdc92bd2c6b4ca33ca7ca84c7fb5350fc470775b609559ed124d81bb02ba5 3074 test01_0.1-1_all.deb
+ 5ce7f32d3715fc16553d98fbc2de16b736ad8200e2f67c315197cbac8c53b805 5943 test01_0.1-1_amd64.buildinfo
 Files:
- 7c3868830c60c53affc0ff7888f26aa2 3044 unknown optional test01_0.1-1_all.deb
- 6ba0726423c6658f04887bacfc8cad85 5914 unknown optional test01_0.1-1_amd64.buildinfo
+ 1db675f2f05c7f009c0a86ece6b89719 3074 unknown optional test01_0.1-1_all.deb
+ 4b9f4ed7ca34d7c0ee714f73c95f9b72 5943 unknown optional test01_0.1-1_amd64.buildinfo
