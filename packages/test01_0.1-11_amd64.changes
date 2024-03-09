@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Sun, 10 Mar 2024 02:47:34 +0300
+Source: test01
+Binary: test01
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-11
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ test01     - test01
+Changes:
+ test01 (0.1-11) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+   * Fixes
+   * Fixes2
+   * Fixes3
+   * 3
+   * 4
+   * 5
+   * 6
+   * 7
+   * 8
+   * 11
+Checksums-Sha1:
+ 0d86e8f73aa835f03842d18f1c80276a8e540f43 3158 test01_0.1-11_all.deb
+ 8151843cacf690ffc853aa5bf8123df582b1b3ae 5947 test01_0.1-11_amd64.buildinfo
+Checksums-Sha256:
+ f34bbe14de2a68199b5ec4ffc6ed91b0a2615d464acf2e43d2aee4f4eb86a53d 3158 test01_0.1-11_all.deb
+ f2a7e115cdc8d4bd3635bed90fc34b2f012ace5fdfc4d8e565a0c8b295bb3e99 5947 test01_0.1-11_amd64.buildinfo
+Files:
+ 6cea44b2f97353f81df7a1bd3ef0fd5a 3158 unknown optional test01_0.1-11_all.deb
+ fc2d2adcca2a7ead72614d081428035d 5947 unknown optional test01_0.1-11_amd64.buildinfo
