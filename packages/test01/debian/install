@@ -1,1 +1,1 @@
-files/etc/bind/named.conf.debathena /files/etc/bind/
+files/* /

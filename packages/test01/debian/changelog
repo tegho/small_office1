@@ -1,4 +1,4 @@
-test01 (0.1-11) UNRELEASED; urgency=medium
+test01 (0.1-12) UNRELEASED; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
   * Fixes
@@ -11,5 +11,6 @@ test01 (0.1-11) UNRELEASED; urgency=medium
   * 7
   * 8
   * 11
+  * 12
 
- -- admin <no@mail.plz>  Sun, 10 Mar 2024 02:47:34 +0300
+ -- admin <no@mail.plz>  Sun, 10 Mar 2024 02:54:44 +0300
