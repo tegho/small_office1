@@ -159,6 +159,6 @@ check_undisplace_unhide()
 
 # End of displace.sh.in
 if [ "$1" = "configure" ] || [ "$1" = "abort-remove" ]; then
-    displace_link /etc/bind/named.conf
+    displace_link /etc/bind/named.conf.moon
 fi
 # End automatically added section

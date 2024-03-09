@@ -1,11 +1,11 @@
 Package: test01
-Version: 0.1-2
+Version: 0.1-3
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
 Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf
-Provides: diverts-etc++bind++named.conf
+Conflicts: diverts-etc++bind++named.conf.moon
+Provides: diverts-etc++bind++named.conf.moon
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
