@@ -1,8 +1,8 @@
 Package: test01
-Version: 0.1-9
+Version: 0.1-10
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 18
+Installed-Size: 19
 Depends: bind9, dnsutils
 Conflicts: diverts-etc++bind++named.conf.debathena
 Provides: diverts-etc++bind++named.conf.debathena

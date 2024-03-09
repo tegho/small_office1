@@ -381,6 +381,27 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
 
 Package: test01
 Architecture: all
+Version: 0.1-10
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 19
+Provides: diverts-etc++bind++named.conf.debathena
+Depends: bind9, dnsutils
+Conflicts: diverts-etc++bind++named.conf.debathena
+Filename: pool/main/test01_0.1-10_all.deb
+Size: 3166
+MD5sum: ac4095c1a25d1af6ef118c6f267a2335
+SHA1: 69dd04cc0e0cd5ca0fe5958555ff3e0eff5a8caf
+SHA256: f42642d2bde76fcffaec5126d54b49bc9ea0f0fa1d43ee80a19906a086d1c7bb
+SHA512: 71e9803325da717c19b1cd4e70f69b3ba65f703bcb8cd83f42cc5bed9aff90558ceb61e0beb2ee8c5df6a7303b161c1e53af6cee12de086727c054309116960e
+Homepage: https://github.com/tegho
+Description: test01
+ multiline
+ description
+
+Package: test01
+Architecture: all
 Version: 0.1-1
 Priority: optional
 Section: unknown
