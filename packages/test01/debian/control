@@ -2,7 +2,7 @@ Source: test01
 Section: unknown
 Priority: optional
 Maintainer: admin <no@mail.plz>
-Build-Depends: debhelper-compat (= 13), config-package-dev
+Build-Depends: debhelper-compat (= 13), config-package-dev (>= 4.15~)
 Standards-Version: 4.6.0
 Homepage: https://github.com/tegho
 #Vcs-Browser: https://salsa.debian.org/debian/test01
