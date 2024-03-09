@@ -11,7 +11,7 @@ Rules-Requires-Root: no
 
 Package: test01
 Architecture: all
-Depends: bind9,dnsutils
+Depends: ${misc:Depends},bind9,dnsutils
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
 Description: test01
