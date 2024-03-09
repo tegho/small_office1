@@ -442,3 +442,24 @@ Description: test01
  multiline
  description
 
+Package: test01
+Architecture: all
+Version: 0.1-4
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 18
+Provides: diverts-etc++bind++named.conf.moon
+Depends: bind9, dnsutils
+Conflicts: diverts-etc++bind++named.conf.moon
+Filename: pool/main/test01_0.1-4_all.deb
+Size: 3112
+MD5sum: 4d28f6c266f5f278a1cc5fa5f3b27ea0
+SHA1: 822b0ed78f714deb0bfea3dd62ac0a9d98b0b9d1
+SHA256: eb46b95649c7f7340b01e9f412526f2b78783e257d8c62d2e7439606ab97a6e6
+SHA512: 544d163ef1047db7f3a40965655d13a3a0c78e04c82bacb820795de839baba28cc18654af0265a431ab87c795a2fc9c7fa466ae594d663a4a486f5168d6ce7c2
+Homepage: https://github.com/tegho
+Description: test01
+ multiline
+ description
+
