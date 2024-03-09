@@ -672,7 +672,7 @@ VARS
     if [ $ret -eq 0 ]; then
       # parse subject, trim
       dnsname=$(openssl req -in "$crypto_dir/pki/reqs/${internalname}.req" -noout -subject | sed 's/.*CN[ \t]*=[ \t]*\([^,]\+\).*/\1/' | sed 's/^[ \t]*//;s/[ \t]*$//' ) #'
-      [ -z "$dnsname" ]; then
+      if [ -z "$dnsname" ]; then
         ret=1
         errorinfo "Cannot parse CN from request"
       fi

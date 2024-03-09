@@ -190,6 +190,25 @@ Description: Install easy-rsa, creates PKI structure and helpers
  multiline
  description
 
+Package: crypt-pki
+Architecture: all
+Version: 0.1-9
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-9_all.deb
+Size: 9764
+MD5sum: dc4e6b30ca4bf07989d40612ed76befe
+SHA1: f918d54bd39d5e0839fd989c6576946605f82c61
+SHA256: 23d673705a43f716606e40a4456cac12d5708d78467a047f3b0804edd3b0edbb
+SHA512: 209f946896b7302e1cde15445906d13ee2ef273c34b1b25fdb011e6c9592ab063c22e1daa5bddda1cd01a27502926b91e51e8122e731ae92b5bfd5790a56d9b8
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
@@ -298,6 +317,25 @@ MD5sum: 753699cf66c6460c8b2751467eb79688
 SHA1: e469afc144c7d45dc7727354a1a3cc74518792fc
 SHA256: b1a60e8230a50fb7c6854817f6974f4d1f4edaa25ac9593d2c036794de4ddd23
 SHA512: e3971fde576ccc7fdb03098387a7f7770c96a875912cf5b3ffe4e83e097e24608cf24f65d2b3cabeda4ea0947875b81c0b0529eb2079ea9a584a2522b1070584
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
+Package: setup-montana
+Architecture: all
+Version: 0.1-6
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-6_all.deb
+Size: 5102
+MD5sum: 53316bd8b52fdd6e5440beed8b53d726
+SHA1: 4ca82961eb8b50291f7fe1f3f038c8bb2fc6ee20
+SHA256: 64322e4fbce0fc312eff701f2b182d702287e7c0aae8d333d1be4956adfe5359
+SHA512: 12784bca770d3fc48e25f6155811cae8a9cc5669576525da2099f69cfa3dbbf2c8653413b1ce7888bc50936834cc753284b94b7da07e79856583b6864ce9729a
 Homepage: https://github.com/tegho
 Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline

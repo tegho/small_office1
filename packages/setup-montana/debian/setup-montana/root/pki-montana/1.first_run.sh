@@ -15,7 +15,7 @@ ca_name="Montana vpn CA"
 
 # pki container is exist
 if [ -s "$container_file" ] ; then
-  echo "==========\nERROR. PKI container already exist.\n==========\n"
+  echo "==========\nPKI container already exist.\n==========\n"
   exit 0
 fi
 
