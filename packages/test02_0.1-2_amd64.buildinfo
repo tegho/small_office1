@@ -4,14 +4,14 @@ Binary: test02
 Architecture: all
 Version: 0.1-2
 Checksums-Md5:
- 28f260bfafa86614f8b6c4ec24fd5de9 3116 test02_0.1-2_all.deb
+ 1cdbfcdfbd0df227a4fe396c91d413ba 3142 test02_0.1-2_all.deb
 Checksums-Sha1:
- f13a67e154d6b0a2719839703b055d93f7096b36 3116 test02_0.1-2_all.deb
+ 9d464cba7384b16cb5df263b2ed28e1a9801a299 3142 test02_0.1-2_all.deb
 Checksums-Sha256:
- 786652fe9c4b0d4e9964fec516efaaf1d038f82233498fdde68bc8c241f83f77 3116 test02_0.1-2_all.deb
+ 98730993792a9058991554afd0940398530a7ffde7a7c202e7d1d4f6141ada8b 3142 test02_0.1-2_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 10 Mar 2024 04:03:16 +0300
+Build-Date: Sun, 10 Mar 2024 04:43:27 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -29,7 +29,6 @@ Installed-Build-Depends:
  bsdutils (= 1:2.37.2-4ubuntu3),
  build-essential (= 12.9ubuntu3),
  bzip2 (= 1.0.8-5build1),
- config-package-dev (= 5.5),
  coreutils (= 8.32-4.1ubuntu1.1),
  cpp (= 4:11.2.0-1ubuntu1),
  cpp-11 (= 11.4.0-1ubuntu1~22.04),
@@ -183,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1710032588"
+ SOURCE_DATE_EPOCH="1710034974"

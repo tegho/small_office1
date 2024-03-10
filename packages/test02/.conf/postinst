@@ -1,8 +1,11 @@
 #!/bin/sh
 
 set -e
+
 case "$1" in
     configure)
+      dpkg-divert --package $package_name --divert /etc/bind/named.conf-original --rename --add /etc/bind/named.conf
+      [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-$package_name /etc/bind/named.conf
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

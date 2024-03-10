@@ -1,3 +1,2 @@
-diverted-files=diverts-etc++bind++named.conf.debathena
 misc:Depends=
 misc:Pre-Depends=

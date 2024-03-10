@@ -3,7 +3,9 @@
 set -e
 case "$1" in
     remove|upgrade|deconfigure)
-    ;;
+      [ -L /etc/bind/named.conf ] && rm -f /etc/bind/named.conf
+      dpkg-divert --package test02 --divert /etc/bind/named.conf.original --rename --remove /etc/bind/named.conf
+      ;;
 
     failed-upgrade)
     ;;

@@ -247,60 +247,6 @@ Description: Updates DDNS records on afraid.org
  multiline
  description
 
-Package: debathena-conffile-example
-Architecture: all
-Version: 1.1
-Priority: extra
-Section: config
-Maintainer: Geoffrey Thomas <geofft@mit.edu>
-Installed-Size: 31
-Provides: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
-Conflicts: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
-Filename: pool/main/debathena-conffile-example_1.1_all.deb
-Size: 3594
-MD5sum: 3939e4a3eb3aa24696124c95d9f308a2
-SHA1: e6a76f75ee747f03b127031b34e0e5f701575f6f
-SHA256: 97eb1d721abbc334c058174cde90a00ef0d14aea2a9655799c2f6bb181f42555
-SHA512: aba761b492ba2d653396c181609ca72604a7897997183560d76d2029c613f4404b83acddcee8eca40a24d5ce10f362aceef412687f5b36b47ba875add0091976
-Description: Example config-package-dev package
- This is an example config-package-dev package.
-
-Package: debathena-conffile-example
-Architecture: all
-Version: 1.2
-Priority: extra
-Section: config
-Maintainer: Geoffrey Thomas <geofft@mit.edu>
-Installed-Size: 22
-Provides: diverts-etc++issue.net
-Conflicts: diverts-etc++issue.net
-Filename: pool/main/debathena-conffile-example_1.2_all.deb
-Size: 3750
-MD5sum: 12dfa2cfe6d2822bba9d10dc00249adb
-SHA1: f6cd88bd9400b3f79baae773036b11b902f7c87a
-SHA256: 6fa6851772a149ff2dbc9275297123f0261e4d8591572ccd74d39b630c6c43e4
-SHA512: 43710acaebf65cfb9f3e0e1b15c4bb56643aab3684d4006bd14404dacfcdd0ae807edf9fb29af9abb866ce4422624f3dcbf34a9896d82320def05701c72e7210
-Description: Example config-package-dev package
- This is an example config-package-dev package.
-
-Package: debathena-conffile-example
-Architecture: all
-Version: 1.3
-Priority: extra
-Section: config
-Maintainer: Geoffrey Thomas <geofft@mit.edu>
-Installed-Size: 23
-Provides: diverts-etc++bind++named.conf
-Conflicts: diverts-etc++bind++named.conf
-Filename: pool/main/debathena-conffile-example_1.3_all.deb
-Size: 3762
-MD5sum: 0143392a9a04e95f7ac95a12425850ef
-SHA1: 5d36f6c5f3b65ef0f1a2b6bc38e3f55cd42e795c
-SHA256: 48c514b6ba6abf8cf95f5ccc28039ac8f5dcefaa87fbbd8ba93afd9308a95e67
-SHA512: 317359943767674135b03f6923738383222d4d296d45c2399ed1892e96668083796db19ed1bb0caa28d9cbe3414c69a502f5b46033a5569a628342a62194f0d0
-Description: Example config-package-dev package
- This is an example config-package-dev package.
-
 Package: my-repo
 Architecture: all
 Version: 0.1-1
@@ -435,41 +381,18 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
 
 Package: test02
 Architecture: all
-Version: 0.1-1
+Version: 0.1-2
 Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test02_0.1-1_all.deb
-Size: 3102
-MD5sum: 6551cf86edc9ce3466054d4baacf668f
-SHA1: 8491e0cd349b88425e6670112e546ef31d7ec36c
-SHA256: abc699b9caaa3a1ad95b0773859a6c12ca3f6e60a03cebd84f77f3e6a8b4e72b
-SHA512: 5109df62fd557515d8ac1b02bd0e8b85357115fc429d05b750d9a7b22f78441d1fcdc9c3dc46b7e93f030620f1f2a90011c4b7bdd2d67246d702a5ff4407bb3a
-Homepage: https://github.com/tegho
-Description: test02
- multiline
- description
-
-Package: test02
-Architecture: all
-Version: 0.1-2
-Priority: optional
-Section: config
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9
-Conflicts: diverts-etc++bind++named.conf.debathena
+Installed-Size: 17
+Depends: bind9, dnsutils
 Filename: pool/main/test02_0.1-2_all.deb
-Size: 3116
-MD5sum: 28f260bfafa86614f8b6c4ec24fd5de9
-SHA1: f13a67e154d6b0a2719839703b055d93f7096b36
-SHA256: 786652fe9c4b0d4e9964fec516efaaf1d038f82233498fdde68bc8c241f83f77
-SHA512: c52447df3546b389a8c4fe7d95ec171afa10c5cce31d923db9944e48c028cc749f461f70681b5c36d9077cdd42375c2ea74d53e4bfffee4d0d476228305ab8ab
+Size: 3142
+MD5sum: 1cdbfcdfbd0df227a4fe396c91d413ba
+SHA1: 9d464cba7384b16cb5df263b2ed28e1a9801a299
+SHA256: 98730993792a9058991554afd0940398530a7ffde7a7c202e7d1d4f6141ada8b
+SHA512: bf83d3cf644d629167994203576c2b152c7f9cef438bce6b3555a690354ebe417d5aa5b5bdebb564fc293a90c8200a83d39017fed391bb9e0380644f5ef45f09
 Homepage: https://github.com/tegho
 Description: test02
  multiline

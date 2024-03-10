@@ -6,10 +6,10 @@ dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64
  debian/rules clean
-dh clean --with config-package
+dh clean
    dh_clean
  debian/rules binary
-dh binary --with config-package
+dh binary
    dh_update_autotools_config
    dh_autoreconf
    create-stamp debian/debhelper-build-stamp
@@ -19,7 +19,6 @@ dh binary --with config-package
    dh_installdocs
    dh_installchangelogs
    dh_perl
-   dh_configpackage
    dh_link
    dh_strip_nondeterminism
    dh_compress
@@ -50,10 +49,7 @@ E: test02: description-is-pkg-name test02
 E: test02: description-starts-with-package-name
 E: test02: description-too-short test02
 E: test02: helper-templates-in-copyright
+E: test02: section-is-dh_make-template
 W: test02: copyright-has-url-from-dh_make-boilerplate
-W: test02: maintainer-script-empty [postinst]
-W: test02: maintainer-script-empty [postrm]
-W: test02: maintainer-script-empty [prerm]
-W: test02: unknown-section config
 W: test02: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
 Finished running lintian.

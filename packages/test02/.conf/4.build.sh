@@ -10,7 +10,11 @@ cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
 
 #######################
-cp "$current_dir/postinst" "$current_dir/postrm" "$current_dir/prerm" "$current_dir/install" "$package_dir/debian"
+export package_name
+envsubst < "$current_dir/postinst" > "$package_dir/debian/postinst"
+envsubst < "$current_dir/prerm" > "$package_dir/debian/prerm"
+cp "$current_dir/install" "$package_dir/debian"
+# cp "$current_dir/postinst" "$current_dir/postrm" "$current_dir/prerm" "$current_dir/install" "$package_dir/debian"
 #######################
 
 debuild -i -us -uc -b
