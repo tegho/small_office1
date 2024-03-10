@@ -398,3 +398,22 @@ Description: test02
  multiline
  description
 
+Package: test02
+Architecture: all
+Version: 0.1-3
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 17
+Depends: bind9, dnsutils
+Filename: pool/main/test02_0.1-3_all.deb
+Size: 3148
+MD5sum: 59803187f0b9642718dd606b45d1428e
+SHA1: 3776f39520f8fd81748afb0c3805e936cfa1ab53
+SHA256: caba2fb128c76ff5f6f46258227200825a2ad951be14e047426b9a38f27c0321
+SHA512: 33ef6c988c92407d46cf1efac01280f746e56f55223ac0cdb96415fdf845737918e9c3bae4c32b20b7088a38250f9e7976e393ca39dcc23517d3186e1ca90906
+Homepage: https://github.com/tegho
+Description: test02
+ multiline
+ description
+
