@@ -2,16 +2,18 @@ Source: test02
 Section: unknown
 Priority: optional
 Maintainer: admin <no@mail.plz>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 13), config-package-dev (>= 4.15~)
 Standards-Version: 4.6.0
 Homepage: https://github.com/tegho
-#Vcs-Browser: https://salsa.debian.org/debian/test02
-#Vcs-Git: https://salsa.debian.org/debian/test02.git
+#Vcs-Browser: https://salsa.debian.org/debian/crypt-pki
+#Vcs-Git: https://salsa.debian.org/debian/crypt-pki.git
 Rules-Requires-Root: no
 
 Package: test02
 Architecture: all
-Depends: bind9
-Description: tesy02
+Depends: ${misc:Depends}, bind9
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: test02
  multiline
  description

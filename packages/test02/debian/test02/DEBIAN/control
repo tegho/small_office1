@@ -4,9 +4,11 @@ Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
 Depends: bind9
+Conflicts: diverts-etc++bind++named.conf.debathena
+Provides: diverts-etc++bind++named.conf.debathena
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
-Description: tesy02
+Description: test02
  multiline
  description

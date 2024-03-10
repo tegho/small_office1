@@ -422,15 +422,17 @@ Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
+Provides: diverts-etc++bind++named.conf.debathena
 Depends: bind9
+Conflicts: diverts-etc++bind++named.conf.debathena
 Filename: pool/main/test02_0.1-1_all.deb
-Size: 3060
-MD5sum: 04a197fee4004fc3fb4dc3fa941145b6
-SHA1: 0e00d33d5daffd8b0a9ede9f38d2a0fc25b245ba
-SHA256: 82e77e3486978dc7c89dced8f6ce980497973705c175b686089895eb1b5e6194
-SHA512: 5c2be9ddcfeacdc2389b95ca7626ef0b73632fd9d884438fb882a83aaba79f2b1666841472dcfaf9b4ee45268f23dccecb9bdde49e3f5845ee4d50ec388762a8
+Size: 3102
+MD5sum: 6551cf86edc9ce3466054d4baacf668f
+SHA1: 8491e0cd349b88425e6670112e546ef31d7ec36c
+SHA256: abc699b9caaa3a1ad95b0773859a6c12ca3f6e60a03cebd84f77f3e6a8b4e72b
+SHA512: 5109df62fd557515d8ac1b02bd0e8b85357115fc429d05b750d9a7b22f78441d1fcdc9c3dc46b7e93f030620f1f2a90011c4b7bdd2d67246d702a5ff4407bb3a
 Homepage: https://github.com/tegho
-Description: tesy02
+Description: test02
  multiline
  description
 
