@@ -37,7 +37,7 @@ view "vpn_clients" {
 
   zone "nevada" {
     type            master;
-    file            "/var/cache/bind/zones/nevada";
+    file            "/var/lib/bind/zones/nevada";
     check-names     ignore;
     allow-transfer  { "allow_transfers"; };
     allow-update    { key vpn-update-key; };
@@ -45,7 +45,7 @@ view "vpn_clients" {
 
   zone "192.168.192.in-addr.arpa" {
     type            master;
-    file            "/var/cache/bind/zones/nevada-192.v4.ptr";
+    file            "/var/lib/bind/zones/nevada-192.v4.ptr";
     check-names     ignore;
     allow-transfer  { "allow_transfers"; };
     allow-update    { key vpn-update-key; };
@@ -53,7 +53,7 @@ view "vpn_clients" {
 
   zone "193.168.192.in-addr.arpa" {
     type            master;
-    file            "/var/cache/bind/zones/nevada-193.v4.ptr";
+    file            "/var/lib/bind/zones/nevada-193.v4.ptr";
     check-names     ignore;
     allow-transfer  { "allow_transfers"; };
     allow-update    { key vpn-update-key; };
@@ -61,7 +61,7 @@ view "vpn_clients" {
 
   zone "194.168.192.in-addr.arpa" {
     type            master;
-    file            "/var/cache/bind/zones/nevada-194.v4.ptr";
+    file            "/var/lib/bind/zones/nevada-194.v4.ptr";
     check-names     ignore;
     allow-transfer  { "allow_transfers"; };
     allow-update    { key vpn-update-key; };
@@ -69,7 +69,7 @@ view "vpn_clients" {
 
   zone "195.168.192.in-addr.arpa" {
     type            master;
-    file            "/var/cache/bind/zones/nevada-195.v4.ptr";
+    file            "/var/lib/bind/zones/nevada-195.v4.ptr";
     check-names     ignore;
     allow-transfer  { "allow_transfers"; };
     allow-update    { key vpn-update-key; };
@@ -77,7 +77,7 @@ view "vpn_clients" {
 
 #  zone "30.99.122.2001.ipv6.arpa" {
 #    type            master;
-#    file            "/var/cache/bind/zones/nevada.v6.ptr";
+#    file            "/var/lib/bind/zones/nevada.v6.ptr";
 #    check-names     ignore;
 #    allow-transfer  { "allow_transfers"; };
 #    allow-update    { key vpn-update-key; };

@@ -1,0 +1,106 @@
+
+options {
+    directory "/var/cache/bind";
+#    interface-interval  1;
+    max-cache-size 16m;
+
+    //========================================================================
+    // If BIND logs error messages about the root key being expired,
+    // you will need to update your keys.  See https://www.isc.org/bind-keys
+    //========================================================================
+    dnssec-validation auto;
+
+    listen-on-v6 { any; };
+};
+
+
+include "/etc/bind/keys/vpn-update.key";
+
+acl "vpn_nets" {
+#  ::1;
+#  127/8;
+  192.168.192.0/22;
+};
+
+acl "allow_transfers" {
+  ::1;
+  127/8;
+};
+
+
+###########################################################
+view "vpn_clients" {
+
+  match-clients         { "vpn_nets"; };
+  allow-recursion       { "vpn_nets"; };
+
+
+  zone "nevada" {
+    type            master;
+    file            "/var/lib/bind/zones/nevada";
+    check-names     ignore;
+    allow-transfer  { "allow_transfers"; };
+    allow-update    { key vpn-update-key; };
+  };
+
+  zone "192.168.192.in-addr.arpa" {
+    type            master;
+    file            "/var/lib/bind/zones/nevada-192.v4.ptr";
+    check-names     ignore;
+    allow-transfer  { "allow_transfers"; };
+    allow-update    { key vpn-update-key; };
+  };
+
+  zone "193.168.192.in-addr.arpa" {
+    type            master;
+    file            "/var/lib/bind/zones/nevada-193.v4.ptr";
+    check-names     ignore;
+    allow-transfer  { "allow_transfers"; };
+    allow-update    { key vpn-update-key; };
+  };
+
+  zone "194.168.192.in-addr.arpa" {
+    type            master;
+    file            "/var/lib/bind/zones/nevada-194.v4.ptr";
+    check-names     ignore;
+    allow-transfer  { "allow_transfers"; };
+    allow-update    { key vpn-update-key; };
+  };
+
+  zone "195.168.192.in-addr.arpa" {
+    type            master;
+    file            "/var/lib/bind/zones/nevada-195.v4.ptr";
+    check-names     ignore;
+    allow-transfer  { "allow_transfers"; };
+    allow-update    { key vpn-update-key; };
+  };
+
+#  zone "30.99.122.2001.ipv6.arpa" {
+#    type            master;
+#    file            "/var/lib/bind/zones/nevada.v6.ptr";
+#    check-names     ignore;
+#    allow-transfer  { "allow_transfers"; };
+#    allow-update    { key vpn-update-key; };
+#  };
+
+  include               "/etc/bind/includes/localhost.inc";
+  include               "/etc/bind/includes/inet.inc";
+};
+
+
+###########################################################
+view "localview" {
+
+  match-clients         { 127/8; ::1; };
+  recursion             yes;
+
+  zone "nevada"                     { in-view "vpn_clients"; };
+  zone "192.168.192.in-addr.arpa"   { in-view "vpn_clients"; };
+  zone "193.168.192.in-addr.arpa"   { in-view "vpn_clients"; };
+  zone "194.168.192.in-addr.arpa"   { in-view "vpn_clients"; };
+  zone "195.168.192.in-addr.arpa"   { in-view "vpn_clients"; };
+#  zone "30.99.122.2001.ipv6.arpa"  { in-view "vpn_clients"; };
+
+  include               "/etc/bind/includes/localhost.inc";
+  include               "/etc/bind/includes/inet.inc";
+};

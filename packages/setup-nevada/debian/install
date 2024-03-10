@@ -1,12 +1,1 @@
-etc/iptables/filter.sh /etc/iptables/
-etc/openvpn/server/vpn1.conf /etc/openvpn/server/
-etc/openvpn/pki-montana/import-zip.sh /etc/openvpn/pki-montana/
-etc/swanctl/import-zip.sh /etc/swanctl/
-etc/swanctl/conf.d/nevada.conf /etc/swanctl/conf.d/
-etc/ddns-afraid-org.d/nevada.ajalo.com.conf /etc/ddns-afraid-org.d/
-etc/strongswan.d/autostart.conf /etc/strongswan.d/
-etc/sysctl.d/90-ipv4-forward.conf /etc/sysctl.d/
-etc/systemd/system/montana-crl.service /etc/systemd/system/
-etc/systemd/system/iptables.service /etc/systemd/system/
-etc/systemd/system/montana-crl.timer /etc/systemd/system/
-etc/nginx/sites-available/stat /etc/nginx/sites-available/
+files/* /

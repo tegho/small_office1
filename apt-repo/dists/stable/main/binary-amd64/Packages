@@ -38,6 +38,45 @@ Description: Helps to setup certbot
  multiline
  description
 
+Package: certbot-snap-assist
+Architecture: all
+Version: 0.1-3
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 11
+Depends: snapd
+Breaks: certbot
+Filename: pool/main/certbot-snap-assist_0.1-3_all.deb
+Size: 2472
+MD5sum: 366db4e7f4e922e79c620d67bc844c22
+SHA1: 2514fb8a889ca76d1fffc41c6ccb282615b859a0
+SHA256: 9515405c3e3436ead169596d86a7de916f12e730c37a56a554e632c24b832a4e
+SHA512: b172a933a2af6a84776f977218b501de04652a1c877541e3c4af22778e00a4e255b94fd25f1cab0f3e899deb2f12168d200b1151d8e5b9dfaaffd738088fa2da
+Homepage: https://github.com/tegho
+Description: Helps to setup certbot
+ multiline
+ description
+
+Package: crypt-pki
+Architecture: all
+Version: 0.1-10
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 52
+Depends: easy-rsa, cryptsetup
+Filename: pool/main/crypt-pki_0.1-10_all.deb
+Size: 9778
+MD5sum: 9caafe391877edbf83d1a6046592edcc
+SHA1: 04d2999646badd8d79bea2e8dce5a85a64457823
+SHA256: b72cb900b722f4e846b63583037e9c485f20f1316172cfd7efdb0d27e4db1c22
+SHA512: 0c9eef24526fe10d65f3a4fdf6bf413089b29789896b1e6b5de57599d8dd0eb179268a78904bb07e0a881eba76425b4d7a39b3cfbcb0dec8b4e4044177187a9a
+Homepage: https://github.com/tegho
+Description: Install easy-rsa, creates PKI structure and helpers
+ multiline
+ description
+
 Package: crypt-pki
 Architecture: all
 Version: 0.1-1
@@ -247,6 +286,25 @@ Description: Updates DDNS records on afraid.org
  multiline
  description
 
+Package: ddns-afraid-org
+Architecture: all
+Version: 0.1-3
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 25
+Depends: systemd, curl | wget
+Filename: pool/main/ddns-afraid-org_0.1-3_all.deb
+Size: 3810
+MD5sum: 78462956568d192ec0ab845dc88734e0
+SHA1: 246a1e786778be103363cb95a4ce134079a7d619
+SHA256: 980b1e055a2eff72d36512f257504f4ca8714bf406e05d948cf9ba5cd223d0e3
+SHA512: 83571e97821a52374b3cf25c89d7e10886f21e5739d9c99aabdd567bc7b9044c5e995cb74a294c87526aad0967ee8ae15a97831185cc4aa694e27dedbec44552
+Homepage: https://github.com/tegho
+Description: Updates DDNS records on afraid.org
+ multiline
+ description
+
 Package: my-repo
 Architecture: all
 Version: 0.1-1
@@ -341,6 +399,44 @@ Description: Install PKI, DDNS client, CRL distribution point and monitoring age
  multiline
  description
 
+Package: setup-montana
+Architecture: all
+Version: 0.1-7
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-7_all.deb
+Size: 5174
+MD5sum: 60a7d58c01de02a85f4ab88a5b0d6905
+SHA1: 6cc928398e2c14d5886a3608b918b73dadfccb86
+SHA256: 8a200e6bb88a4077e1c8f607ab82e427f904aa4fb7eeac204d679cd1c390d728
+SHA512: e50632b073f77e49c4fd8c45226489ad75e056e2fffc0a3eb770776d129fe72693e30f859e86e84e786867e14f0a06757adbbd57de568bd747114fc131380696
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
+Package: setup-montana
+Architecture: all
+Version: 0.1-8
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-8_all.deb
+Size: 5202
+MD5sum: a8bd5fd17c76c36f50b087f250b08a64
+SHA1: 795b1ce4d004476955e4062e9d36395c55887fca
+SHA256: 007983230775944a3895d7e98320725ded68150aca4a3cc7479a184a2810f2fa
+SHA512: fffa49fb4cf158bcfb32c7f4fb9e63578400699169b18210127dbda4701afa79bff911ae9155d5b049511cdac5ea6c5166f9c35f133e1279c1978183751d581c
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
 Package: setup-nevada
 Architecture: all
 Version: 0.1-1
@@ -379,41 +475,41 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
  multiline
  description
 
-Package: test02
-Architecture: all
-Version: 0.1-2
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 17
-Depends: bind9, dnsutils
-Filename: pool/main/test02_0.1-2_all.deb
-Size: 3142
-MD5sum: 1cdbfcdfbd0df227a4fe396c91d413ba
-SHA1: 9d464cba7384b16cb5df263b2ed28e1a9801a299
-SHA256: 98730993792a9058991554afd0940398530a7ffde7a7c202e7d1d4f6141ada8b
-SHA512: bf83d3cf644d629167994203576c2b152c7f9cef438bce6b3555a690354ebe417d5aa5b5bdebb564fc293a90c8200a83d39017fed391bb9e0380644f5ef45f09
-Homepage: https://github.com/tegho
-Description: test02
- multiline
- description
-
-Package: test02
+Package: setup-nevada
 Architecture: all
 Version: 0.1-3
 Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
-Installed-Size: 17
-Depends: bind9, dnsutils
-Filename: pool/main/test02_0.1-3_all.deb
-Size: 3148
-MD5sum: 59803187f0b9642718dd606b45d1428e
-SHA1: 3776f39520f8fd81748afb0c3805e936cfa1ab53
-SHA256: caba2fb128c76ff5f6f46258227200825a2ad951be14e047426b9a38f27c0321
-SHA512: 33ef6c988c92407d46cf1efac01280f746e56f55223ac0cdb96415fdf845737918e9c3bae4c32b20b7088a38250f9e7976e393ca39dcc23517d3186e1ca90906
+Installed-Size: 89
+Depends: systemd, iptables, ipset, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins, bind9, dnsutils
+Filename: pool/main/setup-nevada_0.1-3_all.deb
+Size: 10718
+MD5sum: 990d01630f1224ae0be368d024fdfad1
+SHA1: b4c8e71428ca87092358b47a3328dff560b02478
+SHA256: 33bcc84fd3980dd8a519cf78c8f01fb8d98b29023002307eb92fcb9847c7010d
+SHA512: 9fc42cada3a354d3ac2eefb4fbae44529037c453206b3678326cd2c8f6d2a9fff849f1ed3fe94c89eddacb2a6e00989c18e7f29130725dc713f2fe585a665a86
 Homepage: https://github.com/tegho
-Description: test02
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
+Version: 0.1-4
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 89
+Depends: systemd, iptables, ipset, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins, bind9, dnsutils
+Filename: pool/main/setup-nevada_0.1-4_all.deb
+Size: 10726
+MD5sum: 15a858cfd3249de4b1f2df189104e01c
+SHA1: 46b1bb76dcea518c7d21d63b7bf6b3ae95ae9f8f
+SHA256: bd8ccc5a667b26be0dadb96b3bb81fe69e1b31245bff8d5a513d197c945271bc
+SHA512: 6c9145cae880a7d84e6d1564b43e4e39935608424c99a6ef9002e7e3bb369636fb74bacf2558fa58e9a709951970a12b1d7e13556472a4bd61085d1e5df8877e
+Homepage: https://github.com/tegho
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
  multiline
  description
 

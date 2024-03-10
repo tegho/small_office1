@@ -1,6 +1,14 @@
+/etc/bind/clean-jnl.sh
+/etc/bind/includes/inet_fwd.inc
+/etc/bind/includes/inet_own.inc
+/etc/bind/includes/localhost.inc
+/etc/bind/keys/generate-key.sh
+/etc/bind/named.conf-setup-nevada
 /etc/ddns-afraid-org.d/nevada.ajalo.com.conf
 /etc/iptables/filter.sh
+/etc/network/interfaces.d/nevada-ipsec
 /etc/nginx/sites-available/stat
+/etc/openvpn/nevada-ccd/DEFAULT
 /etc/openvpn/pki-montana/import-zip.sh
 /etc/openvpn/server/vpn1.conf
 /etc/strongswan.d/autostart.conf
@@ -10,3 +18,5 @@
 /etc/systemd/system/iptables.service
 /etc/systemd/system/montana-crl.service
 /etc/systemd/system/montana-crl.timer
+/etc/vpn-client-learn.d/20-dns-register.sh
+/etc/vpn-client-learn.d/example.sh

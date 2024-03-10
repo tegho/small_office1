@@ -1,8 +1,10 @@
-setup-montana (0.1-6) UNRELEASED; urgency=medium
+setup-montana (0.1-8) UNRELEASED; urgency=medium
 
   * Fixes
+  * test
+  * test
 
- -- admin <no@mail.plz>  Sat, 09 Mar 2024 23:45:13 +0300
+ -- admin <no@mail.plz>  Sun, 10 Mar 2024 06:00:51 +0300
 
 setup-montana (0.1-5) jammy; urgency=medium
 

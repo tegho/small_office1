@@ -1,17 +1,17 @@
 Format: 1.0
-Source: test02
-Binary: test02
+Source: crypt-pki
+Binary: crypt-pki
 Architecture: all
-Version: 0.1-3
+Version: 0.1-10
 Checksums-Md5:
- 59803187f0b9642718dd606b45d1428e 3148 test02_0.1-3_all.deb
+ 9caafe391877edbf83d1a6046592edcc 9778 crypt-pki_0.1-10_all.deb
 Checksums-Sha1:
- 3776f39520f8fd81748afb0c3805e936cfa1ab53 3148 test02_0.1-3_all.deb
+ 04d2999646badd8d79bea2e8dce5a85a64457823 9778 crypt-pki_0.1-10_all.deb
 Checksums-Sha256:
- caba2fb128c76ff5f6f46258227200825a2ad951be14e047426b9a38f27c0321 3148 test02_0.1-3_all.deb
+ b72cb900b722f4e846b63583037e9c485f20f1316172cfd7efdb0d27e4db1c22 9778 crypt-pki_0.1-10_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 10 Mar 2024 04:46:05 +0300
+Build-Date: Sun, 10 Mar 2024 05:55:40 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1710035139"
+ SOURCE_DATE_EPOCH="1710039326"

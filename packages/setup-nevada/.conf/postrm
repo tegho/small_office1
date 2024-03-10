@@ -3,11 +3,12 @@
 set -e
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-        systemctl daemon-reload
 
-        rm -f /etc/nginx/sites-enabled/stat
+      # systemd daemons
+      systemctl daemon-reload
 
-        deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
+      # sysctl
+      deb-systemd-invoke restart procps.service
     ;;
     *)
         echo "postrm called with unknown argument \`$1'" >&2

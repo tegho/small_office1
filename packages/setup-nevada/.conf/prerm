@@ -4,13 +4,34 @@ set -e
 case "$1" in
     remove|upgrade|deconfigure)
 
-        deb-systemd-invoke disable montana-crl.timer && \
-          deb-systemd-invoke stop montana-crl.timer && \
-          deb-systemd-invoke disable montana-crl.service && \
-          deb-systemd-invoke stop montana-crl.service
+      # bind9 DNS
+      [ -L /etc/bind/named.conf ] && rm -f /etc/bind/named.conf
+      dpkg-divert --package $package_name --divert /etc/bind/named.conf-original --rename --remove /etc/bind/named.conf
+      echo "Check if you want to remove /var/cache/bind/zones manually"
+      deb-systemd-invoke status bind9 >/dev/null 2>&1 && deb-systemd-invoke restart bind9
 
-        deb-systemd-invoke disable iptables.service
-    ;;
+      # nginx
+      rm -f /etc/nginx/sites-enabled/stat
+      deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke restart nginx
+
+      # CRL updater
+      deb-systemd-invoke disable montana-crl.timer && \
+        deb-systemd-invoke stop montana-crl.timer && \
+        deb-systemd-invoke disable montana-crl.service && \
+        deb-systemd-invoke stop montana-crl.service
+
+      # iptables
+      deb-systemd-invoke disable iptables.service
+      echo "Check iptables rules manually"
+
+      deb-systemd-invoke disable openvpn-server@vpn1 && \
+        deb-systemd-invoke stop openvpn-server@vpn1
+
+      deb-systemd-invoke disable strongswan && \
+        deb-systemd-invoke stop strongswan
+
+      ifdown int
+      ;;
 
     failed-upgrade)
     ;;

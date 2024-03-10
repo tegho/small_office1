@@ -1,0 +1,12 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+194.168.192.in-addr.arpa	IN SOA	srv.nevada. root.nevada. (
+				2024090300 ; serial
+				43200      ; refresh (12 hours)
+				1800       ; retry (30 minutes)
+				7257600    ; expire (12 weeks)
+				60         ; minimum (1 minute)
+				)
+			NS	srv.nevada.
+$ORIGIN 194.168.192.in-addr.arpa.
+1                       PTR     srv-194-1.nevada.

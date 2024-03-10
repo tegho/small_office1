@@ -3,28 +3,44 @@
 set -e
 case "$1" in
     configure)
+        systemctl daemon-reload
+
         find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
         find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
 
-        chown -R bind:bind /var/cache/bind/zones
+        # bind9 DNS
+        chown -R bind:bind /var/lib/bind/zones
+        dpkg-divert --package setup-nevada --divert /etc/bind/named.conf-original --rename --add /etc/bind/named.conf
+        [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-setup-nevada /etc/bind/named.conf
+        /etc/bind/keys/generate-key.sh
+#        deb-systemd-invoke status bind9 >/dev/null 2>&1 && deb-systemd-invoke restart bind9
+        deb-systemd-invoke restart bind9
 
-        mkdir -p /etc/nginx/sites-enabled/
+        # nginx
         ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
+        deb-systemd-invoke restart nginx
 
-        systemctl daemon-reload && \
-          deb-systemd-invoke enable montana-crl.service && \
+        # CRL updater
+        deb-systemd-invoke enable montana-crl.service && \
           deb-systemd-invoke enable montana-crl.timer && \
           deb-systemd-invoke start montana-crl.service && \
           deb-systemd-invoke start montana-crl.timer
 
+        # iptables
         deb-systemd-invoke enable iptables.service && \
           deb-systemd-invoke restart iptables.service
 
         # sysctl
         deb-systemd-invoke restart procps.service
 
-        #deb-systemd-invoke reload strongswan-starter.service
-        deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
+        deb-systemd-invoke enable openvpn-server@vpn1 && \
+          deb-systemd-invoke restart openvpn-server@vpn1
+
+        deb-systemd-invoke enable strongswan && \
+          deb-systemd-invoke restart strongswan
+
+        # deb-systemd-invoke restart networking
+        ifup int
 
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)

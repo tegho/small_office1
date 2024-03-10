@@ -1,9 +1,9 @@
 Package: setup-nevada
-Version: 0.1-2
+Version: 0.1-4
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 42
-Depends: systemd, iptables, ipset, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins
+Installed-Size: 89
+Depends: systemd, iptables, ipset, openvpn, nginx, ddns-afraid-org, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins, bind9, dnsutils
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
