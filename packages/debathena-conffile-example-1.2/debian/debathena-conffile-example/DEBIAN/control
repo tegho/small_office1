@@ -1,10 +1,10 @@
 Package: debathena-conffile-example
-Version: 1.1
+Version: 1.2
 Architecture: all
 Maintainer: Geoffrey Thomas <geofft@mit.edu>
-Installed-Size: 31
-Conflicts: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
-Provides: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
+Installed-Size: 22
+Conflicts: diverts-etc++issue.net
+Provides: diverts-etc++issue.net
 Section: config
 Priority: extra
 Description: Example config-package-dev package

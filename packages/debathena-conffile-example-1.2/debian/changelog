@@ -1,3 +1,9 @@
+debathena-conffile-example (1.2) UNRELEASED; urgency=medium
+
+  * fix1
+
+ -- admin <no@mail.plz>  Sun, 10 Mar 2024 03:34:38 +0300
+
 debathena-conffile-example (1.1) unstable; urgency=low
 
   * Remove /etc/sysctl.d/10-ptrace.conf if it exists. Once again,

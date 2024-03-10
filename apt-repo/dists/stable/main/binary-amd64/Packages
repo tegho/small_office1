@@ -265,6 +265,24 @@ SHA512: aba761b492ba2d653396c181609ca72604a7897997183560d76d2029c613f4404b83acdd
 Description: Example config-package-dev package
  This is an example config-package-dev package.
 
+Package: debathena-conffile-example
+Architecture: all
+Version: 1.2
+Priority: extra
+Section: config
+Maintainer: Geoffrey Thomas <geofft@mit.edu>
+Installed-Size: 22
+Provides: diverts-etc++issue.net
+Conflicts: diverts-etc++issue.net
+Filename: pool/main/debathena-conffile-example_1.2_all.deb
+Size: 3750
+MD5sum: 12dfa2cfe6d2822bba9d10dc00249adb
+SHA1: f6cd88bd9400b3f79baae773036b11b902f7c87a
+SHA256: 6fa6851772a149ff2dbc9275297123f0261e4d8591572ccd74d39b630c6c43e4
+SHA512: 43710acaebf65cfb9f3e0e1b15c4bb56643aab3684d4006bd14404dacfcdd0ae807edf9fb29af9abb866ce4422624f3dcbf34a9896d82320def05701c72e7210
+Description: Example config-package-dev package
+ This is an example config-package-dev package.
+
 Package: my-repo
 Architecture: all
 Version: 0.1-1
