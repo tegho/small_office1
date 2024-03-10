@@ -1,0 +1,12 @@
+Package: test02
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 18
+Depends: bind9
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: tesy02
+ multiline
+ description

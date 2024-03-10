@@ -10,8 +10,7 @@ cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
 
 #######################
-cp "$current_dir/postinst" "$current_dir/postrm" "$current_dir/prerm" "$package_dir/debian"
-find . -type f | awk '(!/^\.\/debian\/*/&&!/^\.\/\.conf\/*/) {print substr($0,3),substr($0,2, match($0,"[^/]+$")-2 )}' > "$package_dir/debian/install"
+cp "$current_dir/postinst" "$current_dir/postrm" "$current_dir/prerm" "$current_dir/install" "$package_dir/debian"
 #######################
 
 debuild -i -us -uc -b

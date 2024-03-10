@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sun, 10 Mar 2024 03:14:23 +0300
+Source: test02
+Binary: test02
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ test02     - tesy02
+Changes:
+ test02 (0.1-1) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 0e00d33d5daffd8b0a9ede9f38d2a0fc25b245ba 3060 test02_0.1-1_all.deb
+ fca3592ea8827376c37f60730d9113fffc855fd0 5914 test02_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 82e77e3486978dc7c89dced8f6ce980497973705c175b686089895eb1b5e6194 3060 test02_0.1-1_all.deb
+ 663db8948708c95aabd3b8d45efb3cc88719ade53ee056ec6eb44ae244a1757d 5914 test02_0.1-1_amd64.buildinfo
+Files:
+ 04a197fee4004fc3fb4dc3fa941145b6 3060 unknown optional test02_0.1-1_all.deb
+ f37fb98d54e6c0ed680ff67f619394bf 5914 unknown optional test02_0.1-1_amd64.buildinfo

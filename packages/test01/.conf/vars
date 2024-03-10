@@ -1,3 +1,0 @@
-package_url='https://github.com/tegho'
-package_short="test01"
-package_depends='bind9,dnsutils'

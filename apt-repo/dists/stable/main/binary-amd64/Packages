@@ -247,6 +247,24 @@ Description: Updates DDNS records on afraid.org
  multiline
  description
 
+Package: debathena-conffile-example
+Architecture: all
+Version: 1.1
+Priority: extra
+Section: config
+Maintainer: Geoffrey Thomas <geofft@mit.edu>
+Installed-Size: 31
+Provides: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
+Conflicts: diverts-etc++issue.net, diverts-etc++sysctl.d++10-ptrace.conf
+Filename: pool/main/debathena-conffile-example_1.1_all.deb
+Size: 3594
+MD5sum: 3939e4a3eb3aa24696124c95d9f308a2
+SHA1: e6a76f75ee747f03b127031b34e0e5f701575f6f
+SHA256: 97eb1d721abbc334c058174cde90a00ef0d14aea2a9655799c2f6bb181f42555
+SHA512: aba761b492ba2d653396c181609ca72604a7897997183560d76d2029c613f4404b83acddcee8eca40a24d5ce10f362aceef412687f5b36b47ba875add0091976
+Description: Example config-package-dev package
+ This is an example config-package-dev package.
+
 Package: my-repo
 Architecture: all
 Version: 0.1-1
@@ -379,255 +397,22 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
  multiline
  description
 
-Package: test01
-Architecture: all
-Version: 0.1-10
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 19
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-10_all.deb
-Size: 3166
-MD5sum: ac4095c1a25d1af6ef118c6f267a2335
-SHA1: 69dd04cc0e0cd5ca0fe5958555ff3e0eff5a8caf
-SHA256: f42642d2bde76fcffaec5126d54b49bc9ea0f0fa1d43ee80a19906a086d1c7bb
-SHA512: 71e9803325da717c19b1cd4e70f69b3ba65f703bcb8cd83f42cc5bed9aff90558ceb61e0beb2ee8c5df6a7303b161c1e53af6cee12de086727c054309116960e
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-11
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-11_all.deb
-Size: 3158
-MD5sum: 6cea44b2f97353f81df7a1bd3ef0fd5a
-SHA1: 0d86e8f73aa835f03842d18f1c80276a8e540f43
-SHA256: f34bbe14de2a68199b5ec4ffc6ed91b0a2615d464acf2e43d2aee4f4eb86a53d
-SHA512: 0fbb86ecec295cb806ebea94bf41d979e171472420859158b619e42df6c1fcc906269722b3159b1f25bba7f5874cc74df0031bdf745edf2407dec6f7cc7fcdc9
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-12
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 19
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-12_all.deb
-Size: 3182
-MD5sum: 111b151b7ef5c233c9c2218eb4ccfa7f
-SHA1: 31bb3b0fc41a6ccee45692cd827e610145b18555
-SHA256: 599ac9ba3599b900126e749a718c2db0d20b815117b7d4f2fb4655a988a477e1
-SHA512: 66ca03c6bc19f56e14e4bc219e45834d0e9bb2d60d3b56342ea2f60dbab9d87fe50e47611bc68d231247f77ad82f567cae38bc155c5ad4910d0b141a62af871c
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
+Package: test02
 Architecture: all
 Version: 0.1-1
 Priority: optional
 Section: unknown
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
-Provides: diverts-etc++bind++named.conf
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf
-Filename: pool/main/test01_0.1-1_all.deb
-Size: 3074
-MD5sum: 1db675f2f05c7f009c0a86ece6b89719
-SHA1: 35b556b8ce89efd546b985ef08e6225c423bc752
-SHA256: 511bdc92bd2c6b4ca33ca7ca84c7fb5350fc470775b609559ed124d81bb02ba5
-SHA512: 3eaa7e840f27fca7e3ecb6fab65435018e25951d67b9e50fd46eefaea06655563c877e516a5323c157f603b267216d8be0b5ff68d9a9877e7834074eb2a6e30e
+Depends: bind9
+Filename: pool/main/test02_0.1-1_all.deb
+Size: 3060
+MD5sum: 04a197fee4004fc3fb4dc3fa941145b6
+SHA1: 0e00d33d5daffd8b0a9ede9f38d2a0fc25b245ba
+SHA256: 82e77e3486978dc7c89dced8f6ce980497973705c175b686089895eb1b5e6194
+SHA512: 5c2be9ddcfeacdc2389b95ca7626ef0b73632fd9d884438fb882a83aaba79f2b1666841472dcfaf9b4ee45268f23dccecb9bdde49e3f5845ee4d50ec388762a8
 Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-2
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf
-Filename: pool/main/test01_0.1-2_all.deb
-Size: 3088
-MD5sum: 5fbb5e7e5699ccf2e797e0a4b7011f0e
-SHA1: 6db2ec095fd90db2922f7d547cc7ed86f486e4a2
-SHA256: 1bd63cbcc0ef3e5fed269bb071a104c4d923cdb4dc99d4d01ea3d787d606ca66
-SHA512: a2136c537c7703d46d756db0792b494fec027fab28724c70c3cd1f4d4de553ab86842d873af7639493faf43c4bbaaad484105a72221e3b00b2f049ed67fd5ab4
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-3
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.moon
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.moon
-Filename: pool/main/test01_0.1-3_all.deb
-Size: 3108
-MD5sum: 87d0c25862de72fd4251feebaca8354a
-SHA1: f6bff2a1fc176f738ef7028f62bae17352481670
-SHA256: aa1ab76177638c659f9428f97cfadc64884b1d5a27e9d3d2d319523d59ffe8db
-SHA512: e1afe5fb4b28b79bb6af40ca4ed1eb87335ce34f842cfbe0081cddf368280c12ef83e1004201b1b9a9e7833ec909454569e1303f4727ac4a858764c37af6108b
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-4
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.moon
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.moon
-Filename: pool/main/test01_0.1-4_all.deb
-Size: 3112
-MD5sum: 4d28f6c266f5f278a1cc5fa5f3b27ea0
-SHA1: 822b0ed78f714deb0bfea3dd62ac0a9d98b0b9d1
-SHA256: eb46b95649c7f7340b01e9f412526f2b78783e257d8c62d2e7439606ab97a6e6
-SHA512: 544d163ef1047db7f3a40965655d13a3a0c78e04c82bacb820795de839baba28cc18654af0265a431ab87c795a2fc9c7fa466ae594d663a4a486f5168d6ce7c2
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-5
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-5_all.deb
-Size: 3114
-MD5sum: 4e6e4e396116680bc304179867a137a8
-SHA1: 9cd1252f037521feb4665af6ed9a7b4b6b2d5db1
-SHA256: c05bd99f42eb1ae9766e76f9f97a32c48f2d4f8ba093fbc9d1c0930c1d5b5f99
-SHA512: fd7af61b9d50aba3a5efc57773b1749694f2d39007bde1fc58a789f4c11bf8fcf10870e95b6add28423b333ca7160d09f6be29df0adcf78f99a3f051beefeeb0
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-6
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-6_all.deb
-Size: 3124
-MD5sum: 92ca0394652c53bca1950a1d5579a3e5
-SHA1: 02ab5f4b297fc289f183e05f305ff29b1425bfe3
-SHA256: d24371b12570ff60092cca4be98d797b788eaf8985bdbfcade3fa211a6c7a395
-SHA512: 2f4f0fe6e1f1f08518751f63f56d0eb6924f4aacdac7d659b2f589bb461f796de661276eea0b59d393e1cecab6a43f82d9a0b3dc93742c417d855fd31bae943d
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-7
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-7_all.deb
-Size: 3124
-MD5sum: ebc42074d59738db3fb3782e1f10311d
-SHA1: b66ec3f3aa9ac3862412b9acd0d98c0932232781
-SHA256: 233da09795572eb9161c8b02c1eed69b5d8d586d027669955d1f34969af8bdaa
-SHA512: 01083af35a59eb5532afabeadd62777d5f800f51f2f876884eb950fbbceb4cd3c54499b0af77f4f6f1cbd551779d9819f1e02ca8ccce3781607c95d709920bf0
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-8
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-8_all.deb
-Size: 3124
-MD5sum: f8e310850aeb26e7ba3e7ee0dd3e0d71
-SHA1: 58e997cdef8378fd86fe11b9cfcb0ebc38d170cb
-SHA256: 2ada04f89be404cea5386ebdfe3c834b688f67d6c8926146bdde8315fa847d62
-SHA512: 015f2ab8749c0413a6e4b7d5cd0cf587964266ddd7f4715ab6a71bdfdcd6a5712a3a5aaed4f5548746f552e70d7e8c0202411f0651b9fa178f6cc2aeeb13d6a4
-Homepage: https://github.com/tegho
-Description: test01
- multiline
- description
-
-Package: test01
-Architecture: all
-Version: 0.1-9
-Priority: optional
-Section: unknown
-Maintainer: admin <no@mail.plz>
-Installed-Size: 18
-Provides: diverts-etc++bind++named.conf.debathena
-Depends: bind9, dnsutils
-Conflicts: diverts-etc++bind++named.conf.debathena
-Filename: pool/main/test01_0.1-9_all.deb
-Size: 3136
-MD5sum: bbd0f324255f38b788bf9ed7a0b9046f
-SHA1: 8cf82301a42faf4a0cd12dbb707f747761a416b6
-SHA256: b341d7806c8f29bce81d2fdf6879d83dee6661ab989b071bb4ef0fe892524beb
-SHA512: a8f26d35a9242e0ce977d1baea0cf899b054256db0a817939178532b4abf7e36d26cdf2799775bc738156f8740910102ee331a49d2c66f6a22282b00508a9afb
-Homepage: https://github.com/tegho
-Description: test01
+Description: tesy02
  multiline
  description
 
