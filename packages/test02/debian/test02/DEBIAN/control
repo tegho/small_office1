@@ -1,12 +1,12 @@
 Package: test02
-Version: 0.1-1
+Version: 0.1-2
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 18
 Depends: bind9
 Conflicts: diverts-etc++bind++named.conf.debathena
 Provides: diverts-etc++bind++named.conf.debathena
-Section: unknown
+Section: config
 Priority: optional
 Homepage: https://github.com/tegho
 Description: test02

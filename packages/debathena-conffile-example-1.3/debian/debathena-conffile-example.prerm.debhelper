@@ -158,7 +158,7 @@ check_undisplace_unhide()
 }
 
 # End of displace.sh.in
-if [ "$1" = "configure" ] || [ "$1" = "abort-remove" ]; then
-    displace_link /etc/issue.net 
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+    undisplace_unlink /etc/bind/named.conf 
 fi
 # End automatically added section

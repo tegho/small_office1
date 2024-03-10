@@ -1,5 +1,5 @@
 Source: test02
-Section: unknown
+Section: config
 Priority: optional
 Maintainer: admin <no@mail.plz>
 Build-Depends: debhelper-compat (= 13), config-package-dev (>= 4.15~)
