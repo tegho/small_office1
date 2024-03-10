@@ -33,14 +33,21 @@ case "$1" in
         # sysctl
         deb-systemd-invoke restart procps.service
 
-        deb-systemd-invoke enable openvpn-server@vpn1 && \
-          deb-systemd-invoke restart openvpn-server@vpn1
+        deb-systemd-invoke enable openvpn-server@vpn1
+#          deb-systemd-invoke restart openvpn-server@vpn1
 
-        deb-systemd-invoke enable strongswan && \
-          deb-systemd-invoke restart strongswan
+        deb-systemd-invoke enable strongswan
+#          deb-systemd-invoke restart strongswan
 
         # deb-systemd-invoke restart networking
         ifup int
+
+        echo "==============================================="
+        echo "Now import server keys from PKI and start VPNs:"
+        echo "  systemctl restart openvpn-server@vpn1"
+        echo "  systemctl restart strongswan"
+        echo "==============================================="
+
 
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
