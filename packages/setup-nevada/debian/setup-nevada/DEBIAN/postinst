@@ -12,7 +12,10 @@ case "$1" in
         chown -R bind:bind /var/lib/bind/zones
         dpkg-divert --package setup-nevada --divert /etc/bind/named.conf-original --rename --add /etc/bind/named.conf
         [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-setup-nevada /etc/bind/named.conf
-        /etc/bind/keys/generate-key.sh
+        [ ! -e /etc/bind/zones -o -L /etc/bind/zones ] && ln -sfn /var/lib/bind/zones /etc/bind/zones
+
+        [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k -update-key -u bind
+#        /etc/bind/keys/generate-key.sh
 #        deb-systemd-invoke status bind9 >/dev/null 2>&1 && deb-systemd-invoke restart bind9
         deb-systemd-invoke restart bind9
 
@@ -34,12 +37,8 @@ case "$1" in
         deb-systemd-invoke restart procps.service
 
         deb-systemd-invoke enable openvpn-server@vpn1
-#          deb-systemd-invoke restart openvpn-server@vpn1
-
         deb-systemd-invoke enable strongswan
-#          deb-systemd-invoke restart strongswan
 
-        # deb-systemd-invoke restart networking
         ifup int
 
         echo "==============================================="

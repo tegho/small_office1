@@ -570,3 +570,22 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
  multiline
  description
 
+Package: setup-nevada
+Architecture: all
+Version: 0.2-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 90
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, strongswan, strongswan-swanctl, libcharon-extra-plugins, charon-systemd, bind9, dnsutils, ddns-afraid-org
+Filename: pool/main/setup-nevada_0.2-2_all.deb
+Size: 10862
+MD5sum: e644289a6dbd6d10bf58fc3de45ef3e8
+SHA1: 397f38e862ab4341829524c8e075c6dbf276f200
+SHA256: 56b627c0d29cda53eaedd339c0864c58a3341c7c74b285f739a3d9701c2aab84
+SHA512: 7d4364f7a4f4a4c81cd89dac9cfa375277a463f34f6389ce2f4bf6b80c56cb5f8595ac08a1dc059de8c22d21ee26e18a5e5a658837a8aafc0901b73aaea4bd31
+Homepage: https://github.com/tegho
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
