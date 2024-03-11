@@ -8,6 +8,7 @@ source "$current_dir/version" || exit 1
 
 cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
+sed -i 's!^Depends: .*!Depends: '"$package_depends"'!' "$package_dir/debian/control"
 
 #######################
 cp "$current_dir/postinst" "$current_dir/postrm" "$current_dir/prerm" "$current_dir/install" "$package_dir/debian"

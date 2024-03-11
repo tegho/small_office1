@@ -5,6 +5,7 @@ package_dir=$(realpath "$current_dir/..")
 package_name=$(basename "$package_dir")
 source "$current_dir/vars" || exit 1
 source "$current_dir/version" || exit 1
+sed -i 's!^Depends: .*!Depends: '"$package_depends"'!' "$package_dir/debian/control"
 
 cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
