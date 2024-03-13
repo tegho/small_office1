@@ -15,4 +15,3 @@ Depends: systemd,iptables,ipset,openvpn,nginx,zip,curl,charon-systemd,libcharon-
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
  multiline
  description
-Pre-Depends: docker-repo
