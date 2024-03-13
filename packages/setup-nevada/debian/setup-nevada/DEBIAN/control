@@ -1,9 +1,9 @@
 Package: setup-nevada
-Version: 0.2-5
+Version: 0.2-6
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 90
-Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libstrongswan, libstrongswan-standard-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-repo, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libstrongswan, libstrongswan-standard-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-repo, containerd.io, docker-ce, docker-ce-cli, docker-buildx-plugin, docker-compose-plugin
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
