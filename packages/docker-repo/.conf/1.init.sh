@@ -22,7 +22,7 @@ d}' "$package_dir/debian/control"
 echo -e "override_dh_builddeb:\n\tdh_builddeb -- -Zgzip" >> "$package_dir/debian/rules"
 
 ############################
-echo "Breaks: docker.io, docker-doc, docker-compose, podman-docker, containerd, runc" >> "$package_dir/debian/control"
+echo 'Breaks: docker.io, docker-doc, docker-compose, podman-docker, containerd, runc' >> "$package_dir/debian/control"
 ############################
 
 

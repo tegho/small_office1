@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 14 Mar 2024 01:48:20 +0300
+Source: setup-nevada
+Binary: setup-nevada
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.2-7
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ setup-nevada - Install openvpn, ipsec server, DDNS client, utils for nevada.ajal
+Changes:
+ setup-nevada (0.2-7) UNRELEASED; urgency=medium
+ .
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+Checksums-Sha1:
+ 658e878fdf3711a47627141c59228780fc9f541c 11064 setup-nevada_0.2-7_all.deb
+ d08b2811f0e6c56d7238825bbca0f034bcce13c0 5947 setup-nevada_0.2-7_amd64.buildinfo
+Checksums-Sha256:
+ 62909b5e49fcbb3f3dfee66e48c2e3ac756136227022d5592275792a3263f4f6 11064 setup-nevada_0.2-7_all.deb
+ e0930e88a56bc9bab0458ac59c425f8ed9c936bcf47b058cb93478b692636e1e 5947 setup-nevada_0.2-7_amd64.buildinfo
+Files:
+ f441930d410dfd3fc2285f0a6e49f1c6 11064 unknown optional setup-nevada_0.2-7_all.deb
+ 0f3775b25db78213cd8c4000ff60b00d 5947 unknown optional setup-nevada_0.2-7_amd64.buildinfo
