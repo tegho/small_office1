@@ -692,6 +692,25 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
 
 Package: setup-nevada
 Architecture: all
+Version: 0.2-16
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 90
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libstrongswan, libstrongswan-standard-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-16_all.deb
+Size: 11038
+MD5sum: cd3114a3f34545809d2f1732c8e31725
+SHA1: b92bd5c6df25c3f5fa14a87de92d0f7e08e34b33
+SHA256: 0a5d2b6b066c10f79c7c6e66c71b9679b5861b02969b1dc73ab92216a2a9833c
+SHA512: 2ee6af00ede48d5733c1fb90d3d8ccd385b6368e84b713ad753fae89fa6841e2b2df8dba32d5a1801efca1eaab02501ae50f52a014f4f54a04886584cbf3b211
+Homepage: https://github.com/tegho
+Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
 Version: 0.2-1
 Priority: optional
 Section: unknown

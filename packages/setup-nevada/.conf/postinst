@@ -15,8 +15,6 @@ case "$1" in
         [ ! -e /etc/bind/zones -o -L /etc/bind/zones ] && ln -sfn /var/lib/bind/zones /etc/bind/zones
 
         [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k $vpn-update-key -u bind
-#        /etc/bind/keys/generate-key.sh
-#        deb-systemd-invoke status bind9 >/dev/null 2>&1 && deb-systemd-invoke restart bind9
         deb-systemd-invoke restart bind9
 
         # nginx
@@ -41,11 +39,11 @@ case "$1" in
 
         ifup int
 
-#        docker pull jlti/ipsec_exporter
-#        docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter
-#
-#        docker pull shrikantpatnaik/openvpn_exporter
-#        docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter
+        docker pull jlti/ipsec_exporter
+        docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter
+
+        docker pull shrikantpatnaik/openvpn_exporter
+        docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter
 
         echo "==============================================="
         echo "Now import server keys from PKI and start VPNs:"
