@@ -9,6 +9,7 @@ source "$current_dir/version" || exit 1
 cd "$package_dir"
 [ -d "$package_dir/debian" ] || exit 1
 sed -i 's!^Depends: .*!Depends: '"$package_depends"'!' "$package_dir/debian/control"
+echo "Pre-Depends: docker-repo" >> "$package_dir/debian/control"
 
 #######################
 export package_name

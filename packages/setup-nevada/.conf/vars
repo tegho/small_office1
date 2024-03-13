@@ -1,4 +1,4 @@
 package_url='https://github.com/tegho'
 package_short="Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com."
 # package_depends='systemd,iptables,ipset,openvpn,nginx,zip,curl,strongswan,strongswan-swanctl,libcharon-extra-plugins,charon-systemd,bind9,dnsutils,ddns-afraid-org,autodocker'
-package_depends='systemd,iptables,ipset,openvpn,nginx,zip,curl,charon-systemd,libcharon-extauth-plugins,libstrongswan,libstrongswan-standard-plugins,strongswan-libcharon,strongswan-swanctl,bind9,dnsutils,ddns-afraid-org,prometheus-nginx-exporter,prometheus-node-exporter,docker-repo,containerd\.io,docker-ce,docker-ce-cli,docker-buildx-plugin,docker-compose-plugin'
+package_depends='systemd,iptables,ipset,openvpn,nginx,zip,curl,charon-systemd,libcharon-extauth-plugins,libstrongswan,libstrongswan-standard-plugins,strongswan-libcharon,strongswan-swanctl,bind9,dnsutils,ddns-afraid-org,prometheus-nginx-exporter,prometheus-node-exporter,containerd.io,docker-ce,docker-ce-cli,docker-buildx-plugin,docker-compose-plugin'
