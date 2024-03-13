@@ -1,0 +1,5 @@
+docker-repo (0.1-1) jammy; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- admin <no@mail.plz>  Thu, 14 Mar 2024 01:23:05 +0300

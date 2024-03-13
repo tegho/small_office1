@@ -1,0 +1,18 @@
+Source: docker-repo
+Section: unknown
+Priority: optional
+Maintainer: admin <no@mail.plz>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/tegho
+#Vcs-Browser: https://salsa.debian.org/debian/docker-repo
+#Vcs-Git: https://salsa.debian.org/debian/docker-repo.git
+Rules-Requires-Root: no
+
+Package: docker-repo
+Architecture: all
+Depends: ca-certificates, curl
+Description: Install docker repo
+ multiline
+ description
+Breaks: docker.io, docker-doc, docker-compose, podman-docker, containerd, runc

@@ -1,0 +1,3 @@
+package_url='https://github.com/tegho'
+package_short="Install docker repo"
+package_depends='ca-certificates, curl'

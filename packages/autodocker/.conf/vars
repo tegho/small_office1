@@ -1,3 +1,0 @@
-package_url='https://github.com/tegho'
-package_short="Helps to setup docker"
-package_depends='ca-certificates, curl'
