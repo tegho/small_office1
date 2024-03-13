@@ -41,12 +41,17 @@ case "$1" in
 
         ifup int
 
+        docker pull jlti/ipsec_exporter
+        docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter
+
+        docker pull shrikantpatnaik/openvpn_exporter
+        docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter
+
         echo "==============================================="
         echo "Now import server keys from PKI and start VPNs:"
         echo "  systemctl restart openvpn-server@vpn1"
         echo "  systemctl restart strongswan"
         echo "==============================================="
-
 
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)

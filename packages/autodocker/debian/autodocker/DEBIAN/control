@@ -1,0 +1,13 @@
+Package: autodocker
+Version: 0.1-1
+Architecture: all
+Maintainer: admin <no@mail.plz>
+Installed-Size: 12
+Depends: ca-certificates, curl
+Breaks: containerd, docker-compose, docker-doc, docker.io, podman-docker, runc
+Section: unknown
+Priority: optional
+Homepage: https://github.com/tegho
+Description: Helps to setup docker
+ multiline
+ description

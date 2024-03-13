@@ -1,8 +1,10 @@
-setup-nevada (0.2-2) UNRELEASED; urgency=medium
+setup-nevada (0.2-4) UNRELEASED; urgency=medium
 
   * fixes
+  * fixes
+  * fixes
 
- -- admin <no@mail.plz>  Mon, 11 Mar 2024 04:11:38 +0300
+ -- admin <no@mail.plz>  Wed, 13 Mar 2024 23:55:57 +0300
 
 setup-nevada (0.2-1) jammy; urgency=medium
 
