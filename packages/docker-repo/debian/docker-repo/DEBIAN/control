@@ -1,10 +1,9 @@
 Package: docker-repo
-Version: 0.1-4
+Version: 0.1-5
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 12
 Depends: ca-certificates, curl
-Conflicts: containerd, docker-compose, docker-doc, docker.io, podman-docker, runc
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
