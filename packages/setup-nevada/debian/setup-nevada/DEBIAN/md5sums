@@ -1,5 +1,5 @@
 b000b49bf8d66cc2765f762588eb4d3b  usr/libexec/vpn-client-learn/learn.sh
-124f154469864a8f6e408098f65b61ea  usr/share/doc/setup-nevada/changelog.Debian.gz
+b1c48af7eba2dec3ed4e16cb49b9f149  usr/share/doc/setup-nevada/changelog.Debian.gz
 2c3a3ab7e5d27746249d7e98bd753b62  usr/share/doc/setup-nevada/copyright
 b66ebe2f5dab47390a57064e435c3938  var/lib/bind/zones/nevada
 90ef970ccc0711ba241abd1d4133571f  var/lib/bind/zones/nevada-192.v4.ptr

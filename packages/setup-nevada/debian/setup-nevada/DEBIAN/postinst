@@ -42,6 +42,7 @@ case "$1" in
         docker pull jlti/ipsec_exporter
         docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter || docker start ipsec_exporter
 
+        touch /etc/openvpn/vpn1.stat
         docker pull shrikantpatnaik/openvpn_exporter
         docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter || docker start openvpn_exporter
 

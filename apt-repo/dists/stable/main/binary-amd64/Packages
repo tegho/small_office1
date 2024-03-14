@@ -828,6 +828,25 @@ Description: Install nevada.ajalo.com.
 
 Package: setup-nevada
 Architecture: all
+Version: 0.2-19
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 90
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libstrongswan, libstrongswan-standard-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-19_all.deb
+Size: 11050
+MD5sum: 4aec5b2c021e5122ed4dc1979582ba54
+SHA1: 3530779a26d32c84d706c49570827062e3fbea80
+SHA256: 3cf70086abd4c98303c941e0702c3c30faed5a43f4f784c6d862b45ce3447bf0
+SHA512: 60996b4943a60f8f14153b18556b3268303651cc2cbce590d1717b8d6dbe78e0a94bb22f0584edb7b9391268e900ce2a2532245d2e877d52833b5465181f0384
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
 Version: 0.2-1
 Priority: optional
 Section: unknown

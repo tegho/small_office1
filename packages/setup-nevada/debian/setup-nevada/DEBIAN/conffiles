@@ -11,7 +11,6 @@
 /etc/openvpn/nevada-ccd/DEFAULT
 /etc/openvpn/pki-montana/import-zip.sh
 /etc/openvpn/server/vpn1.conf
-/etc/openvpn/vpn1.stat
 /etc/strongswan.d/autostart.conf
 /etc/swanctl/conf.d/nevada.conf
 /etc/swanctl/import-zip.sh
