@@ -14,7 +14,7 @@ case "$1" in
         [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-setup-nevada /etc/bind/named.conf
         [ ! -e /etc/bind/zones -o -L /etc/bind/zones ] && ln -sfn /var/lib/bind/zones /etc/bind/zones
 
-        [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k -update-key -u bind
+        [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k vpn-update-key -u bind
         deb-systemd-invoke restart bind9
 
         # nginx
