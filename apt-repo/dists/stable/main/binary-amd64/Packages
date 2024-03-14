@@ -866,6 +866,44 @@ Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.
 
 Package: setup-nevada
 Architecture: all
+Version: 0.2-20
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 90
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-20_all.deb
+Size: 11052
+MD5sum: 4ddf9c60bfed82f7e1246ce4de12dc34
+SHA1: 57127dcec060364a1d61161b747816ea12914197
+SHA256: 20c195f2d0bd13a54e889e7885bcc333a83271bc29804f6e340eb3db93fd538f
+SHA512: abb5fcf735081c7b6924377c8d985ce7b1e15ca426c6ae6e7cc4df878fa06d457faa56c9d1a4eadc719a96e7475d5c8d208ee9e2c4bfbc272d2bc7663e039631
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
+Version: 0.2-21
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 90
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-21_all.deb
+Size: 11056
+MD5sum: 1d5e346f6ce2a2966c07113447ed4833
+SHA1: 6f33d137ebc5594a369e853eacae8accbdbf3b8a
+SHA256: cb5fa478c171baefe10cb59261bc577f2f825c4e1349360e9c6cb0095607bfad
+SHA512: 25dca8493d33bf1794c3e8a24cb670f0800765d29a7d7e25db0061bb61a469e9c0e000e0ea366f4f08ca85fb905c87c94703c44e9bfa8c78bee902e3aba59b02
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
 Version: 0.2-2
 Priority: optional
 Section: unknown
