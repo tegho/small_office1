@@ -7,13 +7,13 @@
 /etc/ddns-afraid-org.d/nevada.ajalo.com.conf
 /etc/iptables/filter.sh
 /etc/network/interfaces.d/nevada-ipsec
+/etc/nginx/conf.d/nevada.conf
+/etc/nginx/sites-available/prometheus
 /etc/nginx/sites-available/stat
 /etc/openvpn/nevada-ccd/DEFAULT
-/etc/openvpn/pki-montana/import-zip.sh
 /etc/openvpn/server/vpn1.conf
 /etc/strongswan.d/autostart.conf
 /etc/swanctl/conf.d/nevada.conf
-/etc/swanctl/import-zip.sh
 /etc/sysctl.d/90-ipv4-forward.conf
 /etc/systemd/system/iptables.service
 /etc/systemd/system/montana-crl.service

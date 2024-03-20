@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Thu, 21 Mar 2024 00:33:27 +0300
+Source: setup-nevada
+Binary: setup-nevada
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.2-23
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ setup-nevada - Install nevada.ajalo.com.
+Changes:
+ setup-nevada (0.2-23) UNRELEASED; urgency=medium
+ .
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fixes
+   * fix
+   * fix
+   * fix
+   * fix
+   * fix
+   * fix
+   * fix
+Checksums-Sha1:
+ 0113f1ac03ccf4f3fd9b491533bae7b6f3e4bbe5 12190 setup-nevada_0.2-23_all.deb
+ ac74eeada4370f155138753bae325741cae659dc 5953 setup-nevada_0.2-23_amd64.buildinfo
+Checksums-Sha256:
+ ab0251a6a49c61b771c607d21d15276bf89e092c86bd30cc711f93f83116c91b 12190 setup-nevada_0.2-23_all.deb
+ 53c75cd5d78dc8b60a4edb12c537ef1a730522171022d7458eb0bc9270df088a 5953 setup-nevada_0.2-23_amd64.buildinfo
+Files:
+ 8a890cb2d98d85f55dd832969cb6c435 12190 unknown optional setup-nevada_0.2-23_all.deb
+ 79186534fe7d2ebd41e1dadd9857c9e4 5953 unknown optional setup-nevada_0.2-23_amd64.buildinfo

@@ -2,62 +2,76 @@
 
 set -e
 case "$1" in
-    configure)
-        systemctl daemon-reload
+  configure)
+    systemctl daemon-reload
 
-        find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
-        find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+    find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
+    find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
 
-        # bind9 DNS
-        chown -R bind:bind /var/lib/bind/zones
-        dpkg-divert --package setup-nevada --divert /etc/bind/named.conf-original --rename --add /etc/bind/named.conf
-        [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-setup-nevada /etc/bind/named.conf
-        [ ! -e /etc/bind/zones -o -L /etc/bind/zones ] && ln -sfn /var/lib/bind/zones /etc/bind/zones
+    # bind9 DNS
+    chown -R bind:bind /var/lib/bind/zones
+    dpkg-divert --package setup-nevada --divert /etc/bind/named.conf-original --rename --add /etc/bind/named.conf
+    [ ! -e /etc/bind/named.conf -o -L /etc/bind/named.conf ] && ln -sf /etc/bind/named.conf-setup-nevada /etc/bind/named.conf
+    [ ! -e /etc/bind/zones -o -L /etc/bind/zones ] && ln -sfn /var/lib/bind/zones /etc/bind/zones
 
-        [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k vpn-update-key -u bind
-        deb-systemd-invoke restart bind9
+    [ ! -f /etc/bind/keys/vpn-update.key ] && rndc-confgen -a -c /etc/bind/keys/vpn-update.key -k vpn-update-key -u bind
+    deb-systemd-invoke restart bind9
 
-        # nginx
-        ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
-        deb-systemd-invoke restart nginx
+    # nginx
+    touch /etc/nginx/pki-montana/ca.crt
+    touch /etc/nginx/pki-montana/crl.pem
+    ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
+    ln -fs /etc/nginx/sites-available/prometheus /etc/nginx/sites-enabled/prometheus
+    rm -f /etc/nginx/sites-enabled/default
+    deb-systemd-invoke restart nginx
 
-        # CRL updater
-        deb-systemd-invoke enable montana-crl.service && \
-          deb-systemd-invoke enable montana-crl.timer && \
-          deb-systemd-invoke start montana-crl.service && \
-          deb-systemd-invoke start montana-crl.timer
+    # CRL updater
+    deb-systemd-invoke enable montana-crl.service && \
+      deb-systemd-invoke enable montana-crl.timer && \
+      deb-systemd-invoke start montana-crl.service && \
+      deb-systemd-invoke start montana-crl.timer
 
-        # iptables
-        deb-systemd-invoke enable iptables.service && \
-          deb-systemd-invoke restart iptables.service
+    # iptables
+    deb-systemd-invoke enable iptables.service && \
+      deb-systemd-invoke restart iptables.service
 
-        # sysctl
-        deb-systemd-invoke restart procps.service
+    # sysctl
+    deb-systemd-invoke restart procps.service
 
-        deb-systemd-invoke enable openvpn-server@vpn1
-        deb-systemd-invoke enable strongswan
+    # enable but dont start
+    deb-systemd-invoke enable openvpn-server@vpn1
+    deb-systemd-invoke enable strongswan
 
-        ifup int
+    ifup int
 
-        docker pull jlti/ipsec_exporter
-        docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter || docker start ipsec_exporter
+    # ipsec monitoring
+    docker pull jlti/ipsec_exporter
+    docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter || docker start ipsec_exporter
 
-        touch /etc/openvpn/vpn1.stat
-        docker pull shrikantpatnaik/openvpn_exporter
-        docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter || docker start openvpn_exporter
+    # openvpn monitoring
+    touch /etc/openvpn/vpn1.stat
+    docker pull shrikantpatnaik/openvpn_exporter
+    docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter || docker start openvpn_exporter
 
-        echo "==============================================="
-        echo "Now import server keys from PKI and start VPNs:"
-        echo "  systemctl restart openvpn-server@vpn1"
-        echo "  systemctl restart strongswan"
-        echo "==============================================="
+    # tune prometheus exporters
+    sed -i 's/^[\t ]*ARGS=".*$/ARGS="--web.listen-address=127.0.0.1:9100"/' /etc/default/prometheus-node-exporter
+    sed -i 's/^[\t ]*ARGS=".*$/ARGS="-web.listen-address 127.0.0.1:9113"/' /etc/default/prometheus-nginx-exporter
+    deb-systemd-invoke restart prometheus-node-exporter
+    deb-systemd-invoke restart prometheus-nginx-exporter
 
+    echo "========================================================"
+    echo "Now import server keys from PKI and start VPNs:"
+    echo "  systemctl restart openvpn-server@vpn1 nginx strongswan"
+    echo "========================================================"
     ;;
-    abort-upgrade|abort-remove|abort-deconfigure)
+
+  abort-upgrade|abort-remove|abort-deconfigure)
     ;;
-    *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
     ;;
 esac
+
 exit 0

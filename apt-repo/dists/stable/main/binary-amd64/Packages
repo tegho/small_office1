@@ -536,6 +536,25 @@ Description: Install PKI, DDNS client, CRL distribution point and monitoring age
  multiline
  description
 
+Package: setup-montana
+Architecture: all
+Version: 0.1-9
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 34
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Filename: pool/main/setup-montana_0.1-9_all.deb
+Size: 5228
+MD5sum: 3764342087cca0116e43d6c4a0fdcfe3
+SHA1: e9629c43cb6dd0bf74b0e01630ed992caa668532
+SHA256: 8f9aa739edb844f31c3714dbc7365c28a5f6eec835dec9a273288d1b764f6fda
+SHA512: 722a3f7b3620e18d101989c9eb653bf1fb5fece300891e18e4396b6166174a305e966f4c90d4df73006043e4514cc0e9fe3d6ab0f664774a8c9c2ea4831bca78
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
 Package: setup-nevada
 Architecture: all
 Version: 0.1-1
@@ -916,6 +935,25 @@ MD5sum: 9a7bd2b76eadf3ac91143b5cbc1083f4
 SHA1: d47a4e7254bff925b80b142d20b1679aa983cceb
 SHA256: 66f5ea545f8e5a2efe16c51c77973ae7f32028ade872006c0c2748a0968d1cda
 SHA512: a401431adfe3c4252ec9e0dee2ed8014193e9ca22076de91c5db2c8dca429d19cd8fc0240d94fa895f549b89a99d1e3063f7b013892a49a00f28583393499f51
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
+Version: 0.2-23
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 96
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-23_all.deb
+Size: 12190
+MD5sum: 8a890cb2d98d85f55dd832969cb6c435
+SHA1: 0113f1ac03ccf4f3fd9b491533bae7b6f3e4bbe5
+SHA256: ab0251a6a49c61b771c607d21d15276bf89e092c86bd30cc711f93f83116c91b
+SHA512: 9f372dd4020ba71289303ba993facc0813a050146be5393d89190ee59db68623156ea12be2a2af79962e02025239a195875b391a28d9e89047e9b914efaa9503
 Homepage: https://github.com/tegho
 Description: Install nevada.ajalo.com.
  multiline

@@ -12,6 +12,7 @@ case "$1" in
 
       # nginx
       rm -f /etc/nginx/sites-enabled/stat
+      rm -f /etc/nginx/sites-enabled/prometheus
       deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke restart nginx
 
       # CRL updater

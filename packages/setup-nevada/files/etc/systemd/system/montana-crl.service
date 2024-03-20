@@ -4,7 +4,7 @@ After=network.target network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=bash -c 'if crl=$(curl -s -m 10 --fail "'http://montana.ajalo.com/crl'") ; then echo "$crl" > /etc/openvpn/pki-montana/crl.pem; echo "$crl" > /etc/swanctl/x509crl/pki-montana.pem; fi'
+ExecStart=bash -c 'if crl=$(curl -s -m 10 --fail "'http://montana.ajalo.com/crl'") ; then echo "$crl" > /etc/openvpn/pki-montana/crl.pem; echo "$crl" > /etc/swanctl/x509crl/pki-montana.pem; echo "$crl" > /etc/nginx/pki-montana/crl.pem; fi'
 
 [Install]
 WantedBy=multi-user.target
