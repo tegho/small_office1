@@ -11,7 +11,7 @@ Rules-Requires-Root: no
 
 Package: setup-montana
 Architecture: all
-Depends: crypt-pki,openvpn,nginx,ddns-afraid-org,zip
+Depends: crypt-pki,openvpn,nginx,ddns-afraid-org,zip,iptables,ipset
 Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
  multiline
  description

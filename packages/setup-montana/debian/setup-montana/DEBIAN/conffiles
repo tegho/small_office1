@@ -1,3 +1,5 @@
 /etc/ddns-afraid-org.d/montana.ajalo.com.conf
+/etc/iptables/filter.sh
 /etc/nginx/sites-available/crl
 /etc/nginx/sites-available/stat
+/etc/systemd/system/iptables.service

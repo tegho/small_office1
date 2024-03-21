@@ -1,9 +1,9 @@
 Package: setup-montana
-Version: 0.1-9
+Version: 0.1-12
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 34
-Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip
+Installed-Size: 41
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip, iptables, ipset
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho

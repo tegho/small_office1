@@ -1,0 +1,10 @@
+[Unit]
+Description=Iptables rules (service)
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/etc/iptables/filter.sh
+
+[Install]
+WantedBy=multi-user.target

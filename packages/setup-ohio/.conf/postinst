@@ -1,0 +1,35 @@
+#!/bin/sh
+
+set -e
+case "$1" in
+  configure)
+
+    # ddns
+    find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
+    find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+    deb-systemd-invoke restart ddns-afraid-org.service
+
+    # nginx
+#    touch /etc/nginx/pki-montana/ca.crt
+#    touch /etc/nginx/pki-montana/crl.pem
+#    ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
+#    ln -fs /etc/nginx/sites-available/prometheus /etc/nginx/sites-enabled/prometheus
+#    rm -f /etc/nginx/sites-enabled/default
+#    deb-systemd-invoke restart nginx
+
+    # iptables
+    deb-systemd-invoke enable iptables.service && \
+      deb-systemd-invoke restart iptables.service
+
+    ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
+    ;;
+esac
+
+exit 0

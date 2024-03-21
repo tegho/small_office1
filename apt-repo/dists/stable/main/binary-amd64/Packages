@@ -424,6 +424,44 @@ Description: Install my-repo apt repository
 
 Package: setup-montana
 Architecture: all
+Version: 0.1-10
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 41
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip, iptables, ipset
+Filename: pool/main/setup-montana_0.1-10_all.deb
+Size: 5916
+MD5sum: 394743f4bc3efd61c6715d365dec893e
+SHA1: 3e2026bdd5453cd92c550f46f251799959e291ee
+SHA256: 7360cf3219e6bad237706c461976df739cd58e21d60b27f95ca2027ba30f58e5
+SHA512: 372ac4d1dcd2f96e959755d21ca4a6a8526c8e696701cdfcd5eabfc4582747babcccbf3c1a7bb0f21d6b05cde84e087a2d8da6178fd1f99126688684f8da3df2
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
+Package: setup-montana
+Architecture: all
+Version: 0.1-12
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 41
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip, iptables, ipset
+Filename: pool/main/setup-montana_0.1-12_all.deb
+Size: 5948
+MD5sum: 24d3688a74a13ef75ce8fab6e7e88a6b
+SHA1: 69e1139fcfc9d0621fe973d0473faf43ea893f03
+SHA256: 28167d49c5da33b24ed3c4d5519d0646095e81db4cba0207363f6d1224f73f03
+SHA512: a59839d9e0aa3aafb426474c042f0de1353b9bff09e9e30d8b9c6448e1423cc4163f2ce39d5c16924b73075fb6a65edda02b5b56458ef9931ab4e30b1aed73cf
+Homepage: https://github.com/tegho
+Description: Install PKI, DDNS client, CRL distribution point and monitoring agent for montana.ajalo.com.
+ multiline
+ description
+
+Package: setup-montana
+Architecture: all
 Version: 0.1-1
 Priority: optional
 Section: unknown
@@ -961,6 +999,44 @@ Description: Install nevada.ajalo.com.
 
 Package: setup-nevada
 Architecture: all
+Version: 0.2-24
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 97
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-24_all.deb
+Size: 12224
+MD5sum: f225dd26b89a10a9312b0e1ee08adaa2
+SHA1: 88e71c26bc9a7b15d79a9c7e9cc34af5e8b61731
+SHA256: 5dc72307c91f1d4bf30eb6d4660a859fa5df66e7f64e613baffd9b6e4332188d
+SHA512: abee5b3a060fb3ede802092d7079e945722b1966bd49b6b23ebe406e99d2b918ef2538b4d7ee9cf3b5ed33781a6701f2ea14fc149f7b201c2b0bbdcb2f3a3c1f
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
+Version: 0.2-25
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 97
+Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
+Filename: pool/main/setup-nevada_0.2-25_all.deb
+Size: 12240
+MD5sum: 916e57e4e2c6f4552280a8ec8b8dfc8b
+SHA1: 38a4e115ea5ccafbf2a1c9cafcc74dbf1208e7d8
+SHA256: 2eb1ce81ffa567da56a19cf5e6eff69c94ca14cf4221d26f1dd6adb00a95a64e
+SHA512: 39e4e7eb973b5d9e777a26ad14ee9d6c02312450830c3c499948591d56dc79f0b239e26dfb353a5a51e0eb26e07caeece872aeb5162fce06cd65ebee2d6aa892
+Homepage: https://github.com/tegho
+Description: Install nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-nevada
+Architecture: all
 Version: 0.2-2
 Priority: optional
 Section: unknown
@@ -1089,6 +1165,25 @@ SHA256: 74cdc7d854762b71df3021e4f079f701ed7b23df80f76a26de4662a954e3b7ee
 SHA512: 94aa615e8893db77212a84bf87020251fccbcd8a4d5badc1e12995387308b0264cf398f550e73a9dc58aa29508600348e6c12a43690aa3368e16800d8af7ecfd
 Homepage: https://github.com/tegho
 Description: Install openvpn, ipsec server, DDNS client, utils for nevada.ajalo.com.
+ multiline
+ description
+
+Package: setup-ohio
+Architecture: all
+Version: 0.1-1
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 33
+Depends: systemd, iptables, ipset, prometheus, prometheus-alertmanager
+Filename: pool/main/setup-ohio_0.1-1_all.deb
+Size: 5020
+MD5sum: 53564d8419df620666b86173c9d39190
+SHA1: 8da9394312c859cce1bd6a5bfce170a3e5958506
+SHA256: 2def747043b3615c9173fa98f27b64fd4e7c183bdb400ec5af5030581840c486
+SHA512: 15b91ee12029bb8d9d0bb964a687638d534dfffea99a09aabae35d0487826499fe1ef23fc1eba6397f3fdbf5707029b036d28e8d899223b8a533d8a716d5b084
+Homepage: https://github.com/tegho
+Description: Install ohio.ajalo.com.
  multiline
  description
 

@@ -2,28 +2,37 @@
 
 set -e
 case "$1" in
-    configure)
-        find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
-        find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+  configure)
+    # ddns
+    find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
+    find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+    deb-systemd-invoke restart ddns-afraid-org.service
 
-        find /root/pki-montana -type d -exec chmod 700 '{}' \;
-        find /root/pki-montana -type f -exec chmod 600 '{}' \;
-        find /root/pki-montana -type f -name *.sh -exec chmod 700 '{}' \;
+    find /root/pki-montana -type d -exec chmod 700 '{}' \;
+    find /root/pki-montana -type f -exec chmod 600 '{}' \;
+    find /root/pki-montana -type f -name *.sh -exec chmod 700 '{}' \;
 
-        /root/pki-montana/1.first_run.sh
+    # iptables
+    deb-systemd-invoke enable iptables.service && \
+      deb-systemd-invoke restart iptables.service
 
-        mkdir -p /etc/nginx/sites-enabled/
-        ln -fs /etc/nginx/sites-available/crl  /etc/nginx/sites-enabled/crl
-        ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
-        rm -f /etc/nginx/sites-enabled/default
-#        deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
-        deb-systemd-invoke restart nginx
+    /root/pki-montana/1.first_run.sh
+
+    mkdir -p /etc/nginx/sites-enabled/
+    ln -fs /etc/nginx/sites-available/crl  /etc/nginx/sites-enabled/crl
+    ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
+    rm -f /etc/nginx/sites-enabled/default
+#    deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke reload nginx
+    deb-systemd-invoke restart nginx
     ;;
-    abort-upgrade|abort-remove|abort-deconfigure)
+
+  abort-upgrade|abort-remove|abort-deconfigure)
     ;;
-    *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
+
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
     ;;
 esac
+
 exit 0

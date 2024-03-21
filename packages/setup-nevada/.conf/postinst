@@ -3,10 +3,12 @@
 set -e
 case "$1" in
   configure)
-    systemctl daemon-reload
+#    systemctl daemon-reload
 
+    # ddns
     find /etc/ddns-afraid-org.d -type f -exec chmod 640 '{}' \;
     find /etc/ddns-afraid-org.d -type d -exec chmod 750 '{}' \;
+    deb-systemd-invoke restart ddns-afraid-org.service
 
     # bind9 DNS
     chown -R bind:bind /var/lib/bind/zones
@@ -28,8 +30,8 @@ case "$1" in
     # CRL updater
     deb-systemd-invoke enable montana-crl.service && \
       deb-systemd-invoke enable montana-crl.timer && \
-      deb-systemd-invoke start montana-crl.service && \
-      deb-systemd-invoke start montana-crl.timer
+      deb-systemd-invoke restart montana-crl.service && \
+      deb-systemd-invoke restart montana-crl.timer
 
     # iptables
     deb-systemd-invoke enable iptables.service && \
@@ -46,12 +48,12 @@ case "$1" in
 
     # ipsec monitoring
     docker pull jlti/ipsec_exporter
-    docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter || docker start ipsec_exporter
+    docker run -d -v /var/run/charon.vici:/var/run/charon.vici -p 127.0.0.1:9814:9814 --name ipsec_exporter --restart always jlti/ipsec_exporter || echo "Ok, then start it." && docker start ipsec_exporter
 
     # openvpn monitoring
     touch /etc/openvpn/vpn1.stat
     docker pull shrikantpatnaik/openvpn_exporter
-    docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter || docker start openvpn_exporter
+    docker run -d -v /etc/openvpn/vpn1.stat:/etc/openvpn_exporter/server.status -p 127.0.0.1:9176:9176 --name openvpn_exporter --restart always shrikantpatnaik/openvpn_exporter || echo "Ok, then start it." &&  docker start openvpn_exporter
 
     # tune prometheus exporters
     sed -i 's/^[\t ]*ARGS=".*$/ARGS="--web.listen-address=127.0.0.1:9100"/' /etc/default/prometheus-node-exporter
@@ -60,7 +62,7 @@ case "$1" in
     deb-systemd-invoke restart prometheus-nginx-exporter
 
     echo "========================================================"
-    echo "Now import server keys from PKI and start VPNs:"
+    echo "Now import server keys from PKI and restart:"
     echo "  systemctl restart openvpn-server@vpn1 nginx strongswan"
     echo "========================================================"
     ;;

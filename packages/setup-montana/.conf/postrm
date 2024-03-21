@@ -3,6 +3,8 @@
 set -e
 case "$1" in
     purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+      # systemd daemons
+      systemctl daemon-reload
       ;;
     *)
       echo "postrm called with unknown argument \`$1'" >&2

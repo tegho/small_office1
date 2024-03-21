@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 21 Mar 2024 03:57:31 +0300
+Source: setup-montana
+Binary: setup-montana
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-12
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ setup-montana - Install PKI, DDNS client, CRL distribution point and monitoring a
+Changes:
+ setup-montana (0.1-12) UNRELEASED; urgency=medium
+ .
+   * fix
+   * fix
+   * fix
+Checksums-Sha1:
+ 69e1139fcfc9d0621fe973d0473faf43ea893f03 5948 setup-montana_0.1-12_all.deb
+ 39cd684263a7afeee9f893751853978855f63b8c 5955 setup-montana_0.1-12_amd64.buildinfo
+Checksums-Sha256:
+ 28167d49c5da33b24ed3c4d5519d0646095e81db4cba0207363f6d1224f73f03 5948 setup-montana_0.1-12_all.deb
+ a7368e0e22075ac3bd73bf2ce6118c4a8375e4f518e7be12b73dae1db2b1ced0 5955 setup-montana_0.1-12_amd64.buildinfo
+Files:
+ 24d3688a74a13ef75ce8fab6e7e88a6b 5948 unknown optional setup-montana_0.1-12_all.deb
+ 3b52d5838703082d01b8c8e5adb31e8a 5955 unknown optional setup-montana_0.1-12_amd64.buildinfo

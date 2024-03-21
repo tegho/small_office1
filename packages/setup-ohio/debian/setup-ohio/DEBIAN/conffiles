@@ -1,0 +1,6 @@
+/etc/ddns-afraid-org.d/ohio.ajalo.com.conf
+/etc/iptables/filter.sh
+/etc/nginx/conf.d/nevada.conf
+/etc/nginx/sites-available/prometheus
+/etc/nginx/sites-available/stat
+/etc/systemd/system/iptables.service
