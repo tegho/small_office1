@@ -1187,3 +1187,22 @@ Description: Install ohio.ajalo.com.
  multiline
  description
 
+Package: setup-ohio
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 33
+Depends: systemd, iptables, ipset, ddns-afraid-org, prometheus, prometheus-alertmanager
+Filename: pool/main/setup-ohio_0.1-2_all.deb
+Size: 5028
+MD5sum: a1e5fe9c587da42342200b12ac5b519b
+SHA1: effaf1de73b76997e4d367f87445d6a4489030cb
+SHA256: a1025d22752c1047ed4779773da318be1c429e4048899106d998be1be7305e99
+SHA512: 49a7e7f7d892bfc4d2774b439a0c77fe6abc3dbc711e5ad3defd4379f0797d140537cc04fcf73445a6224215b5a58aa68739e77cf1ed9b013e97363fd7a97415
+Homepage: https://github.com/tegho
+Description: Install ohio.ajalo.com.
+ multiline
+ description
+

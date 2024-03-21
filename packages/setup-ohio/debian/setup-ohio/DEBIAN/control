@@ -1,9 +1,9 @@
 Package: setup-ohio
-Version: 0.1-1
+Version: 0.1-2
 Architecture: all
 Maintainer: admin <no@mail.plz>
 Installed-Size: 33
-Depends: systemd, iptables, ipset, prometheus, prometheus-alertmanager
+Depends: systemd, iptables, ipset, ddns-afraid-org, prometheus, prometheus-alertmanager
 Section: unknown
 Priority: optional
 Homepage: https://github.com/tegho
