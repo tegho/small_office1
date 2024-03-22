@@ -43,7 +43,6 @@ E: setup-ohio: bogus-mail-host Maintainer no@mail.plz
 E: setup-ohio changes: bogus-mail-host Changed-By no@mail.plz
 E: setup-ohio changes: bogus-mail-host Maintainer no@mail.plz
 E: setup-ohio: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
-E: setup-ohio: changelog-is-dh_make-template
 E: setup-ohio: copyright-contains-dh_make-todo-boilerplate
 E: setup-ohio: dir-or-file-in-home root/import-zip.sh
 E: setup-ohio: helper-templates-in-copyright
@@ -53,5 +52,4 @@ W: setup-ohio: copyright-has-url-from-dh_make-boilerplate
 W: setup-ohio: initial-upload-closes-no-bugs
 W: setup-ohio: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:9]
 W: setup-ohio: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:8]
-W: setup-ohio: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
 Finished running lintian.

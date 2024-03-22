@@ -5,6 +5,7 @@ case "$1" in
     remove|upgrade|deconfigure)
       rm -f /etc/nginx/sites-enabled/crl
       rm -f /etc/nginx/sites-enabled/stat
+      rm -f /etc/nginx/sites-enabled/prometheus
       deb-systemd-invoke status nginx >/dev/null 2>&1 && deb-systemd-invoke restart nginx
 
       # iptables

@@ -20,7 +20,6 @@ case "$1" in
     deb-systemd-invoke restart bind9
 
     # nginx
-    touch /etc/nginx/pki-montana/ca.crt
     touch /etc/nginx/pki-montana/crl.pem
     ln -fs /etc/nginx/sites-available/stat /etc/nginx/sites-enabled/stat
     ln -fs /etc/nginx/sites-available/prometheus /etc/nginx/sites-enabled/prometheus

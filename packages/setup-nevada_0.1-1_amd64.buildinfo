@@ -4,14 +4,14 @@ Binary: setup-nevada
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- e931928e63102ef281153cd15c45aab2 5414 setup-nevada_0.1-1_all.deb
+ 18fe2bd2d455fe801279061166d37fb1 11964 setup-nevada_0.1-1_all.deb
 Checksums-Sha1:
- 4a6d611b272b4e1e5ab1ed0d00a339148329a4b2 5414 setup-nevada_0.1-1_all.deb
+ fb1906f9657b773b715588172843b13c19fe2b92 11964 setup-nevada_0.1-1_all.deb
 Checksums-Sha256:
- de997ce1f4afa327ec3aecc0ef874d563b2c63bec22c18f761e21148775d0758 5414 setup-nevada_0.1-1_all.deb
+ ef71fa87fa2270fd0cd7516b4c0e6303b8a6513f8963d21373a730433e2759e2 11964 setup-nevada_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 03 Mar 2024 05:06:39 +0300
+Build-Date: Sat, 23 Mar 2024 02:53:30 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -21,7 +21,7 @@ Installed-Build-Depends:
  autotools-dev (= 20220109.1),
  base-files (= 12ubuntu4.5),
  base-passwd (= 3.5.52build1),
- bash (= 5.1-6ubuntu1),
+ bash (= 5.1-6ubuntu1.1),
  binutils (= 2.38-4ubuntu2.6),
  binutils-common (= 2.38-4ubuntu2.6),
  binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6),
@@ -146,7 +146,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-97.107),
+ linux-libc-dev (= 5.15.0-101.111),
  login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1709431589"
+ SOURCE_DATE_EPOCH="1711151589"

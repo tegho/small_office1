@@ -4,14 +4,14 @@ Binary: setup-ohio
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- 53564d8419df620666b86173c9d39190 5020 setup-ohio_0.1-1_all.deb
+ cbeb9d6ec805d733448b82dd57947c7a 4976 setup-ohio_0.1-1_all.deb
 Checksums-Sha1:
- 8da9394312c859cce1bd6a5bfce170a3e5958506 5020 setup-ohio_0.1-1_all.deb
+ 6f7ef3690ea554ee7b85f42fae08c238a275028c 4976 setup-ohio_0.1-1_all.deb
 Checksums-Sha256:
- 2def747043b3615c9173fa98f27b64fd4e7c183bdb400ec5af5030581840c486 5020 setup-ohio_0.1-1_all.deb
+ 078dcc97f32230b9a126d4044e4c3b517171ab6a48c97a823fbcc9426c7b01b0 4976 setup-ohio_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 21 Mar 2024 04:08:01 +0300
+Build-Date: Sat, 23 Mar 2024 02:54:55 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -146,7 +146,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-100.110),
+ linux-libc-dev (= 5.15.0-101.111),
  login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1710983274"
+ SOURCE_DATE_EPOCH="1711151665"

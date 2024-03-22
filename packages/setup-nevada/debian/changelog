@@ -1,50 +1,5 @@
-setup-nevada (0.2-25) UNRELEASED; urgency=medium
-
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fixes
-  * fix
-  * fix
-  * fix
-  * fix
-  * fix
-  * fix
-  * fix
-  * fix
-  * fix
-
- -- admin <no@mail.plz>  Thu, 21 Mar 2024 04:06:08 +0300
-
-setup-nevada (0.2-1) jammy; urgency=medium
-
-  * test
-  * test
-  * test
-  * test
-  * 
-
- -- admin <no@mail.plz>  Mon, 11 Mar 2024 03:46:11 +0300
-
-setup-nevada (0.1-2) jammy; urgency=medium
-
-  * Multiple fixes
-
- -- admin <no@mail.plz>  Tue, 05 Mar 2024 14:59:43 +0300
-
-setup-nevada (0.1-1) jammy; urgency=medium
+setup-nevada (0.1-1) UNRELEASED; urgency=medium
 
   * Initial release
 
- -- admin <no@mail.plz>  Sun, 03 Mar 2024 05:06:29 +0300
+ -- admin <no@mail.plz>  Sat, 23 Mar 2024 02:53:09 +0300

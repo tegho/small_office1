@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Sun, 03 Mar 2024 05:06:29 +0300
+Date: Sat, 23 Mar 2024 02:53:09 +0300
 Source: setup-nevada
 Binary: setup-nevada
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: jammy
+Distribution: UNRELEASED
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
- setup-nevada - Install openvpn, ipsec server, DDNS client, utils for nevada.ajal
+ setup-nevada - Install nevada.ajalo.com.
 Changes:
- setup-nevada (0.1-1) jammy; urgency=medium
+ setup-nevada (0.1-1) UNRELEASED; urgency=medium
  .
    * Initial release
 Checksums-Sha1:
- 4a6d611b272b4e1e5ab1ed0d00a339148329a4b2 5414 setup-nevada_0.1-1_all.deb
- 7af8005e68fc62d8862aa40af1380288619b934f 5943 setup-nevada_0.1-1_amd64.buildinfo
+ fb1906f9657b773b715588172843b13c19fe2b92 11964 setup-nevada_0.1-1_all.deb
+ a5344ec8eb3e622306ec1b528613e3d236223838 5949 setup-nevada_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- de997ce1f4afa327ec3aecc0ef874d563b2c63bec22c18f761e21148775d0758 5414 setup-nevada_0.1-1_all.deb
- a61673f0c69b9850f63422b63f59e27d04400a0cf7994125aef4b9400a687017 5943 setup-nevada_0.1-1_amd64.buildinfo
+ ef71fa87fa2270fd0cd7516b4c0e6303b8a6513f8963d21373a730433e2759e2 11964 setup-nevada_0.1-1_all.deb
+ b1bc873cd3659cc14b4a97c05921a8459a65cd8b1d3aed9240f2a7a1fb055f82 5949 setup-nevada_0.1-1_amd64.buildinfo
 Files:
- e931928e63102ef281153cd15c45aab2 5414 unknown optional setup-nevada_0.1-1_all.deb
- ff73f67c0b001529a071646e92b07299 5943 unknown optional setup-nevada_0.1-1_amd64.buildinfo
+ 18fe2bd2d455fe801279061166d37fb1 11964 unknown optional setup-nevada_0.1-1_all.deb
+ 33a8bd8b47fd4caf675d8a10458bb114 5949 unknown optional setup-nevada_0.1-1_amd64.buildinfo

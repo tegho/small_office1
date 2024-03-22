@@ -1,3 +1,3 @@
 package_url='https://github.com/tegho'
 package_short="Setup  montana.ajalo.com."
-package_depends='crypt-pki,openvpn,nginx,ddns-afraid-org,zip,iptables,ipset'
+package_depends='crypt-pki,openvpn,nginx,ddns-afraid-org,zip,iptables,ipset,prometheus-nginx-exporter,prometheus-node-exporter'

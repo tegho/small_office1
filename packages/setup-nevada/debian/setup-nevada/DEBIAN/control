@@ -1,8 +1,8 @@
 Package: setup-nevada
-Version: 0.2-25
+Version: 0.1-1
 Architecture: all
 Maintainer: admin <no@mail.plz>
-Installed-Size: 97
+Installed-Size: 96
 Depends: systemd, iptables, ipset, openvpn, nginx, zip, curl, charon-systemd, libcharon-extauth-plugins, libcharon-extra-plugins, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, strongswan-libcharon, strongswan-swanctl, bind9, dnsutils, ddns-afraid-org, prometheus-nginx-exporter, prometheus-node-exporter, docker-ce, docker-ce-cli, containerd.io, docker-buildx-plugin, docker-compose-plugin
 Section: unknown
 Priority: optional

@@ -4,14 +4,14 @@ Binary: ddns-afraid-org
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- aac3f99d8d7440e8be326e3c702758be 3650 ddns-afraid-org_0.1-1_all.deb
+ 8dd38f61cb689213bcb25474a5790a4e 3726 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha1:
- 42d7915225a66ea5380f58a28aafe7a0b9e7e8e3 3650 ddns-afraid-org_0.1-1_all.deb
+ ecbcbed309de710dccb0817a1c9eb3040ba2a5b5 3726 ddns-afraid-org_0.1-1_all.deb
 Checksums-Sha256:
- 8ddaebe256076d8740a7659637fe5a1ff84896a94f8f36eed7c16e70ff9f1239 3650 ddns-afraid-org_0.1-1_all.deb
+ fe794ca1f3790daa99e80ba53af5d36d57bbcd8c6fc97d91364c4491d30c995f 3726 ddns-afraid-org_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 03 Mar 2024 03:48:26 +0300
+Build-Date: Sat, 23 Mar 2024 02:51:44 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -21,7 +21,7 @@ Installed-Build-Depends:
  autotools-dev (= 20220109.1),
  base-files (= 12ubuntu4.5),
  base-passwd (= 3.5.52build1),
- bash (= 5.1-6ubuntu1),
+ bash (= 5.1-6ubuntu1.1),
  binutils (= 2.38-4ubuntu2.6),
  binutils-common (= 2.38-4ubuntu2.6),
  binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6),
@@ -146,7 +146,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-97.107),
+ linux-libc-dev (= 5.15.0-101.111),
  login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1709426893"
+ SOURCE_DATE_EPOCH="1711151481"

@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package crypt-pki
 dpkg-buildpackage: info: source version 0.1-1
-dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64

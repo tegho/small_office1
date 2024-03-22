@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Sun, 03 Mar 2024 03:49:44 +0300
+Date: Sat, 23 Mar 2024 02:49:43 +0300
 Source: crypt-pki
 Binary: crypt-pki
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: jammy
+Distribution: UNRELEASED
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
  crypt-pki  - Install easy-rsa, creates PKI structure and helpers
 Changes:
- crypt-pki (0.1-1) jammy; urgency=medium
+ crypt-pki (0.1-1) UNRELEASED; urgency=medium
  .
    * Initial release
 Checksums-Sha1:
- bcf93501afc477298ed519be717aad14e9bd4650 9556 crypt-pki_0.1-1_all.deb
- 2ab654e734d8cbbaf948c4e614966985c84f7980 5928 crypt-pki_0.1-1_amd64.buildinfo
+ aa2782c2de3b0dddcea8c4f87e899076dc4d9458 9524 crypt-pki_0.1-1_all.deb
+ 5805b1fe29e549854387400c74a1ae9f02443587 5931 crypt-pki_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- e96ea1a550a900383df20fb6fe2f1754f9dfcad69c2c8e5210c1a0eb1f5fdf5a 9556 crypt-pki_0.1-1_all.deb
- 7e0148a14972243194f58ec14c37ef4d55a2d63dcd4eb2541f1db44f36903bb7 5928 crypt-pki_0.1-1_amd64.buildinfo
+ 4a31971df6ab4638d336b431cc503c130c4ef54d6001b747f703048844a0e80d 9524 crypt-pki_0.1-1_all.deb
+ 2162302ea348f4f74323165c42df34924a22f9e1fae893bf518a342edf3372c1 5931 crypt-pki_0.1-1_amd64.buildinfo
 Files:
- 14d854866c8d812d87ba8b2c5929aad1 9556 unknown optional crypt-pki_0.1-1_all.deb
- becd12f61ce3fbf1a13bee40df5769d9 5928 unknown optional crypt-pki_0.1-1_amd64.buildinfo
+ 898e66673d4d3830e69bdf0a65c0e745 9524 unknown optional crypt-pki_0.1-1_all.deb
+ 062247ac0721e4576b9b9476b71515db 5931 unknown optional crypt-pki_0.1-1_amd64.buildinfo

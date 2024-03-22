@@ -1,13 +1,13 @@
 server {
-  listen                443 ssl;
-  listen                [::]:443 ssl;
+  listen                442 ssl;
+  listen                [::]:442 ssl;
   server_name           nevada.ajalo.com;
-  ssl_certificate       /etc/letsencrypt/live/nevada.ajalo.com/fullchain.pem;
-  ssl_certificate_key   /etc/letsencrypt/live/nevada.ajalo.com/privkey.pem;
   ssl_early_data        on;
 
   ssl_crl               /etc/nginx/pki-montana/crl.pem;
   ssl_client_certificate /etc/nginx/pki-montana/ca.crt;
+  ssl_certificate       /etc/nginx/pki-montana/nevada.ajalo.com.crt;
+  ssl_certificate_key   /etc/nginx/pki-montana/nevada.ajalo.com.key;
   ssl_verify_client     on;
 
   proxy_http_version    1.1;

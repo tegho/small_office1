@@ -4,14 +4,14 @@ Binary: setup-montana
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- b81afc2fd28e0cd2b4550aaa63748a17 4918 setup-montana_0.1-1_all.deb
+ fd4c1933c46302bbac49b34bb3413ea1 6754 setup-montana_0.1-1_all.deb
 Checksums-Sha1:
- 230692d5c6419c1a4ca261dd56b46dd423f01333 4918 setup-montana_0.1-1_all.deb
+ 8532504c7e4d77405f1c3f911e1766a89abff576 6754 setup-montana_0.1-1_all.deb
 Checksums-Sha256:
- a009d9c56c1387875670a7fe46c8e7fa3963d16cb48814e0448228a6a63ab4c2 4918 setup-montana_0.1-1_all.deb
+ f744e85266113bf6ae4925788265cff42473b59e0b5381cf1204f8f59081d194 6754 setup-montana_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 03 Mar 2024 03:51:56 +0300
+Build-Date: Sat, 23 Mar 2024 02:52:58 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -21,7 +21,7 @@ Installed-Build-Depends:
  autotools-dev (= 20220109.1),
  base-files (= 12ubuntu4.5),
  base-passwd (= 3.5.52build1),
- bash (= 5.1-6ubuntu1),
+ bash (= 5.1-6ubuntu1.1),
  binutils (= 2.38-4ubuntu2.6),
  binutils-common (= 2.38-4ubuntu2.6),
  binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6),
@@ -146,7 +146,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-97.107),
+ linux-libc-dev (= 5.15.0-101.111),
  login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1709427099"
+ SOURCE_DATE_EPOCH="1711151554"

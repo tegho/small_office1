@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package docker-repo
 dpkg-buildpackage: info: source version 0.1-1
-dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64
@@ -43,7 +43,6 @@ E: docker-repo: bogus-mail-host Maintainer no@mail.plz
 E: docker-repo changes: bogus-mail-host Changed-By no@mail.plz
 E: docker-repo changes: bogus-mail-host Maintainer no@mail.plz
 E: docker-repo: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
-E: docker-repo: changelog-is-dh_make-template
 E: docker-repo: copyright-contains-dh_make-todo-boilerplate
 E: docker-repo: helper-templates-in-copyright
 E: docker-repo: section-is-dh_make-template
@@ -57,5 +56,4 @@ W: docker-repo: copyright-has-url-from-dh_make-boilerplate
 W: docker-repo: empty-binary-package
 W: docker-repo: initial-upload-closes-no-bugs
 W: docker-repo: maintainer-script-empty [prerm]
-W: docker-repo: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
 Finished running lintian.

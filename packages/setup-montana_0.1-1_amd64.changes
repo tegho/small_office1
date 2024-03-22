@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Sun, 03 Mar 2024 03:51:39 +0300
+Date: Sat, 23 Mar 2024 02:52:34 +0300
 Source: setup-montana
 Binary: setup-montana
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: jammy
+Distribution: UNRELEASED
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
- setup-montana - Install PKI, DDNS client, CRL distribution point and monitoring a
+ setup-montana - Setup  montana.ajalo.com.
 Changes:
- setup-montana (0.1-1) jammy; urgency=medium
+ setup-montana (0.1-1) UNRELEASED; urgency=medium
  .
    * Initial release
 Checksums-Sha1:
- 230692d5c6419c1a4ca261dd56b46dd423f01333 4918 setup-montana_0.1-1_all.deb
- 9ddd9cbff8576f8e6da253ad066dcf2c894b4ffe 5948 setup-montana_0.1-1_amd64.buildinfo
+ 8532504c7e4d77405f1c3f911e1766a89abff576 6754 setup-montana_0.1-1_all.deb
+ 22bee219470e56d3a7de796f565bfdaef402906f 5951 setup-montana_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- a009d9c56c1387875670a7fe46c8e7fa3963d16cb48814e0448228a6a63ab4c2 4918 setup-montana_0.1-1_all.deb
- 465d8b938bad439414ebc139456690a9e5aa81df2d1403a7249654a1f7f93608 5948 setup-montana_0.1-1_amd64.buildinfo
+ f744e85266113bf6ae4925788265cff42473b59e0b5381cf1204f8f59081d194 6754 setup-montana_0.1-1_all.deb
+ 6b8857224805000a4ce0523ae43249a61bcf19de190a810726a2fa022d3c337a 5951 setup-montana_0.1-1_amd64.buildinfo
 Files:
- b81afc2fd28e0cd2b4550aaa63748a17 4918 unknown optional setup-montana_0.1-1_all.deb
- 233c52db4928ca9484c40046829781c4 5948 unknown optional setup-montana_0.1-1_amd64.buildinfo
+ fd4c1933c46302bbac49b34bb3413ea1 6754 unknown optional setup-montana_0.1-1_all.deb
+ a3a43d7f54ccc1f2f38f330e398e8d12 5951 unknown optional setup-montana_0.1-1_amd64.buildinfo

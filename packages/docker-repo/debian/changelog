@@ -1,14 +1,5 @@
-docker-repo (0.1-5) UNRELEASED; urgency=medium
+docker-repo (0.1-1) UNRELEASED; urgency=medium
 
-  * fix
-  * fix
-  * fix
-  * fix
+  * Initial release
 
- -- admin <no@mail.plz>  Thu, 14 Mar 2024 04:55:15 +0300
-
-docker-repo (0.1-1) jammy; urgency=medium
-
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
-
- -- admin <no@mail.plz>  Thu, 14 Mar 2024 01:23:05 +0300
+ -- admin <no@mail.plz>  Sat, 23 Mar 2024 02:52:05 +0300

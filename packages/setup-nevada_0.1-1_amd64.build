@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package setup-nevada
 dpkg-buildpackage: info: source version 0.1-1
-dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64
@@ -44,12 +44,17 @@ E: setup-nevada changes: bogus-mail-host Changed-By no@mail.plz
 E: setup-nevada changes: bogus-mail-host Maintainer no@mail.plz
 E: setup-nevada: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
 E: setup-nevada: copyright-contains-dh_make-todo-boilerplate
+E: setup-nevada: dir-or-file-in-home root/import-zip.sh
+E: setup-nevada: diversion-for-unknown-file etc/bind/named.conf [postinst:15]
 E: setup-nevada: helper-templates-in-copyright
 E: setup-nevada: section-is-dh_make-template
 E: setup-nevada: systemd-service-in-odd-location [etc/systemd/system/iptables.service]
 E: setup-nevada: systemd-service-in-odd-location [etc/systemd/system/montana-crl.service]
 W: setup-nevada: copyright-has-url-from-dh_make-boilerplate
 W: setup-nevada: initial-upload-closes-no-bugs
-W: setup-nevada: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:7]
-W: setup-nevada: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:6]
+W: setup-nevada: recursive-privilege-change "chown -R" [postinst:14]
+W: setup-nevada: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:10]
+W: setup-nevada: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:9]
+W: setup-nevada: script-not-executable [etc/vpn-client-learn.d/20-dns-register.sh]
+W: setup-nevada: script-not-executable [etc/vpn-client-learn.d/example.sh]
 Finished running lintian.

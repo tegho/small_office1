@@ -1,26 +1,26 @@
 Format: 1.8
-Date: Thu, 14 Mar 2024 01:23:05 +0300
+Date: Sat, 23 Mar 2024 02:52:05 +0300
 Source: docker-repo
 Binary: docker-repo
 Built-For-Profiles: noudeb
 Architecture: all
 Version: 0.1-1
-Distribution: jammy
+Distribution: UNRELEASED
 Urgency: medium
 Maintainer: admin <no@mail.plz>
 Changed-By: admin <no@mail.plz>
 Description:
  docker-repo - Install docker repo
 Changes:
- docker-repo (0.1-1) jammy; urgency=medium
+ docker-repo (0.1-1) UNRELEASED; urgency=medium
  .
-   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+   * Initial release
 Checksums-Sha1:
- 4d0d1e1ae6086a002fb8ef5cbfcbabc77093fad7 2632 docker-repo_0.1-1_all.deb
- 795d3587c08e5842bab9f2872799346804d233ce 5939 docker-repo_0.1-1_amd64.buildinfo
+ 9caf282d3ec2a630644b17b570ba047f182ee0f6 2596 docker-repo_0.1-1_all.deb
+ 373b1cec7033e40743206963a828bece0c0ea644 5941 docker-repo_0.1-1_amd64.buildinfo
 Checksums-Sha256:
- 315085e80303cc6dc56b7b6178fd2e1b36db1059d42df388babc904be817d55e 2632 docker-repo_0.1-1_all.deb
- 64b2642778898288127bcd8dbbdecbf23ed9feba557ca24faaca7ed6911f8a9c 5939 docker-repo_0.1-1_amd64.buildinfo
+ 5f320f4937b44e55e10740c40ce1e5c9b8dc2a025dd7fef4185c9bfdfe9a524f 2596 docker-repo_0.1-1_all.deb
+ a0f9a759308346e3e73678af95d5483eb2bfaedddd7e22f5c3c8219223699e53 5941 docker-repo_0.1-1_amd64.buildinfo
 Files:
- ce7ec318d5518c189c65160d02b27545 2632 unknown optional docker-repo_0.1-1_all.deb
- 82e57967ec36b3482fda296756e5e594 5939 unknown optional docker-repo_0.1-1_amd64.buildinfo
+ b42ad87fd8717c05c312548a07f21f57 2596 unknown optional docker-repo_0.1-1_all.deb
+ 64030301be5bd77713fd86f074a9e06d 5941 unknown optional docker-repo_0.1-1_amd64.buildinfo

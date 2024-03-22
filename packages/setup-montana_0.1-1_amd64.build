@@ -1,7 +1,7 @@
  dpkg-buildpackage -us -uc -ui -i -b
 dpkg-buildpackage: info: source package setup-montana
 dpkg-buildpackage: info: source version 0.1-1
-dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by admin <no@mail.plz>
  dpkg-source -i --before-build .
 dpkg-buildpackage: info: host architecture amd64
@@ -45,24 +45,23 @@ E: setup-montana changes: bogus-mail-host Maintainer no@mail.plz
 E: setup-montana: bogus-mail-host-in-debian-changelog no@mail.plz version 0.1-1 (line 1)
 E: setup-montana: copyright-contains-dh_make-todo-boilerplate
 E: setup-montana: dir-or-file-in-home root/pki-montana/
-E: setup-montana: dir-or-file-in-home root/pki-montana/1.first_run.sh
-E: setup-montana: dir-or-file-in-home root/pki-montana/2.crl.sh
+E: setup-montana: dir-or-file-in-home root/pki-montana/first-run.sh
+E: setup-montana: dir-or-file-in-home root/pki-montana/new-crl.sh
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/android-api
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/android-in
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/win-api
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/win-in
 E: setup-montana: dir-or-file-in-var-www var/www/crl-pki-montana/
-E: setup-montana: dir-or-file-in-var-www var/www/crl-pki-montana/crlfile.pem
+E: setup-montana: dir-or-file-in-var-www var/www/crl-pki-montana/.placeholder
 E: setup-montana: helper-templates-in-copyright
 E: setup-montana: section-is-dh_make-template
+E: setup-montana: systemd-service-in-odd-location [etc/systemd/system/iptables.service]
 W: setup-montana: copyright-has-url-from-dh_make-boilerplate
 W: setup-montana: initial-upload-closes-no-bugs
-W: setup-montana: maintainer-script-empty [prerm]
-W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:7]
-W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:6]
-W: setup-montana: recursive-privilege-change "find /root/pki-montana -type d -exec chmod" [postinst:9]
-W: setup-montana: recursive-privilege-change "find /root/pki-montana -type f -exec chmod" [postinst:10]
-W: setup-montana: recursive-privilege-change "find /root/pki-montana -type f -name *.sh -exec chmod" [postinst:11]
-W: setup-montana: synopsis-too-long
+W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type d -exec chmod" [postinst:8]
+W: setup-montana: recursive-privilege-change "find /etc/ddns-afraid-org.d -type f -exec chmod" [postinst:7]
+W: setup-montana: recursive-privilege-change "find /root/pki-montana -type d -exec chmod" [postinst:11]
+W: setup-montana: recursive-privilege-change "find /root/pki-montana -type f -exec chmod" [postinst:12]
+W: setup-montana: recursive-privilege-change "find /root/pki-montana -type f -name *.sh -exec chmod" [postinst:13]
 Finished running lintian.

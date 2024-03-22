@@ -1,17 +1,5 @@
-ddns-afraid-org (0.1-3) UNRELEASED; urgency=medium
-
-  * test
-
- -- admin <no@mail.plz>  Sun, 10 Mar 2024 05:56:02 +0300
-
-ddns-afraid-org (0.1-2) jammy; urgency=medium
-
-  * Some fixes
-
- -- admin <no@mail.plz>  Sat, 09 Mar 2024 22:33:02 +0300
-
-ddns-afraid-org (0.1-1) jammy; urgency=medium
+ddns-afraid-org (0.1-1) UNRELEASED; urgency=medium
 
   * Initial release
 
- -- admin <no@mail.plz>  Sun, 03 Mar 2024 03:48:13 +0300
+ -- admin <no@mail.plz>  Sat, 23 Mar 2024 02:51:21 +0300

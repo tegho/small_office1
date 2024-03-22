@@ -4,14 +4,14 @@ Binary: docker-repo
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- ce7ec318d5518c189c65160d02b27545 2632 docker-repo_0.1-1_all.deb
+ b42ad87fd8717c05c312548a07f21f57 2596 docker-repo_0.1-1_all.deb
 Checksums-Sha1:
- 4d0d1e1ae6086a002fb8ef5cbfcbabc77093fad7 2632 docker-repo_0.1-1_all.deb
+ 9caf282d3ec2a630644b17b570ba047f182ee0f6 2596 docker-repo_0.1-1_all.deb
 Checksums-Sha256:
- 315085e80303cc6dc56b7b6178fd2e1b36db1059d42df388babc904be817d55e 2632 docker-repo_0.1-1_all.deb
+ 5f320f4937b44e55e10740c40ce1e5c9b8dc2a025dd7fef4185c9bfdfe9a524f 2596 docker-repo_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 14 Mar 2024 01:23:12 +0300
+Build-Date: Sat, 23 Mar 2024 02:52:23 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -21,7 +21,7 @@ Installed-Build-Depends:
  autotools-dev (= 20220109.1),
  base-files (= 12ubuntu4.5),
  base-passwd (= 3.5.52build1),
- bash (= 5.1-6ubuntu1),
+ bash (= 5.1-6ubuntu1.1),
  binutils (= 2.38-4ubuntu2.6),
  binutils-common (= 2.38-4ubuntu2.6),
  binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6),
@@ -146,7 +146,7 @@ Installed-Build-Depends:
  libuuid1 (= 2.37.2-4ubuntu3),
  libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
  libzstd1 (= 1.4.8+dfsg-3build1),
- linux-libc-dev (= 5.15.0-100.110),
+ linux-libc-dev (= 5.15.0-101.111),
  login (= 1:4.8.1-2ubuntu2.2),
  lsb-base (= 11.1.0ubuntu4),
  lto-disabled-list (= 24),
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1710368585"
+ SOURCE_DATE_EPOCH="1711151525"

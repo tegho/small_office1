@@ -1,14 +1,14 @@
 server {
   listen                442 ssl;
   listen                [::]:442 ssl;
-  server_name           nevada.ajalo.com;
+  server_name           montana.ajalo.com;
   ssl_early_data        on;
 
-  ssl_crl               /etc/nginx/pki-montana/crl.pem;
-  ssl_client_certificate /etc/nginx/pki-montana/ca.crt;
-  ssl_certificate       /etc/nginx/pki-montana/nevada.ajalo.com.crt;
-  ssl_certificate_key   /etc/nginx/pki-montana/nevada.ajalo.com.key;
-  ssl_verify_client     on;
+  ssl_crl                   /etc/nginx/pki-montana/crl.pem;
+  ssl_client_certificate    /etc/nginx/pki-montana/ca.crt;
+  ssl_certificate           /etc/nginx/pki-montana/montana.ajalo.com.crt;
+  ssl_certificate_key       /etc/nginx/pki-montana/montana.ajalo.com.key;
+  ssl_verify_client         on;
 
   proxy_http_version    1.1;
   proxy_cache_bypass    $http_upgrade;
@@ -40,14 +40,6 @@ server {
   }
   location /prometheus-nginx {
     proxy_pass          http://127.0.0.1:9113/metrics;
-    proxy_set_header    Connection          $connection_upgrade;
-  }
-  location /prometheus-ipsec {
-    proxy_pass          http://127.0.0.1:9814/metrics;
-    proxy_set_header    Connection          $connection_upgrade;
-  }
-  location /prometheus-openvpn {
-    proxy_pass          http://127.0.0.1:9176/metrics;
     proxy_set_header    Connection          $connection_upgrade;
   }
 }
