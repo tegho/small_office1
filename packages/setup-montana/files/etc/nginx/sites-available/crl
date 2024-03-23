@@ -1,34 +1,18 @@
 server {
     listen 80;
     listen [::]:80;
-
-    root /var/www/crl;
-
     server_name montana.ajalo.com;
     server_tokens off;
 
-    location = /favicon.ico { access_log off; log_not_found off; }
-    location = /robots.txt {
-        access_log off;
-        log_not_found off;
-        add_header Content-Type text/plain;
-        return 200 "User-agent: *\nDisallow: /\n";
-    }
+#    root /var/www/html
+    location = / { return 404; access_log off; log_not_found off; }
     location /crl {
-        alias /var/www/crl-pki-montana/crlfile.pem;
+        alias /var/www/crl-pki-montana/crl.pem;
         default_type application/pkix-crl;
         expires -1;
         etag off;
         proxy_cache_bypass 1;
         add_header Last-Modified $date_gmt;
         add_header Cache-Control 'no-store, no-cache';
-    }
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    # deny access to .htaccess files, if Apache's document root concurs with nginx's one
-    location ~ /\.ht {
-        deny all;
     }
 }

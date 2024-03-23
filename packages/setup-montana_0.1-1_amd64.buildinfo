@@ -4,14 +4,14 @@ Binary: setup-montana
 Architecture: all
 Version: 0.1-1
 Checksums-Md5:
- fd4c1933c46302bbac49b34bb3413ea1 6754 setup-montana_0.1-1_all.deb
+ 7a26973b27494838245370d53b690091 6550 setup-montana_0.1-1_all.deb
 Checksums-Sha1:
- 8532504c7e4d77405f1c3f911e1766a89abff576 6754 setup-montana_0.1-1_all.deb
+ d7fc3418b087cb5b138f1dd06105f8c905903707 6550 setup-montana_0.1-1_all.deb
 Checksums-Sha256:
- f744e85266113bf6ae4925788265cff42473b59e0b5381cf1204f8f59081d194 6754 setup-montana_0.1-1_all.deb
+ e290ef9d9fa3db114a034f387833df0cf9975a3ed56985940591bd39bbca6dbf 6550 setup-montana_0.1-1_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sat, 23 Mar 2024 02:52:58 +0300
+Build-Date: Sat, 23 Mar 2024 03:17:05 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:
@@ -182,4 +182,4 @@ Environment:
  LC_PAPER="ru_RU.UTF-8"
  LC_TELEPHONE="ru_RU.UTF-8"
  LC_TIME="ru_RU.UTF-8"
- SOURCE_DATE_EPOCH="1711151554"
+ SOURCE_DATE_EPOCH="1711153007"

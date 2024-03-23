@@ -18,8 +18,8 @@ pki_server="montana.ajalo.com"
 my_export_dir="/etc/nginx/pki-montana"
 export_pki_file="$my_export_dir/server-pki.zip"
 
-crl_file1="$my_export_dir/crlfile.pem"
-crl_file2="/var/www/crl-pki-montana/crlfile.pem"
+crl_file1="$my_export_dir/crl.pem"
+crl_file2="/var/www/crl-pki-montana/crl.pem"
 
 
 # pki container is exist

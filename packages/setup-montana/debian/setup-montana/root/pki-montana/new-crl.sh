@@ -6,8 +6,8 @@ container_file="$current_dir/pki-montana.bin"
 ca_pwd_file="$current_dir/ca_key_password"
 pki_pwd_file="$current_dir/pki_password"
 
-crl_file1="$my_export_dir/crlfile.pem"
-crl_file2="/var/www/crl-pki-montana/crlfile.pem"
+crl_file1="$my_export_dir/crl.pem"
+crl_file2="/var/www/crl-pki-montana/crl.pem"
 
 
 if [ ! -s "$ca_pwd_file" ] || [ ! -s "$pki_pwd_file" ] || [ ! -s "$container_file" ] ; then

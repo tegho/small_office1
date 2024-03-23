@@ -53,7 +53,6 @@ E: setup-montana: dir-or-file-in-home root/pki-montana/templates/android-in
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/win-api
 E: setup-montana: dir-or-file-in-home root/pki-montana/templates/win-in
 E: setup-montana: dir-or-file-in-var-www var/www/crl-pki-montana/
-E: setup-montana: dir-or-file-in-var-www var/www/crl-pki-montana/.placeholder
 E: setup-montana: helper-templates-in-copyright
 E: setup-montana: section-is-dh_make-template
 E: setup-montana: systemd-service-in-odd-location [etc/systemd/system/iptables.service]
