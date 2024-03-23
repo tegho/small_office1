@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Sat, 23 Mar 2024 05:52:57 +0300
+Source: docker-repo
+Binary: docker-repo
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-2
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ docker-repo - Install docker repo
+Changes:
+ docker-repo (0.1-2) UNRELEASED; urgency=medium
+ .
+   * Initial release
+   * Fix1
+Checksums-Sha1:
+ 814cd34699ef5edd0898a9c99966c32068f5c21c 2612 docker-repo_0.1-2_all.deb
+ f5b610792be94ba7d1b4ec82be8f9152605465e6 5941 docker-repo_0.1-2_amd64.buildinfo
+Checksums-Sha256:
+ b26b91decfbc785db3912fc7c9867d33619518147050f32c5feb1cd563f588b3 2612 docker-repo_0.1-2_all.deb
+ 6bed474e229d5bd9ae673befeadbd6bc7fc725ab97326f04edcf316d0820c5c2 5941 docker-repo_0.1-2_amd64.buildinfo
+Files:
+ 73ba6d6f7115127388da82aee925c34a 2612 unknown optional docker-repo_0.1-2_all.deb
+ c3ba20d0c085a8dd6f2c89b2e1fd124f 5941 unknown optional docker-repo_0.1-2_amd64.buildinfo

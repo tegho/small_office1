@@ -1,5 +1,6 @@
-docker-repo (0.1-1) UNRELEASED; urgency=medium
+docker-repo (0.1-2) UNRELEASED; urgency=medium
 
   * Initial release
+  * Fix1
 
- -- admin <no@mail.plz>  Sat, 23 Mar 2024 02:52:05 +0300
+ -- admin <no@mail.plz>  Sat, 23 Mar 2024 05:52:57 +0300

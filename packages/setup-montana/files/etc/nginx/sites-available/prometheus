@@ -31,7 +31,7 @@ server {
   location / {
     add_header Content-Type text/plain;
     # return 200 "got cn: $ssl_client_cn";
-    return 200;
+    return 404;
   }
 
   location = /prometheus-node {

@@ -116,6 +116,26 @@ Description: Install docker repo
  multiline
  description
 
+Package: docker-repo
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 12
+Depends: ca-certificates, curl
+Breaks: containerd:amd64, docker-compose:amd64, docker-doc:amd64, docker.io:amd64, podman-docker:amd64, runc:amd64
+Filename: pool/main/docker-repo_0.1-2_all.deb
+Size: 2612
+MD5sum: 73ba6d6f7115127388da82aee925c34a
+SHA1: 814cd34699ef5edd0898a9c99966c32068f5c21c
+SHA256: b26b91decfbc785db3912fc7c9867d33619518147050f32c5feb1cd563f588b3
+SHA512: 4e6b88fde88703dbc3c88615b0ac03d468d5ad45fb0d8be56282353310eec3a769b46fd469d0e4c2f55c8aae9651629940e5535cf30287ee2d2a8af52a2bf9c6
+Homepage: https://github.com/tegho
+Description: Install docker repo
+ multiline
+ description
+
 Package: my-repo
 Architecture: all
 Version: 0.1-1

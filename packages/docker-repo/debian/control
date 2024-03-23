@@ -15,4 +15,4 @@ Depends: ca-certificates,curl
 Description: Install docker repo
  multiline
  description
-Breaks: docker.io, docker-doc, docker-compose, podman-docker, containerd, runc
+Breaks: docker.io:amd64, docker-doc:amd64, docker-compose:amd64, podman-docker:amd64, containerd:amd64, runc:amd64
