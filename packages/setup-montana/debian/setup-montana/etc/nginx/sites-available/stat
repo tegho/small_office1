@@ -3,7 +3,8 @@ server {
   listen [::]:8080 default_server;
   server_name _;
 
-  location /stub_status {
+  location / { return 404; access_log off; log_not_found off; }
+  location = /stub_status {
     stub_status;
     allow 127.0.0.0/8;
     allow ::1/128;

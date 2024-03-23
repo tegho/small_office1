@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 23 Mar 2024 05:00:52 +0300
+Source: setup-montana
+Binary: setup-montana
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.1-3
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: admin <no@mail.plz>
+Changed-By: admin <no@mail.plz>
+Description:
+ setup-montana - Setup  montana.ajalo.com.
+Changes:
+ setup-montana (0.1-3) UNRELEASED; urgency=medium
+ .
+   * Initial release
+   * Monitoring tune
+   * Url fixes
+Checksums-Sha1:
+ 5f803313e4c00389db1773414c769f1c28d8e3c3 6668 setup-montana_0.1-3_all.deb
+ 50ab4a45839fd960ff084c55cbc526aa11bc1b5f 5951 setup-montana_0.1-3_amd64.buildinfo
+Checksums-Sha256:
+ ff3c617b4b1c74604efeff3650f5e5596fc1be17f493aa26dfcbc1c37a2633cf 6668 setup-montana_0.1-3_all.deb
+ 7ebf8379378ab2c45601fc3c0a1c67804c6a5bb01659cff8c43d35455bf97764 5951 setup-montana_0.1-3_amd64.buildinfo
+Files:
+ d0b9fb15e99f35847689263c5590b18a 6668 unknown optional setup-montana_0.1-3_all.deb
+ efba80930e50da204a9322d0fb4d6aef 5951 unknown optional setup-montana_0.1-3_amd64.buildinfo

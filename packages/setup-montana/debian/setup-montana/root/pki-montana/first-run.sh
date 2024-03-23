@@ -24,7 +24,7 @@ crl_file2="/var/www/crl-pki-montana/crl.pem"
 
 # pki container is exist
 if [ -s "$container_file" ] ; then
-  echo "==========\nPKI container already exist.\n==========\n"
+  echo -e "==========\nPKI container already exist.\n==========\n"
   exit 0
 fi
 
@@ -89,7 +89,7 @@ fi
 if [ $ret -eq 0 ]; then
   echo -e "==========\nPKI container is ready. Now secure the passwords from $current_dir and copy $export_file to a vpn server.\n==========\n"
 else
-  echo "==========\nERROR. Some PKI operations are failed.\n==========\n"
+  echo -e "==========\nERROR. Some PKI operations are failed.\n==========\n"
 fi
 
 

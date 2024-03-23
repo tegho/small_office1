@@ -4,9 +4,8 @@ server {
     server_name montana.ajalo.com;
     server_tokens off;
 
-#    root /var/www/html
-    location = / { return 404; access_log off; log_not_found off; }
-    location /crl/ {
+    location / { return 404; access_log off; log_not_found off; }
+    location = /crl {
         alias /var/www/crl-pki-montana/crl.pem;
         default_type application/pkix-crl;
         expires -1;
