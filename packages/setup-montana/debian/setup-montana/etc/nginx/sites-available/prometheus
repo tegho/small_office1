@@ -34,11 +34,11 @@ server {
     return 200;
   }
 
-  location /prometheus-node {
+  location /prometheus-node/ {
     proxy_pass          http://127.0.0.1:9100/metrics;
     proxy_set_header    Connection          $connection_upgrade;
   }
-  location /prometheus-nginx {
+  location /prometheus-nginx/ {
     proxy_pass          http://127.0.0.1:9113/metrics;
     proxy_set_header    Connection          $connection_upgrade;
   }

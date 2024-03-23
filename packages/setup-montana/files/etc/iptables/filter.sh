@@ -36,7 +36,6 @@ clearfw
 $IPS add vpnnets 192.168.192.0/22
 
 $IPT -t filter -A FORWARD -m set --match-set vpnnets src -j ACCEPT
-
 $IPT -t filter -A FORWARD -m set --match-set vpnnets dst -m state --state ESTABLISHED  -j ACCEPT
 $IPT -t filter -A FORWARD -m set --match-set vpnnets dst -m state --state RELATED  -j ACCEPT
 $IPT -t filter -A FORWARD -m set --match-set vpnnets dst -m state --state INVALID  -j DROP

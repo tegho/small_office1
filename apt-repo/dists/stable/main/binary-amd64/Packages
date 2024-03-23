@@ -153,6 +153,25 @@ Description: Setup  montana.ajalo.com.
  multiline
  description
 
+Package: setup-montana
+Architecture: all
+Version: 0.1-2
+Priority: optional
+Section: unknown
+Maintainer: admin <no@mail.plz>
+Installed-Size: 49
+Depends: crypt-pki, openvpn, nginx, ddns-afraid-org, zip, iptables, ipset, prometheus-nginx-exporter, prometheus-node-exporter
+Filename: pool/main/setup-montana_0.1-2_all.deb
+Size: 6662
+MD5sum: cd1fa81b73c81c06f115003f5d36727e
+SHA1: c5f3971192d253b19d3a93647dec86d4695a5848
+SHA256: c02918b107280484164b04fb75b5e31ac2076d34b2e186ba6e2488994d0eb52f
+SHA512: d89b8bb732f85b43fe03ec16bcdc9588c764ea2fbb92661a81e0fdbf6d3996dcd5cc265b0ae9559c7f3baf1eb0bbebc11e6581d5998388a8199307370563379a
+Homepage: https://github.com/tegho
+Description: Setup  montana.ajalo.com.
+ multiline
+ description
+
 Package: setup-nevada
 Architecture: all
 Version: 0.1-1

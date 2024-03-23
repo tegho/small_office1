@@ -11,12 +11,11 @@ case "$1" in
     find /root/pki-montana -type d -exec chmod 700 '{}' \;
     find /root/pki-montana -type f -exec chmod 600 '{}' \;
     find /root/pki-montana -type f -name *.sh -exec chmod 700 '{}' \;
+    /root/pki-montana/first-run.sh
 
     # iptables
     deb-systemd-invoke enable iptables.service && \
       deb-systemd-invoke restart iptables.service
-
-    /root/pki-montana/first-run.sh
 
     # nginx
     touch /etc/nginx/pki-montana/crl.pem
@@ -25,6 +24,12 @@ case "$1" in
     ln -fs /etc/nginx/sites-available/prometheus /etc/nginx/sites-enabled/prometheus
     rm -f /etc/nginx/sites-enabled/default
     deb-systemd-invoke restart nginx
+
+    # tune prometheus exporters
+    sed -i 's/^[\t ]*ARGS=".*$/ARGS="--web.listen-address=127.0.0.1:9100"/' /etc/default/prometheus-node-exporter
+    sed -i 's/^[\t ]*ARGS=".*$/ARGS="-web.listen-address 127.0.0.1:9113"/' /etc/default/prometheus-nginx-exporter
+    deb-systemd-invoke restart prometheus-node-exporter
+    deb-systemd-invoke restart prometheus-nginx-exporter
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
